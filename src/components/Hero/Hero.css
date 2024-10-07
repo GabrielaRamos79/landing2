@@ -83,12 +83,12 @@
   }
   
   .yeah {
-    width: 127%;
+    width: 150%;
     max-width: 250%;
     /* align-self: flex-end; */
-    margin-left: -10%;
-    margin-top: 25%;
-    margin-bottom:0%;
+    margin-left: -20%;
+    margin-top: 10%;
+    margin-bottom:30px;
   }
   
   .highlight {
