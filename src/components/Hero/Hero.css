@@ -1,0 +1,145 @@
+.hero-component{
+    background-color: #e9eaf0;
+    display: block;
+    padding: 20px;
+}
+
+.logo-text-container {
+    display: flex; /* Usamos flexbox solo en esta parte */
+    justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+    align-items: flex-end; /* Alinea el logo y el texto en la parte inferior */
+    margin-bottom: 20px; /* Añadimos espacio debajo */
+}
+
+.spin-gif {
+    flex: 0 1 auto; /* Permite que el logo ocupe su espacio natural */
+    text-align: center;
+    margin-right: 20px; /* Ajusta este margen para separar la imagen del texto */
+}
+
+.spin-logo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-left: 500px;
+    margin-bottom: 310px;
+    /* margin-top: -80px; */
+    /* margin-right: -300px; */
+  }
+
+  .right-text {
+    /* flex:  0 1 50%; */
+    font-family: "Inter_18pt-Light", sans-serif;
+    font-size: 60px;
+    line-height: 1.2;
+    text-align: right;
+    max-width: 370px;
+    margin-left: 26px;
+    margin-top: 0;
+    /* align-self: flex-end; */
+    
+  }
+
+  /* .highlight-text {
+    font-family: "Inter_18pt-Light", sans-serif;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: relative;
+    display: inline-block;
+  } */
+
+  .punch {
+    margin-top: 20px;
+    font-family: "Inter_18-Medium", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  
+  .punch p {
+    font-family: "Inter_18-Medium", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 0%;
+    width: 65%; /* Ajuste del ancho para evitar que el botón afecte el flujo del texto */
+  }
+
+  .boton-escribe {
+    background-color: #c9ea50;
+    color: #161719;
+    font-family: 'Agharti-lightcondensed', sans-serif;
+    font-size: 60px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 15px;
+    margin-right: 0%;
+    margin-left: 21%;
+    margin-top: 20%; /* Mueve el botón hacia arriba */
+    height: fit-content;
+    letter-spacing: 0.5px;
+    transform: scaleY(0.8);
+  }
+  
+  .yeah {
+    width: 127%;
+    max-width: 250%;
+    /* align-self: flex-end; */
+    margin-left: -10%;
+    margin-top: 25%;
+    margin-bottom:0%;
+  }
+  
+  .highlight {
+    position: relative;
+    display: inline-block;
+    font-weight: bold; /* O el estilo que quieras darle al texto */
+    background-image: url("../../images/details/Linea.png"); /* Ruta de la imagen */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 5px; /* Espacio para la imagen debajo del texto */
+  }
+
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+    align-items: center; /* Alinea verticalmente */
+    margin-top: -10%; /* Ajusta según lo necesario */
+    margin-bottom: -3.9%;
+  }
+  
+  .left-column {
+    text-align: left;
+    margin-top: 56%;
+    margin-left: 7%; /* Ajusta la posición de la imagen del texto */
+  }
+  
+  .right-column {
+    text-align: right;
+    margin-right: 30%; /* Ajusta la posición de la imagen del lado derecho */
+  }
+  
+  .hacemos {
+    width: 70%; /* Ajusta el tamaño de la imagen "QUE HACEMOS" */
+    max-width: 400px; /* Ajusta según lo que necesites */
+  }
+
+  @media (max-width: 767px) {
+    .hero-component {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra todo */
+    }
+
+    .right-text {
+        width: 80%;
+        font-size: 40px;
+        margin-right: 0;
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .spin-gif {
+        margin-bottom: 20px; /* Añade espacio entre la imagen y el texto en móviles */
+    }
+}

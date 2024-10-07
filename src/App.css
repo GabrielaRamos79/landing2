@@ -52,7 +52,7 @@
 
 @font-face {
   font-family: "Hurtmore";
-  src: local("Hurtmore") url("./fonts/Hurtmore.ttf") format("truetype");
+  src: local("Hurtmore") url("./fonts/Hurtmore/Hurtmore.ttf") format("truetype");
 }
 
 @font-face {
@@ -98,4 +98,16 @@
 @font-face {
   font-family: "Inter_18pt-SemiBold";
   src: url("./fonts/Inter/Inter_18pt-SemiBold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Alinear los componentes verticalmente */
+  gap: 0px; /* Asegúrate de que no haya separación entre componentes */
 }

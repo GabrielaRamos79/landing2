@@ -1,0 +1,99 @@
+.header-navbar {
+    background-color: #e9eaf0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.acento-somos {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter_18pt-Light', sans-serif; /* Asegúrate de que la fuente esté bien importada */
+    font-size: 4rem;
+    color: #161719;
+    position: relative;
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+.acento-img-wrapper {
+    display: inline-block;
+    /* margin-right: 5px; */
+    margin-top: -95px;
+    margin-left: 50px;
+}
+
+.acento-img {
+    width: 60px;
+    height: auto;
+    vertical-align: middle; /* Para alinear la imagen con el texto */
+    position: relative;
+    left: 20px;
+}
+
+.puente-img {
+    height: 100px;
+    margin-top: 10px; /* Ajusta según sea necesario */
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* Media query para pantallas pequeñas como móviles (hasta 767px) */
+@media (max-width: 767px) {
+    .header-navbar {
+        flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+        align-items: start;
+    }
+
+    .logo {
+        flex-direction: column;
+        margin-left: 5px;
+    }
+
+    .acento-somos{
+        margin-left: -72px;
+    }
+    .acento-img {
+        width: 50px; /* Mantén el tamaño de las imágenes constante */
+    }
+
+    .puente-img {
+        width: 250px;
+        margin-left: 90px;
+    }
+
+    /* img .puente-img {
+        margin-left: 105px;
+    } */
+}
+/* Media query para pantallas de 430px y más pequeñas */
+@media (max-width: 430px) {
+    .header-navbar {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .logo {
+        flex-direction: column; /* Coloca los elementos en columna */
+        text-align: center; /* Centra el texto y las imágenes */
+    }
+
+    /* Mantén las imágenes y textos del mismo tamaño */
+    .acento-img {
+        width: 50px; /* Mantiene el tamaño original de la imagen */
+    }
+
+    .puente-img {
+        height: 80px; /* Mantiene el tamaño original de la imagen */
+        margin-left: 0; /* Elimina el margen izquierdo en la vista de columna */
+        margin-top: 10px; /* Añade un margen superior si es necesario */
+    }
+}
