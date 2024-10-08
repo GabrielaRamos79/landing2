@@ -15,33 +15,29 @@ function Hero() {
           tu agencia de publicidad y comunicación 360º
         </h2>
       </div>
-      <div>
-        <div className="punch">
+      <div className="hero-grid">
+        <div className="punch-text">
+          <p>Hacemos las cosas diferentes desde el otro lado</p>
+          <p>del branding: publicidad, branded content, diseño</p>
           <p>
-            Hacemos las cosas diferentes desde el otro lado
-            <br />
-            del branding: publicidad, branded content, diseño
-            <br />y estrategia, ¡con un&nbsp;
+            y estrategia, ¡con un&nbsp;
             <span className="highlight">
               <b> punch de flow creativo</b>
             </span>
-            !<br />
-            <span>
-              <br />
-              Si quieres revolucionar tu marca y llevarla hasta el
-              <br />
-              éxito, es el momento de cruzar al otro lado.
-            </span>
-            <br />
-            <br />
-            ¿Quieres saber qué podemos hacer por ti?
+            !
           </p>
+          <p>&nbsp;</p>
+          <p>Si quieres revolucionar tu marca y llevarla hasta el</p>
+          <p>éxito, es el momento de cruzar al otro lado.</p>
+          <p>&nbsp;</p>
+          <p>¿Quieres saber qué podemos hacer por ti?</p>
+        </div>
+        <div className="boton-container">
+          <a className="boton-escribe" href="#contactForm">
+            ESCRÍBENOS
+          </a>
         </div>
       </div>
-
-      <a className="boton-escribe" href="#contactForm">
-        ESCRÍBENOS
-      </a>
       <div className="header-grid">
         <div className="left-column">
           <img src={hacemos} className="hacemos" alt="que-hacemos" />

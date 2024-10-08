@@ -30,12 +30,13 @@
   .right-text {
     /* flex:  0 1 50%; */
     font-family: "Inter_18pt-Light", sans-serif;
-    font-size: 60px;
+    font-size: 58px;
     line-height: 1.2;
     text-align: right;
-    max-width: 370px;
-    margin-left: 26px;
+    max-width: 400px;
+    margin-left: 0px;
     margin-top: 0;
+    margin-bottom: 8px;
     /* align-self: flex-end; */
     
   }
@@ -49,22 +50,32 @@
     display: inline-block;
   } */
 
-  .punch {
-    margin-top: 20px;
-    font-family: "Inter_18-Medium", sans-serif;
-    font-size: 1.2rem;
-    text-align: left;
-  }
+  .hero-grid {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el texto y el botón */
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre columnas */
+    padding: 20px 0;
+}
+.punch-text {
+    flex: 1;
+    max-width: 65%;
+    margin-left: 60px;
+}
   
-  .punch p {
+  .punch-text p {
+    margin-bottom: 20px; /* Espaciado entre los párrafos */
     font-family: "Inter_18-Medium", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: left;
-    margin-left: 8%;
-    margin-top: 0%;
-    width: 65%; /* Ajuste del ancho para evitar que el botón afecte el flujo del texto */
-  }
-
+    line-height: 15px;
+}
+.boton-container {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   .boton-escribe {
     background-color: #c9ea50;
     color: #161719;
@@ -74,8 +85,8 @@
     text-decoration: none;
     text-align: center;
     padding: 5px 15px;
-    margin-right: 0%;
-    margin-left: 21%;
+    margin-right: 120%;
+    margin-left: 1%;
     margin-top: 20%; /* Mueve el botón hacia arriba */
     height: fit-content;
     letter-spacing: 0.5px;
@@ -131,15 +142,111 @@
         flex-direction: column; /* Cambia a columna en pantallas pequeñas */
         align-items: center; /* Centra todo */
     }
-
+    .logo-text-container {
+        flex-direction: column;
+        align-items: center; /* Centra logo y texto */
+        margin-bottom: 20px;
+    }
+    .spin-logo {
+        margin-left: -50px; 
+        margin-bottom: 20px; /* Añade espacio debajo del logo */
+    }
     .right-text {
-        width: 80%;
+        /* width: 80%; */
         font-size: 40px;
-        margin-right: 0;
-        text-align: center; /* Centra el texto en pantallas pequeñas */
+        margin-right: 30px;
+        /* margin-left: 80px; */
+        text-align: right; /* Centra el texto en pantallas pequeñas */
+    }
+    .hero-grid {
+        flex-direction: column; /* Los párrafos y el botón se apilarán */
+        align-items: center;
     }
 
-    .spin-gif {
+    .punch-text {
+        max-width: 100%; /* El texto ocupará todo el ancho disponible */
+        text-align: center; /* Centra el texto */
+        margin-bottom: 20px; /* Añade espacio debajo */
+    }
+    .punch-text p{
+        line-height: 25px;
+    }
+    .boton-escribe {
+        font-size: 80px; /* Ajusta el tamaño del botón */
+        text-align: center;
+        margin-left: -106px;
+    }
+
+    .header-grid {
+        grid-template-columns: 1fr; /* Cambia la cuadrícula a una sola columna */
+        margin-top: 20px;
+    }
+    .left-column {
+        order: 2; /* Mueve "Qué hacemos" abajo */
+        text-align: center; /* Ajusta para centrar en pantallas pequeñas */
+        margin: 20px 0; /* Ajusta márgenes si es necesario */
+      }
+    
+      .right-column {
+        order: 1; /* Mueve "Oh Yeah" arriba */
+        text-align: center; /* Centra la imagen "Oh Yeah" */
+        margin: 0 0; /* Ajusta márgenes si es necesario */
+      }
+.yeah{
+    margin-left: 15px;
+}
+    .hacemos, .yeah {
+        max-width: 100%; /* Mantén las imágenes al 100% del ancho */
+        margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
+    }
+    /* .spin-gif {
         margin-bottom: 20px; /* Añade espacio entre la imagen y el texto en móviles */
+    /*} */
+}
+/* Media query para pantallas de hasta 430px (móviles más pequeños) */
+@media (max-width: 430px) {
+    .hero-component {
+        flex-direction: column; /* Mantén en columna para pantallas pequeñas */
+        align-items: center;
+    }
+
+    .logo-text-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .spin-logo {
+        margin-bottom: 15px; /* Reduce el espacio debajo del logo */
+    }
+
+    .right-text {
+        font-size: 35px; /* Reduce un poco más el tamaño del texto */
+        text-align: center;
+    }
+
+    .hero-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .punch-text {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .boton-escribe {
+        font-size: 35px; /* Reduce el tamaño del botón */
+    }
+
+    .header-grid {
+        grid-template-columns: 1fr; /* Mantén una sola columna */
+        margin-top: 15px;
+    }
+
+    .hacemos, .yeah {
+        max-width: 100%;
+        margin-bottom: 15px;
     }
 }
