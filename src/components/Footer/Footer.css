@@ -1,0 +1,305 @@
+.footer-section {
+  background-color: #e9eaf0;
+  /* padding: 50px 20px; */
+  text-align: center;
+  /* font-family: 'Inter_18pt-Regular', sans-serif; */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Social links styling */
+.social-links {
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+  font-family: "Inter_18pt-Bold";
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  position: relative;
+}
+
+.link-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* .circle-effect {
+    position: absolute;
+    top: -4%;
+    left: 0%;
+    width: 195px; Tamaño del círculo
+    height: 60px;
+    transform:none;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+  } */
+
+.circle-effect-instagram {
+  position: absolute;
+  top: -2%;
+  left: -1%;
+  width: 252px; /* Tamaño del círculo */
+  height: 62px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.link-container:hover .circle-effect-instagram {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 1;
+}
+.circle-effect-linkedin {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  width: 196px; /* Tamaño del círculo */
+  height: 64px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.link-container:hover .circle-effect-linkedin {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 1;
+}
+.circle-effect-vimeo {
+  position: absolute;
+  top: -4%;
+  left: -1%;
+  width: 142px; /* Tamaño del círculo */
+  height: 60px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.link-container:hover .circle-effect-vimeo {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 1;
+}
+
+.circle-effect-aviso {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 82px; /* Tamaño del círculo */
+  height: 20px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.link-container:hover .circle-effect-aviso {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 2;
+}
+
+.circle-effect-privacidad {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  width: 155px; /* Tamaño del círculo */
+  height: 22px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.link-container:hover .circle-effect-privacidad {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 2;
+}
+
+.circle-effect-cookie {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  width: 135px; /* Tamaño del círculo */
+  height: 22px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.link-container:hover .circle-effect-cookie {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 1;
+}
+
+@keyframes traceCircle {
+  0% {
+    transform: translate(calc(-50% + 430px), calc(-50% + 523px), 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(calc(-50% + 0px), calc(-50% + 0px), 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(-50% + 0px), calc(-50% + 0px), 0);
+    opacity: 1;
+  }
+}
+
+.social-links a,
+.legal-links a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 5px;
+  z-index: 1;
+  /* transition: color 0.3s ease-in-out; */
+}
+
+/* .social-links a:hover:before {
+    width: 110%;
+    height: 110%;
+  } */
+/* .social-links .highlighted {
+    position: relative;
+    color: black;
+    background-color: #c9ea50;
+    padding: 0 10px;
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate3d(calc(-50% + 519px), calc(-50% + 523px), 0px);
+  } */
+
+/* Vimeo section with the splatter image */
+*/ .vimeo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.vimeo-wrapper a {
+  position: relative;
+  z-index: 1;
+}
+
+.splatter-image {
+  position: absolute;
+  top: -220px;
+  right: 446px;
+  z-index: 0;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+  overflow: hidden;
+}
+
+/* Legal links styling */
+.legal-links {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+
+.legal-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Footer logo */
+.footer-logo img {
+  width: 130px;
+  margin-top: -98px;
+  margin-left: 80%;
+}
+
+@media (max-width: 991px) {
+  .footer-section {
+    padding: 20px 0;
+  }
+
+  .circle-effect-instagram {
+    margin-left: 45px;
+  }
+
+  .circle-effect-linkedin {
+    margin-left: 45px;
+  }
+  .circle-effect-vimeo {
+    margin-left: 45px;
+  }
+  .circle-effect-aviso {
+    margin-left: 45px;
+  }
+  .circle-effect-privacidad {
+    margin-left: 45px;
+  }
+  .circle-effect-cookie {
+    margin-left: 45px;
+  }
+  .social-links {
+    flex-direction: column; /* Coloca los enlaces de redes sociales en columna */
+    align-items: left; /* Centra los elementos */
+    gap: 20px; /* Reduce el espacio entre los enlaces */
+    margin-left: 0; /* Elimina margen lateral */
+  }
+  .link-container {
+    text-align: left;
+    padding-left: 42px;
+  }
+
+  .legal-links {
+    flex-direction: column; /* Coloca los enlaces legales en columna */
+    align-items: left; /* Centra los enlaces */
+    gap: 15px; /* Reduce el espacio entre los enlaces */
+    margin-left: 0; /* Elimina margen lateral */
+  }
+
+  .footer-logo img {
+    margin-left: 0; /* Centra el logo */
+    margin-top: 20px; /* Añade espacio en la parte superior del logo */
+    width: 100px; /* Reduce el tamaño del logo */
+  }
+
+  .splatter-image {
+    right: 0; /* Ajusta la posición del splatter */
+    top: -150px; /* Mueve el splatter más cerca de la parte superior */
+    width: 70%; /* Ajusta el tamaño del splatter */
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-section {
+    padding: 20px 0;
+  }
+
+  .social-links {
+    flex-direction: column; /* Coloca los enlaces de redes sociales en columna */
+    align-items: left; /* Centra los elementos */
+    gap: 20px; /* Reduce el espacio entre los enlaces */
+    margin-left: 0; /* Elimina margen lateral */
+  }
+
+  .legal-links {
+    flex-direction: column; /* Coloca los enlaces legales en columna */
+    align-items: left; /* Centra los enlaces */
+    gap: 15px; /* Reduce el espacio entre los enlaces */
+    margin-left: 0; /* Elimina margen lateral */
+  }
+
+  .footer-logo img {
+    margin-left: 0; /* Centra el logo */
+    margin-top: 20px; /* Añade espacio en la parte superior del logo */
+    width: 100px; /* Reduce el tamaño del logo */
+  }
+
+  .splatter-image {
+    right: 0; /* Ajusta la posición del splatter */
+    top: -150px; /* Mueve el splatter más cerca de la parte superior */
+    width: 70%; /* Ajusta el tamaño del splatter */
+  }
+}

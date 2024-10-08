@@ -14,17 +14,19 @@ import Services from "./components/Services/Services";
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <Hero />
-      <Services />
-      <Client />
-      <Project />
-      <Carousel />
-      <ContactForm />
-      <Contact />
-      <Footer />
-    </div>
+      <div className="container">
+        <Header />
+        <Hero />
+        <Services />
+        <Client />
+        <Project />
+        <Carousel />
+        <ContactForm />
+        <Contact />
+        <Footer />
+      </div>
+
+     
   );
 }
 

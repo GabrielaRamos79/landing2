@@ -21,7 +21,7 @@
   font-family: "Hurtmore", sans-serif;
   font-size: 4.5rem;
   margin-left: 15%;
-  margin-top: 4px;
+  margin-top: 24px;
   margin-bottom: 30px;
   text-align: left;
   color: #161719;
@@ -136,12 +136,13 @@ textarea.form-input {
 .send-button {
   background-color: #c9ea50;
   color: #161719;
-  font-family: "AghartiCondensed", sans-serif;
+  font-family: "Agharti-LightCondensed", sans-serif;
+  letter-spacing: 0.5px;
   font-size: 3.5rem;
-  padding: 1px 20px;
+  padding: 0 20px;
   border: none;
   cursor: pointer;
-  /* margin-right: 25%; */
+  margin-left: 68%;
   margin-bottom: 3%;
   /* margin-top: -1%; */
   text-align: center;
@@ -228,3 +229,260 @@ input[type="checkbox"]:checked::before {
   color: #c9ea50;
   font-size: 14px;
 }
+
+.custom-title {
+    font-family: "Hurtmore", sans-serif; /* Cambia por la fuente que desees */
+    font-size: 4rem; /* Ajusta el tamaño del texto */
+    color: #161719; /* Cambia el color del texto */
+  }
+  
+  .rotated-title {
+    transform: rotate(-10deg); /* Aplica la rotación */
+    display: inline-block;
+  }
+
+  .custom-text {
+    font-family: "Agharti-LightCondensed", sans-serif; /* Cambia por la fuente que desees */
+    font-size: 3rem; /* Ajusta el tamaño del texto */
+    color: #161719; /* Cambia el color del texto */
+  }
+  .custom-popup {
+    background-image: url("../../images/details/trazado.png"); /* Un fondo blanco con un poco de transparencia */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Añade espaciado interno */
+  }
+  
+  .custom-confirm-button {
+    background-color: #c9ea50;
+    color: #161719;
+    font-family: "Agharti-LightCondensed", sans-serif;
+    font-size: 3.5rem;
+    padding: 0 20px;
+    letter-spacing: 1.2;
+    border: none;
+    border-radius: 5px;
+  }
+/* Media query para pantallas de hasta 991px */
+@media (max-width: 991px) {
+    .form-title {
+      font-size: 4rem;
+      margin-left: 10%;
+      text-align: left;
+    }
+  
+    label {
+      font-size: 2.8rem;
+      width: 100%;
+      margin-left: 10%;
+      text-align: left;
+    }
+  
+    .input-wrapper {
+      width: 75%;
+    }
+  
+    .form-input {
+      font-size: 1.4rem;
+      margin-left: 10%;
+      margin-right: 5%;
+    }
+  
+    .star-icon {
+      width: 45px;
+      right: 8%;
+    }
+  
+    textarea.form-input {
+      width: 75%;
+      margin-left: 10%;
+      height: 120px;
+    }
+  
+    .form-group2 label  {
+        font-size: 2.8rem;
+        margin-left: 10%;
+        padding-right: 5%;
+      }
+    .form-group2 h2 {
+      font-size: 3rem;
+      margin-left: 10%;
+      padding-right: 5%;
+    }
+  
+    .send-button {
+      font-size: 3.2rem;
+      margin-left: 60%;
+      margin-bottom: 3%;
+    }
+  
+    .arrow-icon {
+      top: -50%;
+      right: 15%;
+      width: 8%;
+    }
+  
+    .arrow-text {
+      top: -75%;
+      right: 9%;
+      font-size: 1.1rem;
+    }
+  
+    .terms-wrapper {
+      margin-top: 20px;
+      padding-left: 5px;
+    }
+  
+    .terms-wrapper label {
+      font-size: 0.8rem;
+    }
+  
+    .custom-container {
+      padding-left: 0;
+      padding-right: 0;
+      background-size: contain;
+    }
+  }
+  
+/* Media query para pantallas de hasta 767px */
+@media (max-width: 767px) {
+    .form-title {
+      font-size: 3.5rem;
+      margin-left: 10%;
+      text-align: left;
+    }
+  
+    label {
+      font-size: 2.5rem;
+      width: 100%;
+      margin-left: 10%;
+      text-align: left;
+    }
+  
+    .input-wrapper {
+      width: 80%;
+    }
+  
+    .form-input {
+      width: 90%;
+      font-size: 1.2rem;
+      margin-left: -10%;
+      margin-right: 0;
+    }
+  
+    .star-icon {
+      width: 40px;
+      right: 5%;
+    }
+  
+    .textarea.form-input {
+      width: 80%;
+      margin-left: 10%;
+    }
+  
+    .form-group2 h2 {
+      font-size: 2.8rem;
+      margin-left: 10%;
+    }
+  
+    .send-button {
+      margin-left: 50%;
+      font-size: 2.8rem;
+    }
+  
+    .arrow-icon {
+      top: -55%;
+      right: 17%;
+      width: 12%;
+    }
+  
+    .arrow-text {
+      font-size: 1rem;
+      top: -78%;
+      right: 10%;
+    }
+  
+    .terms-wrapper {
+      margin-top: 10px;
+      padding-left: 1%;
+    }
+  
+    .terms-wrapper label {
+      font-size: 0.7rem;
+    }
+  
+    .custom-container {
+      padding-left: 0;
+      padding-right: 0;
+      background-size: contain;
+    }
+  }
+  
+  /* Media query para pantallas de hasta 430px */
+  @media (max-width: 430px) {
+    .custom-container{
+        margin-top: 38px;
+    }
+    .form-title {
+      font-size: 2.8rem;
+      margin-left: 5%;
+    }
+  
+    label {
+      font-size: 2rem;
+      width: 100%;
+      margin-left: 5%;
+    }
+  
+    .form-input {
+      font-size: 1rem;
+      margin-left: -35%;
+      width: 120%;
+    }
+  
+    .star-icon {
+      width: 30px;
+      right: 5%;
+    }
+  
+    textarea.form-input {
+      width: 90%;
+      margin-left: 5%;
+    }
+  
+    .form-group2 label  {
+        font-size: 2.5rem;
+        margin-left: 5%;
+        padding-right: 5%;
+      }
+    .form-group2 h2 {
+      font-size: 2.2rem;
+      margin-left: 5%;
+    }
+  
+    .send-button {
+      margin-left: 5%;
+      font-size: 3rem;
+    }
+  
+    .arrow-icon {
+      top: -75%;
+      right: 35%;
+      width: 28%;
+    }
+  
+    .arrow-text {
+      font-size: 1rem;
+      top: -75%;
+      right: 23%;
+    }
+  
+    .terms-wrapper {
+      padding-left: 5%;
+    }
+  
+    .terms-wrapper label {
+      font-size: 0.6rem;
+    }
+  }

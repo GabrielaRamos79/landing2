@@ -1,11 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import './ContactForm.css';
+import Swal from "sweetalert2";
+import "./ContactForm.css";
 import estrella from "../../images/details/estrella.png";
 import flecha from "../../images/details/Flecha.png";
+import gif1 from "../../images/details/gif1.gif";
+import textura from "../../images/details/textura2.png";
 
 function ContactForm() {
-    const form = useRef();
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,21 +23,45 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Mensaje enviado con éxito");
+          // SweetAlert mensaje de éxito
+          Swal.fire({
+            title: "¡Mensaje Recibido!",
+            text: "Pronto contactaremos contigo para darle caña a tu marca.",
+            imageUrl: gif1,
+            imageWidth: 200,
+            imageHeight: 200,
+            imageAlt: "Gif de confirmación",
+            background: `url(${textura})`,
+            confirmButtonColor: "#e9ea50",
+            confirmButtonText: "OK",
+            // Personalización del estilo
+            customClass: {
+              title: "custom-title rotated-title", // Clase CSS personalizada para el título
+              text: "custom-text",
+              popup: "custom-popup", // Clase CSS para el popup
+              confirmButton: "custom-confirm-button", // Clase para el botón de confirmación
+            },
+
+            // Opcional: Cambiar el color del fondo o reducir la transparencia
+            backdrop: "rgba(0, 0, 0, 0.9)", // Fondo oscuro con un poco de transparencia
+          });
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
-          alert("Hubo un error al enviar el mensaje");
+          // SweetAlert mensaje de error
+          Swal.fire({
+            title: "Error",
+            text: "Hubo un problema al enviar el mensaje. Inténtalo de nuevo más tarde.",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
         }
       );
   };
   return (
     <div id="contactForm" className="container custom-container">
-      <h1 className="form-title">
-        {" "}
-        <br />
-        VAMOS AL LÍO!
-      </h1>
+      <h1 className="form-title"> VAMOS AL LÍO!</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">Nombre</label>
@@ -44,6 +71,7 @@ function ContactForm() {
               id="name"
               name="from_name"
               className="form-input"
+              required
             />
           </div>
         </div>
@@ -55,6 +83,7 @@ function ContactForm() {
               id="email"
               name="user_email"
               className="form-input"
+              required
             />
             <img src={estrella} alt="star icon" className="star-icon" />
           </div>
@@ -62,7 +91,7 @@ function ContactForm() {
         <div className="form-group">
           <label htmlFor="phone">Teléfono</label>
           <div className="input-wrapper">
-            <input type="tel" id="phone" className="form-input" />
+            <input type="tel" id="phone" className="form-input" required />
           </div>
         </div>
 
@@ -75,12 +104,12 @@ function ContactForm() {
             name="message"
             rows="4"
             className="form-input"
+            required
           ></textarea>
         </div>
         <div className="form-group2">
-          <h2>
-            Ready para que tu marca empiece </h2><h2>a petarlo?
-          </h2>
+          <h2>Ready para que tu marca empiece </h2>
+          <h2>a petarlo?</h2>
           <div className="send-wrapper">
             <button type="submit" className="send-button">
               YASSSSSS!

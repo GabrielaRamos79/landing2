@@ -1,0 +1,181 @@
+.contact-section {
+  background-color: #161719; /* Fondo oscuro */
+  color: white;
+  padding: 20px 0; /* Espaciado */
+  text-align: center;
+  font-family: "Agharti-LightCondensed", sans-serif;
+}
+
+/* Título grande */
+.big-title {
+  font-family: "Agharti-LightCondensed", sans-serif;
+  font-size: 15rem; /* Tamaño grande para el título */
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 15%; /* Separación del contenido */
+  color: white;
+}
+
+/* Estilos para los datos de contacto */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px; /* Ancho máximo para centrar el contenido */
+  margin-left: 5%;
+  font-family: "Inter_18pt-SemiBold", sans-serif;
+}
+
+/* Estilos para las dos columnas de contacto */
+.contact-left {
+  font-size: 2.2rem;
+  line-height: 1;
+  text-align: left;
+}
+
+.contact-right {
+  font-size: 2.2rem;
+  line-height: 1;
+  text-align: left;
+  margin-left: 110px;
+  white-space: nowrap;
+}
+
+/* Media query para pantallas de hasta 1399px */
+@media (max-width: 1399px) {
+  .big-title {
+    font-size: 12rem; /* Reducir el tamaño del título */
+    margin-left: 5%;
+    margin-bottom: 10%;
+    text-align: left;
+  }
+
+  .contact-info {
+    max-width: 900px; /* Ajustar el ancho máximo para que el contenido no se expanda demasiado */
+    margin-left: 5%;
+  }
+
+  .contact-left,
+  .contact-right {
+    font-size: 2rem; /* Reducir el tamaño del texto de contacto */
+    line-height: 1.2; /* Ajustar el interlineado para evitar que se amontone */
+  }
+
+  .contact-right {
+    margin-left: 80px; /* Ajustar el margen entre las dos columnas */
+  }
+}
+
+/* Media query para pantallas de hasta 1199px */
+@media (max-width: 1199px) {
+  .big-title {
+    font-size: 12rem; /* Reducir el tamaño del título */
+    margin-left: 5%;
+    margin-bottom: 10%;
+    text-align: left;
+  }
+
+  .contact-info {
+    max-width: 900px; /* Ajustar el ancho máximo para que el contenido no se expanda demasiado */
+    margin-left: 5%;
+  }
+
+  .contact-left,
+  .contact-right {
+    font-size: 1.5rem; /* Reducir el tamaño del texto de contacto */
+    line-height: 1.2; /* Ajustar el interlineado para evitar que se amontone */
+  }
+
+  .contact-left {
+    margin-right: 50px; /* Ajustar el margen entre las dos columnas */
+  }
+  .contact-right {
+    margin-right: 40px; /* Ajustar el margen entre las dos columnas */
+  }
+}
+
+@media (max-width: 991px) {
+  .big-title {
+    font-size: 12rem; /* Reducir el tamaño del título */
+    margin-left: 5%;
+    margin-bottom: 10%;
+    text-align: left;
+  }
+
+  .contact-info {
+    display: block;
+    text-align: left; /* Centrar el texto en pantallas más pequeñas */
+    margin-left: 0; /* Eliminar el margen izquierdo */
+    padding: 0 10%; /* Agregar un poco de padding lateral */
+  }
+
+  .contact-left,
+  .contact-right {
+    margin-bottom: 20px; /* Añadir espacio entre las "columnas" */
+    font-size: 1.5rem; /* Reducir el tamaño del texto de contacto */
+    text-align: left; /* Centra el texto de cada bloque */
+    line-height: 1.2; /* Ajustar el interlineado para evitar que se amontone */
+  }
+  .contact-left{
+    margin-left: -20px;
+    margin-bottom: 50px;
+  }
+  .contact-right{
+    margin-left: -20px;
+    margin-top: 15px;
+  }
+}
+/* Media query para pantallas de hasta 767px */
+@media (max-width: 767px) {
+  .big-title {
+    font-size: 10rem; /* Ajuste del tamaño del título para pantallas más pequeñas */
+    margin-left: 5%;
+    margin-bottom: 10%;
+    text-align: left; /* Centrar el título en pantallas más pequeñas */
+  }
+
+  .contact-info {
+    display: block; /* Cambiar a bloque para que las columnas se apilen */
+    text-align: left; /* Centrar el contenido */
+    margin-left: 0;
+    padding: 0 10%;
+  }
+
+  .contact-left,
+  .contact-right {
+    font-size: 1.8rem; /* Reducir el tamaño del texto */
+    margin-bottom: 20px; /* Añadir espacio entre las columnas */
+    text-align: left; /* Centrar el texto de contacto */
+  }
+
+  .contact-right {
+    margin-left: -15px; /* Eliminar margen adicional */
+  }
+}
+
+/* Media query para pantallas de hasta 430px */
+@media (max-width: 430px) {
+  .big-title {
+    font-size: 7rem; /* Ajuste aún más pequeño del título */
+    margin-bottom: 5%;
+    text-align: left;
+  }
+
+  .contact-info {
+    padding: 0 5%; /* Reducir el padding para pantallas muy pequeñas */
+  }
+
+  .contact-left,
+  .contact-right {
+    font-size: 1.5rem; /* Ajuste más pequeño del texto */
+    margin-bottom: 15px;
+    text-align: left; /* Seguir centrando el texto */
+  }
+
+  .contact-left {
+    margin-left: 0;
+  }
+  .contact-right {
+    margin-left: 0;
+  }
+}
