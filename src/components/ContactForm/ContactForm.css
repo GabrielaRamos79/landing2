@@ -1,15 +1,9 @@
 .custom-container {
   padding-left: 0px !important;
   padding-right: 0px !important;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   background-image: url("../../images/details/textura2.png");
-  /* overflow: hidden; */
-  /* width: calc(50%-20px); */
 }
 .contact-form {
-  /* background-image:url('../../images/details/textura2.png') !important; */
-  /* padding: 50px; */
   max-width: 800px;
   margin: -10%;
   font-family: "Inter_18pt-Regular", sans-serif;
@@ -34,19 +28,13 @@
   margin-bottom: -10px;
   margin-left: 0;
   margin-right: 0;
-  /* width: 100%; */
-  /* text-align: left; */
 }
 
 .form-group2 {
-  /* display: flex; */
-  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 30px;
   margin-left: 0;
   margin-right: 0;
-  /* width: 100%; */
-  /* text-align: left; */
 }
 textarea.form-input2 {
   height: 100px;
@@ -56,8 +44,6 @@ label {
   font-size: 3rem;
   font-family: "Inter_18pt-semibold", sans-serif;
   width: 30%;
-  /* display: block; */
-  /* margin-bottom: 10px; */
   text-align: left;
   margin-left: 15%;
 }
@@ -67,7 +53,6 @@ label {
   align-items: center;
   position: relative;
   width: 60%;
-  /* justify-content: center; */
 }
 
 .form-input {
@@ -78,7 +63,6 @@ label {
   margin-right: 30%;
   margin-left: 5%;
   font-size: 1.5rem;
-  /* font-family: 'Inter_18pt-Regular', sans-serif; */
   background-color: transparent;
 }
 
@@ -94,10 +78,9 @@ label {
 }
 
 .form-group2 label {
-  font-size: 3rem; /* Ajusta según lo necesario */
-  width: 100%; /* Puedes ajustar el ancho aquí si es necesario */
-  margin-left: 15%; /* O ajusta el margen si es necesario */
-  /* margin-right: 15%; */
+  font-size: 3rem; 
+  width: 100%; 
+  margin-left: 15%; 
 }
 
 textarea.form-input {
@@ -127,11 +110,6 @@ textarea.form-input {
   margin-bottom: 5px;
 }
 
-/* .button-container {
-      position: relative;
-      display: inline-block;
-      margin-top: 20px;
-    } */
 
 .send-button {
   background-color: #c9ea50;
@@ -144,13 +122,11 @@ textarea.form-input {
   cursor: pointer;
   margin-left: 68%;
   margin-bottom: 3%;
-  /* margin-top: -1%; */
   text-align: center;
 }
 
 .arrow-icon {
   margin-left: 10px;
-  /* width: 50px; */
   position: absolute;
   top: -70%;
   right: 10%;
@@ -185,7 +161,6 @@ textarea.form-input {
 .terms-wrapper input {
   margin-right: 10px;
   margin-left: 2px;
-  /* margin-bottom: 0; */
   background-color: transparent;
   border-color: #061599;
   border-radius: 0;
@@ -199,23 +174,22 @@ textarea.form-input {
   line-height: 1.2;
   margin-right: 15px;
   margin-left: 5px;
-  /* margin-top: -15%; */
 }
 
 input[type="checkbox"] {
-  -webkit-appearance: none; /* Remueve el estilo predeterminado en navegadores webkit */
-  -moz-appearance: none; /* Remueve el estilo predeterminado en Firefox */
-  appearance: none; /* Remueve el estilo predeterminado en todos los navegadores */
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
   width: 20px;
   height: 20px;
-  border: 2px solid #061599; /* Define el borde azul */
-  border-radius: 0; /* Elimina el borde redondeado */
+  border: 2px solid #061599; 
+  border-radius: 0; 
   outline: none;
   cursor: pointer;
 }
 
 input[type="checkbox"]:checked {
-  background-color: #061599; /* Cambia el color de fondo cuando está seleccionado */
+  background-color: #061599; 
   color: white;
   display: flex;
   justify-content: center;
@@ -223,7 +197,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked::before {
-  content: "✓"; /* Añade un checkmark cuando está seleccionado */
+  content: "✓"; 
   display: block;
   text-align: center;
   color: #c9ea50;
@@ -231,27 +205,27 @@ input[type="checkbox"]:checked::before {
 }
 
 .custom-title {
-    font-family: "Hurtmore", sans-serif; /* Cambia por la fuente que desees */
-    font-size: 4rem; /* Ajusta el tamaño del texto */
-    color: #161719; /* Cambia el color del texto */
+    font-family: "Hurtmore", sans-serif; 
+    font-size: 4rem; 
+    color: #161719; 
   }
   
   .rotated-title {
-    transform: rotate(-10deg); /* Aplica la rotación */
+    transform: rotate(-10deg); 
     display: inline-block;
   }
 
   .custom-text {
-    font-family: "Agharti-LightCondensed", sans-serif; /* Cambia por la fuente que desees */
-    font-size: 3rem; /* Ajusta el tamaño del texto */
-    color: #161719; /* Cambia el color del texto */
+    font-family: "Agharti-LightCondensed", sans-serif; 
+    font-size: 3rem; 
+    color: #161719;
   }
   .custom-popup {
-    background-image: url("../../images/details/trazado.png"); /* Un fondo blanco con un poco de transparencia */
+    background-image: url("../../images/details/trazado.png"); 
     background-size: cover;
     background-position: center;
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 20px; /* Añade espaciado interno */
+    border-radius: 10px; 
+    padding: 20px; 
   }
   
   .custom-confirm-button {
@@ -264,7 +238,7 @@ input[type="checkbox"]:checked::before {
     border: none;
     border-radius: 5px;
   }
-/* Media query para pantallas de hasta 991px */
+
 @media (max-width: 991px) {
     .form-title {
       font-size: 4rem;
@@ -345,7 +319,6 @@ input[type="checkbox"]:checked::before {
     }
   }
   
-/* Media query para pantallas de hasta 767px */
 @media (max-width: 767px) {
     .form-title {
       font-size: 3.5rem;
@@ -419,7 +392,6 @@ input[type="checkbox"]:checked::before {
     }
   }
   
-  /* Media query para pantallas de hasta 430px */
   @media (max-width: 430px) {
     .custom-container{
         margin-top: 38px;
