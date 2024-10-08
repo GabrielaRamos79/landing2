@@ -222,7 +222,7 @@
 
     .right-text {
         font-size: 35px; /* Reduce un poco más el tamaño del texto */
-        text-align: center;
+        text-align: right;
     }
 
     .hero-grid {
@@ -237,7 +237,7 @@
     }
 
     .boton-escribe {
-        font-size: 35px; /* Reduce el tamaño del botón */
+        font-size: 65px; /* Reduce el tamaño del botón */
     }
 
     .header-grid {

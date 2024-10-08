@@ -1,0 +1,84 @@
+.container-pclients {
+  background-color: #1c1c1c; /* Ajusta el color de fondo según tu diseño */
+  padding: 50px 0;
+}
+
+.grid-clients {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+  gap: 30px; /* Espacio entre los logos */
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+/* .client-row {
+    margin: 0px 2%
+  } */
+
+.client-logo {
+  width: 100px;
+  max-width: 150px; /* Ajusta el tamaño máximo de los logos */
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.client-logo:hover {
+  opacity: 1;
+}
+
+.porshe-client {
+  height: 13px !important;
+  width: auto;
+}
+
+.alarbadero-client {
+  height: 37px !important; /* Ajusta la altura específica para Alabardero */
+  width: auto; /* Mantiene la relación de aspecto */
+}
+
+.text-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 100px;
+}
+.quieres {
+  font-family: "Inter_18-Bold", sans-serif;
+  color: #e9eaf0;
+  font-size: 20px;
+}
+.btn-yes {
+  background-color: #c9ea50;
+  font-family: "AghartiCondensed", sans-serif;
+  color: #161719;
+  padding: 0px 30px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 0;
+  border-color: #c9ea50;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+@media (max-width: 991px) {
+    .grid-clients {
+        grid-template-columns: repeat(3, 1fr); /* Cambia a tres columnas en pantallas medianas */
+        gap: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .grid-clients {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a tres columnas en pantallas medianas */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .grid-clients {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en pantallas pequeñas */
+        gap: 15px;
+        margin-left: 35px;
+    }
+}
