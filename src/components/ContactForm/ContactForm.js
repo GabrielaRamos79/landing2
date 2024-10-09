@@ -112,7 +112,9 @@ function ContactForm() {
           <h2>a petarlo?</h2>
           <div className="send-wrapper">
             <button type="submit" className="send-button">
+            <a href="/mensaje-enviado/mensaje-enviado.html" style={{ textDecoration: 'none', color: 'inherit' }}>
               YASSSSSS!
+              </a>
             </button>
             <div className="terms-wrapper">
               <input type="checkbox" id="terms" />

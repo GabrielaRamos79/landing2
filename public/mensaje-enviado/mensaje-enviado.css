@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Agharti-LightCondensed";
+    src: local("Agharti-LightCondensed"),
+      url("./fonts/Agharti-LightCondensed.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Hurtmore";
+    src: local("Hurtmore") url("./fonts/Hurtmore.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Inter_18pt-Light";
+    src: url("./fonts/Inter_18pt-Light.ttf") format("truetype");
+  }
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url('./textura2.png');
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .mensaje-enviado-container {
+    background-image: url("./textura2.png");
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .mensaje-enviado-container h1{
+    font-family: "Hurtmore", sans-serif;
+    font-size: 40px;
+  }
+  .mensaje-titulo {
+    font-size: 3rem;
+    color: #161719;
+  }
+  
+  .mensaje-descripcion {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  img {
+    width: 200px;
+    margin-top: 20px;
+  }
+  
