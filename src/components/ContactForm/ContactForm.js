@@ -4,8 +4,7 @@ import Swal from "sweetalert2";
 import "./ContactForm.css";
 import estrella from "../../images/details/estrella.png";
 import flecha from "../../images/details/Flecha.png";
-import gif1 from "../../images/details/gif1.gif";
-import textura from "../../images/details/textura2.png";
+
 
 function ContactForm() {
   const form = useRef();
@@ -23,33 +22,20 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.text);
-          // SweetAlert mensaje de éxito
-          Swal.fire({
-            title: "¡Mensaje Recibido!",
-            text: "Pronto contactaremos contigo para darle caña a tu marca.",
-            imageUrl: gif1,
-            imageWidth: 200,
-            imageHeight: 200,
-            imageAlt: "Gif de confirmación",
-            background: `url(${textura})`,
-            confirmButtonColor: "#e9ea50",
-            confirmButtonText: "OK",
-            // Personalización del estilo
-            customClass: {
-              title: "custom-title rotated-title", // Clase CSS personalizada para el título
-              text: "custom-text",
-              popup: "custom-popup", // Clase CSS para el popup
-              confirmButton: "custom-confirm-button", // Clase para el botón de confirmación
-            },
-
-            // Opcional: Cambiar el color del fondo o reducir la transparencia
-            backdrop: "rgba(0, 0, 0, 0.9)", // Fondo oscuro con un poco de transparencia
-          });
           e.target.reset();
+          Swal.fire({
+            title: "¡Mensaje Enviado!",
+            text: "Redirigiendo en 2 segundos...",
+            icon: "success",
+            timer: 2000,
+            showConfirmButton: false,
+          }).then(() => {
+            // Redirigir después de que el temporizador finalice
+            window.location.href = "http://localhost:3000/mensaje-enviado/mensaje-enviado.html";
+          });
         },
         (error) => {
           console.log(error.text);
-          // SweetAlert mensaje de error
           Swal.fire({
             title: "Error",
             text: "Hubo un problema al enviar el mensaje. Inténtalo de nuevo más tarde.",
@@ -112,9 +98,9 @@ function ContactForm() {
           <h2>a petarlo?</h2>
           <div className="send-wrapper">
             <button type="submit" className="send-button">
-            <a href="/mensaje-enviado/mensaje-enviado.html" style={{ textDecoration: 'none', color: 'inherit' }}>
+            {/* <a href="/mensaje-enviado/mensaje-enviado.html" style={{ textDecoration: 'none', color: 'inherit' }}> */}
               YASSSSSS!
-              </a>
+              {/* </a> */}
             </button>
             <div className="terms-wrapper">
               <input type="checkbox" id="terms" />

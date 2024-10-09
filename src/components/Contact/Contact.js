@@ -12,8 +12,8 @@ function Contact() {
           <p>(+34) 952 424 234</p>
         </div>
         <div className="contact-right">
-          <p>C/ Compositor Lehmberg Ruiz,</p>
-          <p>6 Edificio Ibiza, oficina 4 Málaga</p>
+          <p>C/ Pintor Martínez Cubells</p>
+          <p>5, Málaga, 29017</p>
         </div>
       </div>
     </div>
