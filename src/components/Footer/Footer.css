@@ -1,8 +1,8 @@
 .footer-section {
   background-color: #e9eaf0;
-  /* padding: 50px 20px; */
+ 
   text-align: center;
-  /* font-family: 'Inter_18pt-Regular', sans-serif; */
+
   position: relative;
   overflow: hidden;
 }
@@ -27,16 +27,6 @@
   overflow: hidden;
 }
 
-/* .circle-effect {
-    position: absolute;
-    top: -4%;
-    left: 0%;
-    width: 195px; Tamaño del círculo
-    height: 60px;
-    transform:none;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    opacity: 0;
-  } */
 
 .circle-effect-instagram {
   position: absolute;
@@ -154,25 +144,10 @@
   position: relative;
   padding: 5px;
   z-index: 1;
-  /* transition: color 0.3s ease-in-out; */
 }
 
-/* .social-links a:hover:before {
-    width: 110%;
-    height: 110%;
-  } */
-/* .social-links .highlighted {
-    position: relative;
-    color: black;
-    background-color: #c9ea50;
-    padding: 0 10px;
-    border-radius: 5px;
-    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
-    transform: translate3d(calc(-50% + 519px), calc(-50% + 523px), 0px);
-  } */
 
-/* Vimeo section with the splatter image */
-*/ .vimeo-wrapper {
+.vimeo-wrapper {
   position: relative;
   display: inline-block;
 }

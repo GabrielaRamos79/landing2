@@ -20,10 +20,6 @@
     color: #e9eaf0;
     font-weight: 500;
     margin: 0 30px;
-    /*animation: scrollLeft 65s linear infinite; /* Animación continua */
-    /* animation-duration: 25s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; */
   }
   
   .move-right {
