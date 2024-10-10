@@ -1,6 +1,6 @@
 .carousel-section {
     background-color: #061599; /* Fondo azul */
-    padding: 50px 0;
+    padding: 140px 0;
     overflow: hidden;
   }
   
@@ -15,7 +15,8 @@
   .carousel-content {
     display: inline-block;
     white-space: nowrap;
-    font-size: clamp(3.5rem, 5.8vw + 1rem, 30rem);
+    /* font-size: clamp(3rem, 5.5vw + 1rem, 20rem); */
+    font-size: 5rem;
     font-family: 'Inter_18pt-Medium', sans-serif;
     color: #e9eaf0;
     font-weight: 500;

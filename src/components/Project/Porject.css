@@ -29,6 +29,15 @@
     transform: scale(1.05);
 }
 
+.project-info{
+  margin-top: 5px
+}
+.project-info small {
+  font-family: "Inter_18pt-Regular", sans-serif;
+  font-size: 0.9rem;
+  color: #161719;
+}
+
 .project-info h4 {
     font-family: "Inter_18pt-ExtraBold", sans-serif;
     font-size: 1.3rem;

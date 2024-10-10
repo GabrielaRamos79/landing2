@@ -66,7 +66,7 @@ ul {
 }
 
 li {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Inter_18pt-SemiBold", sans-serif;
   margin-bottom: 10px;
   white-space: nowrap;
@@ -126,8 +126,8 @@ li {
 }
 
 .al-otro-lado-section {
-  padding-bottom: 20px 5%;
-  margin-bottom: -4%;
+  /* padding-bottom: 15px 5%; */
+  margin-bottom: -7%;
   /* margin-left: 29%; */
 }
 
@@ -204,7 +204,7 @@ li {
     }
   
     li {
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
     .content-container {
       flex-direction: column; /* Cambia a columna en pantallas pequeñas */
@@ -250,7 +250,11 @@ li {
   }
 
   li {
-    font-size: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .cruzado{
+    font-size: 12.5rem;
   }
   .content-container {
     flex-direction: column; /* Cambia a columna en pantallas pequeñas */
@@ -298,18 +302,22 @@ li {
   }
 
   li {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  .cruzado{
+    font-size: 10.5rem;
   }
   .telita {
     margin-left: 40px;
-    margin-top: 10px;
-    font-size: 2rem; /* Reduce el tamaño del texto para pantallas pequeñas */
+    margin-top: 12px;
+    margin-bottom: 35px;
+    font-size: 2.5rem; /* Reduce el tamaño del texto para pantallas pequeñas */
     text-align: left; /* Centra el texto */
   }
 
   .flecha {
-    margin-left: 280px;
-    margin-top: -200px; /* Espacio adicional entre el texto y la flecha */
+    margin-left: 240px;
+    margin-top: -270px; /* Espacio adicional entre el texto y la flecha */
     transform: none; /* Mantiene la flecha sin rotación */
   }
 }

@@ -42,6 +42,22 @@ function Carousel() {
           <img src={estrella} alt="star icon" className="icon-star" />
           <span>redacción creativa</span>
           <img src={linea} alt="line icon" className="icon-line" />
+          <span>social media</span>
+          <img src={estrella} alt="star icon" className="icon-star" />
+          <span>fotografía</span>
+          <img src={linea} alt="line icon" className="icon-line" />
+          <span>packaging</span>
+          <img src={estrella} alt="star icon" className="icon-star" />
+          <span>redacción creativa</span>
+          <img src={linea} alt="line icon" className="icon-line" />
+          <span>social media</span>
+          <img src={estrella} alt="star icon" className="icon-star" />
+          <span>fotografía</span>
+          <img src={linea} alt="line icon" className="icon-line" />
+          <span>packaging</span>
+          <img src={estrella} alt="star icon" className="icon-star" />
+          <span>redacción creativa</span>
+          <img src={linea} alt="line icon" className="icon-line" />
           <span>consultoría estratégica</span>
           <img src={estrella} alt="star icon" className="icon-star" />
           <span>motion graphics</span>
@@ -54,6 +70,18 @@ function Carousel() {
       {/* Segunda fila - Movimiento de izquierda a derecha */}
       <div className="carousel-row">
         <div className="carousel-content move-left">
+          <span>consultoría estratégica</span>
+          <img src={estrella} alt="star icon" className="icon-star" />
+          <span>motion graphics</span>
+          <img src={linea} alt="line icon" className="icon-line" />
+          <span>desarrollo web</span>
+          <img src={estrella} alt="star icon" className="icon-star" />
+          <span>consultoría estratégica</span>
+          <img src={estrella} alt="star icon" className="icon-star" />
+          <span>motion graphics</span>
+          <img src={linea} alt="line icon" className="icon-line" />
+          <span>desarrollo web</span>
+          <img src={estrella} alt="star icon" className="icon-star" />
           <span>consultoría estratégica</span>
           <img src={estrella} alt="star icon" className="icon-star" />
           <span>motion graphics</span>
