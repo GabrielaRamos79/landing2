@@ -32,6 +32,7 @@
 .project-info{
   margin-top: 5px
 }
+
 .project-info small {
   font-family: "Inter_18pt-Regular", sans-serif;
   font-size: 0.9rem;
@@ -116,5 +117,24 @@
     .container-project2 {
         grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
         gap: 15px;
+    }
+    .section-title {
+      font-family: "Inter_18pt-ExtraBold", sans-serif;
+      font-size: 2rem;
+      color: #161719;
+      margin-left: 5%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 15px;
+    }
+
+    .project-info {
+      margin-top: 20px;
+    }
+    .project-info small {
+      font-family: "Inter_18pt-Regular", sans-serif;
+      font-size: 0.9rem;
+      color: #161719;
+      font-weight: bold;
     }
 }

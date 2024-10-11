@@ -5,7 +5,6 @@ import "./ContactForm.css";
 import estrella from "../../images/details/estrella.png";
 import flecha from "../../images/details/Flecha.png";
 
-
 function ContactForm() {
   const form = useRef();
 
@@ -31,7 +30,8 @@ function ContactForm() {
             showConfirmButton: false,
           }).then(() => {
             // Redirigir después de que el temporizador finalice
-            window.location.href = "http://localhost:3000/mensaje-enviado/mensaje-enviado.html";
+            window.location.href =
+              "http://localhost:3000/mensaje-enviado/mensaje-enviado.html";
           });
         },
         (error) => {
@@ -93,23 +93,25 @@ function ContactForm() {
             required
           ></textarea>
         </div>
-        <div className="form-group2">
+        <div className="form-group3">
           <h2>Ready para que tu marca empiece </h2>
           <h2>a petarlo?</h2>
-          <div className="send-wrapper">
-            <button type="submit" className="send-button">
-            {/* <a href="/mensaje-enviado/mensaje-enviado.html" style={{ textDecoration: 'none', color: 'inherit' }}> */}
-              YASSSSSS!
-              {/* </a> */}
-            </button>
-            <div className="terms-wrapper">
-              <input type="checkbox" id="terms" />
-              <label htmlFor="terms">
-                He leído y acepto la{" "}
-                <a href="https://www.elpuentepublicidad.com/politica-de-privacidad">
-                  política de privacidad
-                </a>
-              </label>
+          <div className="send-terms">
+            <div className="send-wrapper">
+              <button type="submit" className="send-button">
+                {/* <a href="/mensaje-enviado/mensaje-enviado.html" style={{ textDecoration: 'none', color: 'inherit' }}> */}
+                YASSSSSS!
+                {/* </a> */}
+              </button>
+              <div className="terms-wrapper">
+                <input type="checkbox" id="terms" />
+                <label htmlFor="terms">
+                  He leído y acepto la{" "}
+                  <a href="https://www.elpuentepublicidad.com/politica-de-privacidad">
+                    política de privacidad
+                  </a>
+                </label>
+              </div>
               <img src={flecha} alt="arrow icon" className="arrow-icon" />
               <span className="arrow-text">
                 DALE

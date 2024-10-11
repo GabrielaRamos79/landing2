@@ -278,3 +278,47 @@
     width: 70%; /* Ajusta el tamaño del splatter */
   }
 }
+
+@media (max-width: 430px) {
+  .footer-section {
+    padding: 20px 0;
+  }
+
+  /* Logo arriba a la derecha */
+  .footer-logo img {
+    width: 80px; /* Tamaño más pequeño del logo */
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: 5%; /* Alineado al lado derecho */
+    display: block;
+  }
+
+  /* Social links en columna */
+  .social-links {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: left; /* Centra el contenido */
+    gap: 10px; /* Reduce el espacio entre los links */
+    font-size: 2rem; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  /* Legal links en fila, centrados */
+  .legal-links {
+    flex-direction: row; /* Cambia la dirección a fila */
+    justify-content: left; /* Centra los legal links */
+    gap: 0px; /* Reduce el espacio entre los links */
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    margin-left: 0;
+  }
+
+  /* Ajustes para las animaciones de los efectos circulares */
+  .circle-effect-instagram, .circle-effect-linkedin, 
+  .circle-effect-vimeo, .circle-effect-aviso, 
+  .circle-effect-privacidad, .circle-effect-cookie {
+    width: 80px; /* Tamaño más pequeño de los círculos */
+    height: 20px; /* Tamaño más pequeño de la altura */
+    top: -5%; /* Ajusta la posición */
+    left: 0%; /* Ajusta la posición */
+  }
+}
