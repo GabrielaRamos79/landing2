@@ -281,16 +281,22 @@
 
 @media (max-width: 430px) {
   .footer-section {
-    padding: 20px 0;
+    padding: 60px 0;
   }
 
   /* Logo arriba a la derecha */
   .footer-logo img {
-    width: 80px; /* Tamaño más pequeño del logo */
-    margin-top:0px;
-    margin-left: auto;
-    margin-right: 5%; /* Alineado al lado derecho */
+    position:absolute;
+    width: 100px; /* Tamaño más pequeño del logo */
+    margin-top:-135px;
+    /* margin-bottom: -20px; */
+    margin-left: 280px;
+    margin-right: 0%; /* Alineado al lado derecho */
     display: block;
+  }
+
+  .footer-logo{
+    margin-top: -50px;
   }
 
   /* Social links en columna */
@@ -301,24 +307,72 @@
     font-size: 2rem; /* Ajuste de tamaño de fuente para pantallas pequeñas */
     margin-left: 0;
     justify-content: center;
+    margin-top: -15px;
   }
 
   /* Legal links en fila, centrados */
   .legal-links {
-    flex-direction: row; /* Cambia la dirección a fila */
-    justify-content: left; /* Centra los legal links */
-    gap: 0px; /* Reduce el espacio entre los links */
-    font-size: 0.9rem; /* Ajusta el tamaño del texto */
-    margin-left: 0;
+    position: absolute; /* Hace que los links estén fuera del flujo normal */
+    bottom: -28px; /* Los posiciona cerca del fondo del contenedor */
+    left: 0%; /* Alinea a la izquierda */
+    display: flex;
+    flex-direction: row; /* Los mantiene en fila */
+    gap: 0px; /* Espacio entre los links */
+    font-size: 0.8rem; /* Tamaño del texto */
+    z-index: 1; /* Asegura que los links estén por encima de otros elementos */
   }
 
   /* Ajustes para las animaciones de los efectos circulares */
-  .circle-effect-instagram, .circle-effect-linkedin, 
-  .circle-effect-vimeo, .circle-effect-aviso, 
-  .circle-effect-privacidad, .circle-effect-cookie {
-    width: 80px; /* Tamaño más pequeño de los círculos */
-    height: 20px; /* Tamaño más pequeño de la altura */
-    top: -5%; /* Ajusta la posición */
+  .circle-effect-instagram {
+    width: 200px; /* Tamaño más pequeño de los círculos */
+    height: 45px; /* Tamaño más pequeño de la altura */
+    top: -4%; /* Ajusta la posición */
     left: 0%; /* Ajusta la posición */
+  }
+   .circle-effect-linkedin 
+   {
+    width: 170px; /* Tamaño más pequeño de los círculos */
+    height: 45px; /* Tamaño más pequeño de la altura */
+    top: 5%; /* Ajusta la posición */
+    left: -1%; /* Ajusta la posición */
+  }
+    
+  .circle-effect-vimeo {
+    width: 120px; /* Tamaño más pequeño de los círculos */
+    height: 50px; /* Tamaño más pequeño de la altura */
+    top: -5%; /* Ajusta la posición */
+    left: -1%; /* Ajusta la posición */
+  }
+   .circle-effect-aviso
+   {
+    width: 48px; /* Tamaño más pequeño de los círculos */
+    height: 50px; /* Tamaño más pequeño de la altura */
+    top: -5%; /* Ajusta la posición */
+    left: -5%; /* Ajusta la posición */
+  }
+    
+  .circle-effect-privacidad {
+    width: 80px; /* Tamaño más pequeño de los círculos */
+    height: 50px; /* Tamaño más pequeño de la altura */
+    top: -5%; /* Ajusta la posición */
+    left: -5%; /* Ajusta la posición */
+  }
+    .circle-effect-cookie {
+    width: 80px; /* Tamaño más pequeño de los círculos */
+    height: 50px; /* Tamaño más pequeño de la altura */
+    top: -5%; /* Ajusta la posición */
+    left: -5%; /* Ajusta la posición */
+  }
+  .splatter-image {
+    position: absolute;
+    top: -118px;
+    right: 150px;
+    z-index: 0;
+    width: 130%;
+    max-width: 250%;
+    height: auto;
+    opacity: 0.7;
+    overflow: hidden;
+    transform: rotate(270deg);
   }
 }
