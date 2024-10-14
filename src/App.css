@@ -52,7 +52,8 @@
 
 @font-face {
   font-family: "Hurtmore";
-  src: local("Hurtmore") url("./fonts/Hurtmore/Hurtmore.ttf") format("truetype");
+  src: local("Hurtmore"),
+   url("./fonts/Hurtmore/Hurtmore.ttf") format("truetype");
 }
 
 @font-face {
