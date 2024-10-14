@@ -24,13 +24,13 @@
   }
   
   .move-right {
-    animation: moveRight 60s linear infinite;
-    animation-delay: -2s; /* Hace que comience más rápido */
+    animation: moveRight 50s linear infinite;
+    animation-delay: -5s; /* Hace que comience más rápido */
   }
   
   .move-left {
-    animation: moveLeft 60s linear infinite;
-    animation-delay: -2s; /* Hace que comience más rápido */
+    animation: moveLeft 50s linear infinite;
+    animation-delay: -5s; /* Hace que comience más rápido */
   }
   
   .icon-star {
