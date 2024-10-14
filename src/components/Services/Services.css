@@ -69,7 +69,7 @@ li {
   font-size: 1.2rem;
   font-family: "Inter_18pt-SemiBold", sans-serif;
   margin-bottom: 10px;
-  white-space: nowrap;
+  white-space: normal;
   line-height: 1.5;
   color: black;
   width: 100%;
@@ -318,6 +318,66 @@ li {
   .flecha {
     margin-left: 240px;
     margin-top: -270px; /* Espacio adicional entre el texto y la flecha */
+    transform: none; /* Mantiene la flecha sin rotación */
+  }
+}
+
+@media (max-width: 320px) {
+  .container-services {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    grid-gap: 20px;
+    margin-left: 5px;
+  }
+  .services-section {
+    margin-bottom: -100px;
+  }
+  .services-section h3 {
+    font-size: 4.7rem; /* Ajusta el tamaño del h3 */
+    margin-top: 3%;
+    margin-left: 2%;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-left: 2%;
+  }
+
+  li {
+    font-size: 1.2rem;
+    white-space: normal; /* Asegúrate de permitir el ajuste en varias líneas */
+    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+  }
+
+  .curvy-branding {
+    width: 170px;
+    height: 60px;
+    /* margin-right: -50px; */
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+  
+  .cruzado{
+    font-size: 7.6rem;
+  }
+
+  .otrolado {
+    max-width: 90%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 10px;
+  }
+
+  .telita {
+    margin-left: 20px;
+    margin-top: 12px;
+    margin-bottom: 35px;
+    font-size: 2rem; /* Reduce el tamaño del texto para pantallas pequeñas */
+    text-align: left; /* Centra el texto */
+  }
+
+  .flecha {
+    width: 90px;
+    margin-left: 190px;
+    margin-top: -280px; /* Espacio adicional entre el texto y la flecha */
     transform: none; /* Mantiene la flecha sin rotación */
   }
 }
