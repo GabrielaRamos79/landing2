@@ -1,429 +1,539 @@
-.hero-component{
-    background-color: #e9eaf0;
-    display: block;
-    padding: 20px;
+.hero-component {
+  background-color: #e9eaf0;
+  display: block;
+  padding: 20px;
 }
 
 .logo-text-container {
-    display: flex; /* Usamos flexbox solo en esta parte */
-    justify-content: center; /* Alinea los elementos hacia la izquierda */
-    align-items: flex-end; /* Alinea el logo y el texto en la parte inferior */
-    margin-bottom: 20px; /* Añadimos espacio debajo */
-    margin-left: -30px;
+  display: flex; /* Usamos flexbox solo en esta parte */
+  justify-content: center; /* Alinea los elementos hacia la izquierda */
+  align-items: flex-end; /* Alinea el logo y el texto en la parte inferior */
+  margin-bottom: 20px; /* Añadimos espacio debajo */
+  margin-left: -30px;
 }
 
 .spin-gif {
-    flex: 0 1 auto; /* Permite que el logo ocupe su espacio natural */
-    text-align: center;
-    margin-right: 20px; /* Ajusta este margen para separar la imagen del texto */
+  flex: 0 1 auto; /* Permite que el logo ocupe su espacio natural */
+  text-align: center;
+  margin-right: 20px; /* Ajusta este margen para separar la imagen del texto */
 }
 
 .spin-logo {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    margin-left: 475px;
-    margin-bottom: 310px;
-    /* margin-top: -80px; */
-    /* margin-right: -300px; */
-  }
-
-  .right-text-container {
-    display: flex;
-    flex-direction: column; /* Acomoda los elementos en columna */
-    align-items: flex-end; /* Alinea los textos a la derecha */
-    max-width: 400px; /* Ancho máximo del contenedor */
-    margin-left: -27px;
-    margin-bottom: 146px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-left: 475px;
+  margin-bottom: 310px;
+  /* margin-top: -80px; */
+  /* margin-right: -300px; */
 }
 
-  .right-text {
-    font-family: "Inter_18pt-Light", sans-serif;
-    font-size: 60px;
-    line-height: 1.2;
-    text-align: right;
-    padding-right: 5px;
-    margin: 0 !important;
-  }
+.right-text-container {
+  display: flex;
+  flex-direction: column; /* Acomoda los elementos en columna */
+  align-items: flex-end; /* Alinea los textos a la derecha */
+  max-width: 400px; /* Ancho máximo del contenedor */
+  margin-left: -27px;
+  margin-bottom: 146px;
+}
 
-  .hero-grid {
-    display: flex;
-    justify-content: space-between; /* Espacio entre el texto y el botón */
-    align-items: flex-start;
-    gap: 20px; /* Espacio entre columnas */
-    padding: 20px 0;
-    margin-top: -130px;
+.right-text {
+  font-family: "Inter_18pt-Light", sans-serif;
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: right;
+  padding-right: 5px;
+  margin: 0 !important;
+}
+
+.hero-grid {
+  display: flex;
+  justify-content: space-between; /* Espacio entre el texto y el botón */
+  align-items: flex-start;
+  gap: 20px; /* Espacio entre columnas */
+  padding: 20px 0;
+  margin-top: -130px;
 }
 .punch-text {
-    flex: 1;
-    max-width: 65%;
-    margin-left: 60px;
+  flex: 1;
+  max-width: 65%;
+  margin-left: 60px;
 }
-  
-  .punch-text p {
-    margin-bottom: 20px; /* Espaciado entre los párrafos */
-    font-family: "Inter_18-Regular", sans-serif;
-    font-size: 1.5rem;
-    text-align: left;
-    line-height: 15px;
+
+.punch-text p {
+  margin-bottom: 20px; /* Espaciado entre los párrafos */
+  font-family: "Inter_18-Regular", sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 15px;
 }
 .boton-container {
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.boton-escribe {
+  background-color: #c9ea50;
+  color: #161719;
+  font-family: "Agharti-lightcondensed", sans-serif;
+  font-size: 60px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 15px;
+  margin-right: 120%;
+  margin-left: 1%;
+  margin-top: 0%; /* Mueve el botón hacia arriba */
+  height: fit-content;
+  letter-spacing: 0.5px;
+  transform: scaleY(0.8);
+}
+
+.yeah {
+  width: 150%;
+  max-width: 250%;
+  /* align-self: flex-end; */
+  margin-left: -20%;
+  margin-top: 10%;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  font-weight: bold; /* O el estilo que quieras darle al texto */
+  background-image: url("../../images/details/Linea.png"); /* Ruta de la imagen */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 10px; /* Espacio para la imagen debajo del texto */
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  align-items: center; /* Alinea verticalmente */
+  margin-top: -10%; /* Ajusta según lo necesario */
+  margin-bottom: -3.9%;
+}
+
+.left-column {
+  text-align: left;
+  margin-top: 56%;
+  margin-left: 7%; /* Ajusta la posición de la imagen del texto */
+}
+
+.right-column {
+  text-align: right;
+  margin-right: 30%; /* Ajusta la posición de la imagen del lado derecho */
+}
+
+.hacemos {
+  width: 70%; /* Ajusta el tamaño de la imagen "QUE HACEMOS" */
+  max-width: 400px; /* Ajusta según lo que necesites */
+}
+
+@media (max-width: 1199px) {
+  .hero-component {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center; /* Centra todo */
+  }
+  .logo-text-container {
+    flex-direction: column;
+    align-items: center; /* Centra logo y texto */
+    margin-bottom: 20px;
+  }
+  .spin-logo {
+    margin-left: -30px;
+    margin-bottom: 20px; /* Añade espacio debajo del logo */
+  }
+  .right-text {
+    /* width: 80%; */
+    font-size: 50px;
+    margin-right: 20px;
+    margin-bottom: -30px;
+    /* margin-left: 80px; */
+    text-align: right; /* Centra el texto en pantallas pequeñas */
+  }
+  .hero-grid {
+    flex-direction: column; /* Los párrafos y el botón se apilarán */
+    align-items: center;
+  }
+
+  .punch-text {
+    max-width: 100%; /* El texto ocupará todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Añade espacio debajo */
+  }
+  .punch-text p {
+    line-height: 25px;
+  }
   .boton-escribe {
-    background-color: #c9ea50;
-    color: #161719;
-    font-family: 'Agharti-lightcondensed', sans-serif;
-    font-size: 60px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
+    font-size: 80px; /* Ajusta el tamaño del botón */
     text-align: center;
-    padding: 5px 15px;
-    margin-right: 120%;
-    margin-left: 1%;
-    margin-top: 0%; /* Mueve el botón hacia arriba */
-    height: fit-content;
-    letter-spacing: 0.5px;
-    transform: scaleY(0.8);
-  }
-  
-  .yeah {
-    width: 150%;
-    max-width: 250%;
-    /* align-self: flex-end; */
-    margin-left: -20%;
-    margin-top: 10%;
-    margin-bottom:30px;
-  }
-  
-  .highlight {
-    position: relative;
-    display: inline-block;
-    font-weight: bold; /* O el estilo que quieras darle al texto */
-    background-image: url("../../images/details/Linea.png"); /* Ruta de la imagen */
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 10px; /* Espacio para la imagen debajo del texto */
+    margin-left: -106px;
   }
 
   .header-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
-    align-items: center; /* Alinea verticalmente */
-    margin-top: -10%; /* Ajusta según lo necesario */
-    margin-bottom: -3.9%;
+    grid-template-columns: 1fr; /* Cambia la cuadrícula a una sola columna */
+    margin-top: 20px;
   }
-  
   .left-column {
-    text-align: left;
-    margin-top: 56%;
-    margin-left: 7%; /* Ajusta la posición de la imagen del texto */
+    order: 2; /* Mueve "Qué hacemos" abajo */
+    text-align: center; /* Ajusta para centrar en pantallas pequeñas */
+    margin: 20px 0; /* Ajusta márgenes si es necesario */
   }
-  
+
   .right-column {
-    text-align: right;
-    margin-right: 30%; /* Ajusta la posición de la imagen del lado derecho */
+    order: 1; /* Mueve "Oh Yeah" arriba */
+    text-align: center; /* Centra la imagen "Oh Yeah" */
+    margin: 0 0; /* Ajusta márgenes si es necesario */
   }
-  
-  .hacemos {
-    width: 70%; /* Ajusta el tamaño de la imagen "QUE HACEMOS" */
-    max-width: 400px; /* Ajusta según lo que necesites */
+  .yeah {
+    margin-left: 15px;
+  }
+  .hacemos,
+  .yeah {
+    max-width: 100%; /* Mantén las imágenes al 100% del ancho */
+    margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
+  }
+  /* .spin-gif {
+        margin-bottom: 20px; /* Añade espacio entre la imagen y el texto en móviles */
+  /*} */
+}
+
+@media (max-width: 991px) {
+  .hero-component {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center; /* Centra todo */
+  }
+  .logo-text-container {
+    flex-direction: column;
+    align-items: center; /* Centra logo y texto */
+    margin-bottom: 20px;
+  }
+  .spin-logo {
+    margin-left: -50px;
+    margin-bottom: 20px; /* Añade espacio debajo del logo */
+  }
+  .right-text {
+    /* width: 80%; */
+    font-size: 30px;
+    margin-right: 20px;
+    /* margin-left: 80px; */
+    text-align: right; /* Centra el texto en pantallas pequeñas */
+  }
+  .hero-grid {
+    flex-direction: column; /* Los párrafos y el botón se apilarán */
+    align-items: center;
   }
 
-  @media (max-width: 991px) {
-    .hero-component {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-        align-items: center; /* Centra todo */
-    }
-    .logo-text-container {
-        flex-direction: column;
-        align-items: center; /* Centra logo y texto */
-        margin-bottom: 20px;
-    }
-    .spin-logo {
-        margin-left: -50px; 
-        margin-bottom: 20px; /* Añade espacio debajo del logo */
-    }
-    .right-text {
-        /* width: 80%; */
-        font-size: 30px;
-        margin-right: 20px;
-        /* margin-left: 80px; */
-        text-align: right; /* Centra el texto en pantallas pequeñas */
-    }
-    .hero-grid {
-        flex-direction: column; /* Los párrafos y el botón se apilarán */
-        align-items: center;
-    }
+  .punch-text {
+    max-width: 100%; /* El texto ocupará todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Añade espacio debajo */
+  }
+  .punch-text p {
+    line-height: 25px;
+  }
+  .boton-escribe {
+    font-size: 80px; /* Ajusta el tamaño del botón */
+    text-align: center;
+    margin-left: -106px;
+  }
 
-    .punch-text {
-        max-width: 100%; /* El texto ocupará todo el ancho disponible */
-        text-align: center; /* Centra el texto */
-        margin-bottom: 20px; /* Añade espacio debajo */
-    }
-    .punch-text p{
-        line-height: 25px;
-    }
-    .boton-escribe {
-        font-size: 80px; /* Ajusta el tamaño del botón */
-        text-align: center;
-        margin-left: -106px;
-    }
+  .header-grid {
+    grid-template-columns: 1fr; /* Cambia la cuadrícula a una sola columna */
+    margin-top: 20px;
+  }
+  .left-column {
+    order: 2; /* Mueve "Qué hacemos" abajo */
+    text-align: center; /* Ajusta para centrar en pantallas pequeñas */
+    margin: 20px 0; /* Ajusta márgenes si es necesario */
+  }
 
-    .header-grid {
-        grid-template-columns: 1fr; /* Cambia la cuadrícula a una sola columna */
-        margin-top: 20px;
-    }
-    .left-column {
-        order: 2; /* Mueve "Qué hacemos" abajo */
-        text-align: center; /* Ajusta para centrar en pantallas pequeñas */
-        margin: 20px 0; /* Ajusta márgenes si es necesario */
-      }
-    
-      .right-column {
-        order: 1; /* Mueve "Oh Yeah" arriba */
-        text-align: center; /* Centra la imagen "Oh Yeah" */
-        margin: 0 0; /* Ajusta márgenes si es necesario */
-      }
-.yeah{
+  .right-column {
+    order: 1; /* Mueve "Oh Yeah" arriba */
+    text-align: center; /* Centra la imagen "Oh Yeah" */
+    margin: 0 0; /* Ajusta márgenes si es necesario */
+  }
+  .yeah {
     margin-left: 15px;
-}
-    .hacemos, .yeah {
-        max-width: 100%; /* Mantén las imágenes al 100% del ancho */
-        margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
-    }
-    /* .spin-gif {
+  }
+  .hacemos,
+  .yeah {
+    max-width: 100%; /* Mantén las imágenes al 100% del ancho */
+    margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
+  }
+  /* .spin-gif {
         margin-bottom: 20px; /* Añade espacio entre la imagen y el texto en móviles */
-    /*} */
+  /*} */
 }
-  @media (max-width: 1199px) {
-    .hero-component {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-        align-items: center; /* Centra todo */
-    }
-    .logo-text-container {
-        flex-direction: column;
-        align-items: center; /* Centra logo y texto */
-        margin-bottom: 20px;
-    }
-    .spin-logo {
-        margin-left: -30px; 
-        margin-bottom: 20px; /* Añade espacio debajo del logo */
-    }
-    .right-text {
-        /* width: 80%; */
-        font-size: 50px;
-        margin-right: 20px;
-        margin-bottom: -30px;
-        /* margin-left: 80px; */
-        text-align: right; /* Centra el texto en pantallas pequeñas */
-    }
-    .hero-grid {
-        flex-direction: column; /* Los párrafos y el botón se apilarán */
-        align-items: center;
-    }
 
-    .punch-text {
-        max-width: 100%; /* El texto ocupará todo el ancho disponible */
-        text-align: center; /* Centra el texto */
-        margin-bottom: 20px; /* Añade espacio debajo */
-    }
-    .punch-text p{
-        line-height: 25px;
-    }
-    .boton-escribe {
-        font-size: 80px; /* Ajusta el tamaño del botón */
-        text-align: center;
-        margin-left: -106px;
-    }
+@media (max-width: 767px) {
+  .hero-component {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center; /* Centra todo */
+  }
+  .logo-text-container {
+    flex-direction: column;
+    align-items: center; /* Centra logo y texto */
+    margin-bottom: 20px;
+  }
+  .spin-logo {
+    margin-left: -50px;
+    margin-bottom: 20px; /* Añade espacio debajo del logo */
+  }
+  .right-text {
+    /* width: 80%; */
+    font-size: 40px;
+    margin-right: 30px;
+    /* margin-left: 80px; */
+    text-align: right; /* Centra el texto en pantallas pequeñas */
+  }
+  .hero-grid {
+    flex-direction: column; /* Los párrafos y el botón se apilarán */
+    align-items: center;
+  }
 
-    .header-grid {
-        grid-template-columns: 1fr; /* Cambia la cuadrícula a una sola columna */
-        margin-top: 20px;
-    }
-    .left-column {
-        order: 2; /* Mueve "Qué hacemos" abajo */
-        text-align: center; /* Ajusta para centrar en pantallas pequeñas */
-        margin: 20px 0; /* Ajusta márgenes si es necesario */
-      }
-    
-      .right-column {
-        order: 1; /* Mueve "Oh Yeah" arriba */
-        text-align: center; /* Centra la imagen "Oh Yeah" */
-        margin: 0 0; /* Ajusta márgenes si es necesario */
-      }
-.yeah{
+  .punch-text {
+    max-width: 100%; /* El texto ocupará todo el ancho disponible */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Añade espacio debajo */
+  }
+  .punch-text p {
+    line-height: 25px;
+  }
+  .boton-escribe {
+    font-size: 80px; /* Ajusta el tamaño del botón */
+    text-align: center;
+    margin-left: -106px;
+  }
+
+  .header-grid {
+    grid-template-columns: 1fr; /* Cambia la cuadrícula a una sola columna */
+    margin-top: 20px;
+  }
+  .left-column {
+    order: 2; /* Mueve "Qué hacemos" abajo */
+    text-align: center; /* Ajusta para centrar en pantallas pequeñas */
+    margin: 20px 0; /* Ajusta márgenes si es necesario */
+  }
+
+  .right-column {
+    order: 1; /* Mueve "Oh Yeah" arriba */
+    text-align: center; /* Centra la imagen "Oh Yeah" */
+    margin: 0 0; /* Ajusta márgenes si es necesario */
+  }
+  .yeah {
     margin-left: 15px;
-}
-    .hacemos, .yeah {
-        max-width: 100%; /* Mantén las imágenes al 100% del ancho */
-        margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
-    }
-    /* .spin-gif {
+  }
+  .hacemos,
+  .yeah {
+    max-width: 100%; /* Mantén las imágenes al 100% del ancho */
+    margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
+  }
+  /* .spin-gif {
         margin-bottom: 20px; /* Añade espacio entre la imagen y el texto en móviles */
-    /*} */
-}
-
-  @media (max-width: 767px) {
-    .hero-component {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-        align-items: center; /* Centra todo */
-    }
-    .logo-text-container {
-        flex-direction: column;
-        align-items: center; /* Centra logo y texto */
-        margin-bottom: 20px;
-    }
-    .spin-logo {
-        margin-left: -50px; 
-        margin-bottom: 20px; /* Añade espacio debajo del logo */
-    }
-    .right-text {
-        /* width: 80%; */
-        font-size: 40px;
-        margin-right: 30px;
-        /* margin-left: 80px; */
-        text-align: right; /* Centra el texto en pantallas pequeñas */
-    }
-    .hero-grid {
-        flex-direction: column; /* Los párrafos y el botón se apilarán */
-        align-items: center;
-    }
-
-    .punch-text {
-        max-width: 100%; /* El texto ocupará todo el ancho disponible */
-        text-align: center; /* Centra el texto */
-        margin-bottom: 20px; /* Añade espacio debajo */
-    }
-    .punch-text p{
-        line-height: 25px;
-    }
-    .boton-escribe {
-        font-size: 80px; /* Ajusta el tamaño del botón */
-        text-align: center;
-        margin-left: -106px;
-    }
-
-    .header-grid {
-        grid-template-columns: 1fr; /* Cambia la cuadrícula a una sola columna */
-        margin-top: 20px;
-    }
-    .left-column {
-        order: 2; /* Mueve "Qué hacemos" abajo */
-        text-align: center; /* Ajusta para centrar en pantallas pequeñas */
-        margin: 20px 0; /* Ajusta márgenes si es necesario */
-      }
-    
-      .right-column {
-        order: 1; /* Mueve "Oh Yeah" arriba */
-        text-align: center; /* Centra la imagen "Oh Yeah" */
-        margin: 0 0; /* Ajusta márgenes si es necesario */
-      }
-.yeah{
-    margin-left: 15px;
-}
-    .hacemos, .yeah {
-        max-width: 100%; /* Mantén las imágenes al 100% del ancho */
-        margin-bottom: 20px; /* Añade espacio debajo de cada imagen */
-    }
-    /* .spin-gif {
-        margin-bottom: 20px; /* Añade espacio entre la imagen y el texto en móviles */
-    /*} */
+  /*} */
 }
 
 /* Media query para pantallas de hasta 430px (móviles más pequeños) */
 @media (max-width: 430px) {
-    .hero-component {
-        flex-direction: column; /* Mantén en columna para pantallas pequeñas */
-        align-items: center;
-    }
+  .hero-component {
+    flex-direction: column; /* Mantén en columna para pantallas pequeñas */
+    align-items: center;
+  }
 
-    .logo-text-container {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 15px;
-    }
+  .logo-text-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
 
-    .spin-logo {
-        margin-left: 25px;
-    }
-    .spin-logo img {
-        margin-bottom: 15px; /* Reduce el espacio debajo del logo */
-        width: 500px;
-    }
+  .spin-logo {
+    margin-left: 25px;
+  }
+  .spin-logo img {
+    margin-bottom: 15px; /* Reduce el espacio debajo del logo */
+    width: 500px;
+  }
 
-    .right-text-container{
-        margin-left: 30px;
-    }
-    .right-text {
-        font-size: 35px; /* Reduce un poco más el tamaño del texto */
-        text-align: right;
-    }
+  .right-text-container {
+    margin-left: 30px;
+  }
+  .right-text {
+    font-size: 35px; /* Reduce un poco más el tamaño del texto */
+    text-align: right;
+  }
 
-    .hero-grid {
-        flex-direction: column;
-        align-items: center;
-    }
+  .hero-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .punch-text {
-        max-width: 100%;
-        text-align: center;
-        margin-bottom: 15px;
-    }
+  .punch-text {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 
-    .punch-text p {
-        margin-bottom: 0px; /* Espaciado entre los párrafos */
-        margin-left: -15px;
-        font-family: "Inter_18-Regular", sans-serif;
-        font-size: 1.58rem;
-        text-align: left;
-        line-height: 30px;
-    }
-    .boton-escribe {
-        font-size: 65px; /* Reduce el tamaño del botón */
-    }
+  .punch-text p {
+    margin-bottom: 0px; /* Espaciado entre los párrafos */
+    margin-left: -15px;
+    font-family: "Inter_18-Regular", sans-serif;
+    font-size: 1.58rem;
+    text-align: left;
+    line-height: 30px;
+  }
+  .boton-escribe {
+    font-size: 65px; /* Reduce el tamaño del botón */
+  }
 
-    .header-grid {
-        grid-template-columns: 1fr; /* Mantén una sola columna */
-        margin-top: 15px;
-    }
+  .header-grid {
+    grid-template-columns: 1fr; /* Mantén una sola columna */
+    margin-top: 15px;
+  }
 
-    .left-column {
-        order: 2; /* Mueve "Qué hacemos" abajo */
-        text-align: center; /* Ajusta para centrar en pantallas pequeñas */
-        margin: 20px 0; /* Ajusta márgenes si es necesario */
-      }
-    
-      .right-column {
-        order: 1; /* Mueve "Oh Yeah" arriba */
-        text-align: center; /* Centra la imagen "Oh Yeah" */
-        margin: 0 0; /* Ajusta márgenes si es necesario */
-      }
+  .left-column {
+    order: 2; /* Mueve "Qué hacemos" abajo */
+    text-align: center; /* Ajusta para centrar en pantallas pequeñas */
+    margin: 20px 0; /* Ajusta márgenes si es necesario */
+  }
 
-      .yeah-container {
-        position: relative;
-        width: 100%; /* Ajusta el tamaño del contenedor */
-        height: 100%; /* Ajusta la altura del contenedor si es necesario */
-        overflow: hidden; /* Oculta cualquier cosa que se salga del contenedor */
-    }
+  .right-column {
+    order: 1; /* Mueve "Oh Yeah" arriba */
+    text-align: center; /* Centra la imagen "Oh Yeah" */
+    margin: 0 0; /* Ajusta márgenes si es necesario */
+  }
 
-    .yeah {
-        position:relative;
-        width: 145%;
-        max-width: 150%;
-        margin-top: -40px;
-        margin-left: -158px;
-        overflow: hidden;
-    }
+  .yeah-container {
+    position: relative;
+    width: 100%; /* Ajusta el tamaño del contenedor */
+    height: 100%; /* Ajusta la altura del contenedor si es necesario */
+    overflow: hidden; /* Oculta cualquier cosa que se salga del contenedor */
+  }
 
-    .hacemos {
-        width: 350px;
-        max-width: 250%;
-        margin-top: -45px;
-        margin-bottom: 0;
-    }
+  .yeah {
+    position: relative;
+    width: 145%;
+    max-width: 150%;
+    margin-top: -40px;
+    margin-left: -158px;
+    overflow: hidden;
+  }
+
+  .hacemos {
+    width: 350px;
+    max-width: 250%;
+    margin-top: -45px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-component {
+    flex-direction: column; /* Mantén en columna para pantallas pequeñas */
+    align-items: center;
+  }
+
+  .logo-text-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .spin-logo {
+    margin-left: 32px;
+  }
+  .spin-logo img {
+    margin-bottom: 15px; /* Reduce el espacio debajo del logo */
+    width: 500px;
+  }
+
+  .right-text-container {
+    margin-left: 50px;
+  }
+  .right-text {
+    font-size: 34px; /* Reduce un poco más el tamaño del texto */
+    text-align: right;
+    white-space: normal; /* Asegúrate de permitir el ajuste en varias líneas */
+    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+  }
+
+  .hero-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .punch-text {
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .punch-text p {
+    margin-bottom: 0px; /* Espaciado entre los párrafos */
+    margin-left: -60px;
+    font-family: "Inter_18-Regular", sans-serif;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 30px;
+  }
+  .boton-escribe {
+    font-size: 75px; /* Reduce el tamaño del botón */
+    margin-right: -5px;
+    padding: 0px 10px;
+    letter-spacing: 1px;
+  }
+
+  .header-grid {
+    grid-template-columns: 1fr; /* Mantén una sola columna */
+    margin-top: 15px;
+  }
+
+  .left-column {
+    order: 2; /* Mueve "Qué hacemos" abajo */
+    text-align: center; /* Ajusta para centrar en pantallas pequeñas */
+    margin: 20px 0; /* Ajusta márgenes si es necesario */
+  }
+
+  .right-column {
+    order: 1; /* Mueve "Oh Yeah" arriba */
+    text-align: center; /* Centra la imagen "Oh Yeah" */
+    margin: 0 0; /* Ajusta márgenes si es necesario */
+  }
+
+  .yeah-container {
+    position: relative;
+    width: 100%; /* Ajusta el tamaño del contenedor */
+    height: 100%; /* Ajusta la altura del contenedor si es necesario */
+    overflow: hidden; /* Oculta cualquier cosa que se salga del contenedor */
+  }
+
+  .yeah {
+    position: relative;
+    width: 152%;
+    max-width: 170%;
+    margin-top: -40px;
+    margin-left: -129px;
+    overflow: hidden;
+  }
+
+  .hacemos {
+    width: 254px;
+    max-width: 250%;
+    margin-top: -45px;
+    margin-bottom: 0;
+  }
+
+  .new-line {
+    display: block; /* Fuerza que "360º" esté en una nueva línea */
+    margin-top: 10px; /* Añade espacio entre "comunicación" y "360º" */
+  }
+
+  .right-text {
+    font-size: 32px; /* Ajusta el tamaño del texto según sea necesario */
+  }
 }

@@ -29,7 +29,7 @@ function Hero() {
         <h2 className="right-text">
           tu agencia</h2>
           <h2 className="right-text">de&nbsp;publicidad&nbsp;y</h2>
-          <h2 className="right-text">comunicación&nbsp;360º</h2>
+          <h2 className="right-text">comunicación&nbsp;<span className="new-line">360º</span></h2>
           </div>
       </div>
       <div className="hero-grid">
