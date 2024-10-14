@@ -380,7 +380,7 @@
 @media (max-width: 320px) {
   .footer-section {
     padding: 60px 0;
-    margin-left: -35px;
+    margin-left: 0px;
   }
   /* Logo arriba a la derecha */
   .footer-logo img {
@@ -388,7 +388,7 @@
     width: 100px; /* Tamaño más pequeño del logo */
     margin-top:-135px;
     /* margin-bottom: -20px; */
-    margin-left: 200px;
+    margin-left: 160px;
     margin-right: 0%; /* Alineado al lado derecho */
     display: block;
   }
@@ -404,7 +404,7 @@
     gap: 10px; /* Reduce el espacio entre los links */
     font-size: 1rem; /* Ajuste de tamaño de fuente para pantallas pequeñas */
     font-weight: bold;
-    margin-right: 0px;
+    margin-left: -32px;
     justify-content: center;
     margin-top: -35px;
     margin-bottom: 40px;
@@ -413,10 +413,10 @@
   /* Legal links en fila, centrados */
   .legal-links {
     position: absolute; /* Hace que los links estén fuera del flujo normal */
-    bottom: -8px; /* Los posiciona cerca del fondo del contenedor */
-    margin-bottom: 50px;
-    padding-left: 5px;
-    left: 0%; /* Alinea a la izquierda */
+    bottom: -20px; /* Los posiciona cerca del fondo del contenedor */
+    margin-bottom:40px;
+    padding-left: 0px;
+    left: -8%; /* Alinea a la izquierda */
     display: flex;
     flex-direction: row; /* Los mantiene en fila */
     gap: 5px; /* Espacio entre los links */
@@ -477,11 +477,11 @@
   }
   .splatter-image {
     position: absolute;
-    top: -136px;
-    right: -100px;
+    top: -236px;
+    right: 0px;
     z-index: 0;
-    width: 130%;
-    max-width: 250%;
+    width: 100%;
+    max-width: 250px;
     height: auto;
     opacity: 0.7;
     overflow: hidden;
