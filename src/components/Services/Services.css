@@ -50,8 +50,8 @@
 }
 
 .col h3 img {
-  margin-left: 10px; /* Espacio entre el h3 y la imagen */
-  max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+  /*margin-left: 10px;  Espacio entre el h3 y la imagen */
+  max-width: 250px; /* Ajusta el tamaño máximo de la imagen */
   display: flex;
   flex-direction: column; /* 3 columnas con 30% de ancho cada una */
   align-items: flex-start;
@@ -81,27 +81,27 @@ li {
 } */
 
 .curvy-marca {
-  width: 70px;
+  width: 100px;
   height: 60px;
-  margin-left: 1.2%;
+  margin-left: -5px;
 }
 
 .curvy-digital {
-  width: 70px;
+  width: 100px;
   height: 60px;
-  margin-left: 1.2%;
+  margin-left: 0%;
 }
 
 .curvy-media {
   width: 70px;
   height: 60px;
-  margin-left: 1.2%;
+  margin-left: 2.5%;
 }
 
 .curvy-branding {
   width: 170px;
   height: 60px;
-  margin-left: 0;
+  margin-left: -30px;
   margin-top: 5%;
   margin-bottom: 3%;
 }
@@ -113,7 +113,7 @@ li {
 }
 
 .curvy-audiovisual {
-  width: 120px;
+  width: 140px;
   height: 60px;
   margin-left: 1.2%;
 }
