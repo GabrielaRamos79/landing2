@@ -180,6 +180,34 @@
   }
 }
 
+@media (max-width: 375px) {
+  .big-title {
+    font-size: 7.5rem; /* Ajuste aún más pequeño del título */
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  .contact-info {
+    padding: 0 10%; /* Reducir el padding para pantallas muy pequeñas */
+  }
+
+  .contact-left,
+  .contact-right {
+    font-size: 1.3rem; /* Ajuste más pequeño del texto */
+    margin-bottom: 15px;
+    text-align: left; /* Seguir centrando el texto */
+    /* margin-right: -50px; */
+  }
+
+  .contact-left {
+    margin-left: -15px;
+    line-height: 10px;
+  }
+  .contact-right {
+    margin-top: 30px;
+    margin-left: -15px;
+    line-height: 10px;
+  }
+}
 @media (max-width: 320px) {
   .big-title {
     font-size: 7rem; /* Ajuste aún más pequeño del título */

@@ -66,10 +66,10 @@
         gap: 20px;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .grid-clients {
-        grid-template-columns: repeat(2, 1fr); /* Cambia a tres columnas en pantallas medianas */
-        gap: 20px;
+        grid-template-columns: repeat(3, 1fr); /* Cambia a tres columnas en pantallas medianas */
+        gap: 50px;
     }
 }
 
@@ -80,6 +80,80 @@
         margin-left: 35px;
     }
 }
+
+@media (max-width: 425px) {
+  .grid-clients {
+      grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en pantallas pequeñas */
+      gap: 40px;
+      margin-left: 50px;}
+
+      .client-logo {
+        width: 100px;
+        max-width: 100px; /* Ajusta el tamaño máximo de los logos */
+        opacity: 0.8;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      .client-logo:hover {
+        opacity: 1;
+      }
+      
+      .porshe-client {
+        height: 13px !important;
+        width: auto;
+      }
+      
+      .alarbadero-client {
+        height: 37px !important; /* Ajusta la altura específica para Alabardero */
+        width: auto; /* Mantiene la relación de aspecto */
+      }
+
+      .text-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 100px;
+      }
+  }
+
+@media (max-width: 375px) {
+  .grid-clients {
+      grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en pantallas pequeñas */
+      gap: 40px;
+      margin-left: 40px;}
+
+      .client-logo {
+        width: 90px;
+        max-width: 100px; /* Ajusta el tamaño máximo de los logos */
+        opacity: 0.8;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      .client-logo:hover {
+        opacity: 1;
+      }
+      
+      .porshe-client {
+        height: 13px !important;
+        width: auto;
+      }
+      
+      .alarbadero-client {
+        height: 37px !important; /* Ajusta la altura específica para Alabardero */
+        width: auto; /* Mantiene la relación de aspecto */
+      }
+
+      .text-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 100px;
+      }
+  }
 @media (max-width: 320px) {
   .grid-clients {
       grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en pantallas pequeñas */

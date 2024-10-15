@@ -231,9 +231,9 @@ li {
     }
   }
 /* Media query para pantallas de hasta 767px */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container-services {
-    grid-template-columns: repeat(1, 1fr); /* Cambia a dos columnas */
+    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
     grid-gap: 20px;
     margin-left: 10px;
   }
@@ -254,7 +254,7 @@ li {
   }
 
   .cruzado{
-    font-size: 12.5rem;
+    font-size: 18rem;
   }
   .content-container {
     flex-direction: column; /* Cambia a columna en pantallas pequeñas */
@@ -263,18 +263,20 @@ li {
 
   .otrolado {
     max-width: 90%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    margin-left: 30px;
     margin-bottom: 20px; /* Espacio entre la imagen y el texto */
   }
 
   .telita {
     margin-left: 50px;
     margin-top: 10px;
-    font-size: 3rem; /* Reduce el tamaño del texto para pantallas pequeñas */
+    font-size: 5rem; /* Reduce el tamaño del texto para pantallas pequeñas */
     text-align: left; /* Centra el texto */
   }
 
   .flecha {
-    margin-left: 280px;
+    width: 40%;
+    margin-left: 355px;
     margin-top: -200px; /* Espacio adicional entre el texto y la flecha */
     transform: none; /* Mantiene la flecha sin rotación */
   }
@@ -322,6 +324,28 @@ li {
   }
 }
 
+@media (max-width: 425px) {
+  li {
+    font-size: 1.5rem;
+  }
+
+  .cruzado{
+    font-size: 10rem;
+  }
+
+  .otrolado {
+    max-width: 90%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    margin-left: 20px;
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+  }
+}
+
+@media (max-width: 375px) {
+  .cruzado{
+    font-size: 9rem;
+  }
+}
+
 @media (max-width: 320px) {
   .container-services {
     grid-template-columns: 1fr; /* Cambia a una sola columna */
@@ -334,16 +358,16 @@ li {
   .services-section h3 {
     font-size: 4.7rem; /* Ajusta el tamaño del h3 */
     margin-top: 3%;
-    margin-left: 2%;
+    margin-left: 0.5%;
   }
 
   ul {
     padding-left: 0;
-    margin-left: 2%;
+    margin-left: 0.5%;
   }
 
   li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     white-space: normal; /* Asegúrate de permitir el ajuste en varias líneas */
     word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
   }
@@ -356,6 +380,84 @@ li {
     margin-bottom: 3%;
   }
   
+  .curvy-audiovisual {
+    width: 135px;
+    height: 60px;
+    margin-left: 1.2%;
+  }
+
+  .cruzado{
+    font-size: 7.6rem;
+  }
+
+  .otrolado {
+    max-width: 90%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 10px;
+  }
+
+  .telita {
+    margin-left: 20px;
+    margin-top: 12px;
+    margin-bottom: 35px;
+    font-size: 2rem; /* Reduce el tamaño del texto para pantallas pequeñas */
+    text-align: left; /* Centra el texto */
+  }
+
+  .flecha {
+    width: 90px;
+    margin-left: 190px;
+    margin-top: -280px; /* Espacio adicional entre el texto y la flecha */
+    transform: none; /* Mantiene la flecha sin rotación */
+  }
+}
+
+@media (max-width: 375px) {
+  .cruzado{
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-services {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    grid-gap: 20px;
+    margin-left: 5px;
+  }
+  .services-section {
+    margin-bottom: -100px;
+  }
+  .services-section h3 {
+    font-size: 4.7rem; /* Ajusta el tamaño del h3 */
+    margin-top: 3%;
+    margin-left: 0.5%;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-left: 0.5%;
+  }
+
+  li {
+    font-size: 1.1rem;
+    white-space: normal; /* Asegúrate de permitir el ajuste en varias líneas */
+    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+  }
+
+  .curvy-branding {
+    width: 170px;
+    height: 60px;
+    /* margin-right: -50px; */
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+  
+  .curvy-audiovisual {
+    width: 135px;
+    height: 60px;
+    margin-left: 1.2%;
+  }
+
   .cruzado{
     font-size: 7.6rem;
   }

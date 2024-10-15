@@ -432,6 +432,112 @@
   }
 }
 
+@media (max-width: 375px) {
+  .hero-component {
+    flex-direction: column; /* Mantén en columna para pantallas pequeñas */
+    align-items: center;
+  }
+
+  .logo-text-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .spin-logo {
+    margin-left: 32px;
+  }
+  .spin-logo img {
+    margin-bottom: 15px; /* Reduce el espacio debajo del logo */
+    width: 500px;
+  }
+
+  .right-text-container {
+    margin-left: 50px;
+  }
+  .right-text {
+    font-size: 34px; /* Reduce un poco más el tamaño del texto */
+    text-align: right;
+    white-space: normal; /* Asegúrate de permitir el ajuste en varias líneas */
+    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+  }
+
+  .hero-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .punch-text {
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .punch-text p {
+    margin-bottom: 0px; /* Espaciado entre los párrafos */
+    margin-left: -60px;
+    font-family: "Inter_18-Regular", sans-serif;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 30px;
+  }
+  .boton-escribe {
+    font-size: 75px; /* Reduce el tamaño del botón */
+    margin-right: 35px;
+    padding: 0px 10px;
+    letter-spacing: 1px;
+  }
+
+  .header-grid {
+    grid-template-columns: 1fr; /* Mantén una sola columna */
+    margin-top: 15px;
+  }
+
+  .left-column {
+    order: 2; /* Mueve "Qué hacemos" abajo */
+    text-align: center; /* Ajusta para centrar en pantallas pequeñas */
+    margin: 20px 0; /* Ajusta márgenes si es necesario */
+  }
+
+  .right-column {
+    order: 1; /* Mueve "Oh Yeah" arriba */
+    text-align: center; /* Centra la imagen "Oh Yeah" */
+    margin: 0 0; /* Ajusta márgenes si es necesario */
+  }
+
+  .yeah-container {
+    position: relative;
+    width: 100%; /* Ajusta el tamaño del contenedor */
+    height: 100%; /* Ajusta la altura del contenedor si es necesario */
+    overflow: hidden; /* Oculta cualquier cosa que se salga del contenedor */
+  }
+
+  .yeah {
+    position: relative;
+    width: 140%;
+    max-width: 170%;
+    margin-top: -40px;
+    margin-left: -129px;
+    overflow: hidden;
+  }
+
+  .hacemos {
+    width: 250px;
+    max-width: 250%;
+    margin-top: -45px;
+    margin-bottom: 0;
+  }
+
+  .new-line {
+    display: block; /* Fuerza que "360º" esté en una nueva línea */
+    margin-top: 10px; /* Añade espacio entre "comunicación" y "360º" */
+  }
+
+  .right-text {
+    font-size: 32px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+}
+
 @media (max-width: 320px) {
   .hero-component {
     flex-direction: column; /* Mantén en columna para pantallas pequeñas */
