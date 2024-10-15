@@ -3,7 +3,7 @@ import "./Hero.css";
 import spin from "../../images/details/gif2.gif";
 import spinstatic from "../../images/details/gif2.png";
 import yeah from "../../images/details/yeah.png";
-import hacemos from "../../images/curvy/quehacemos.svg.png";
+import hacemos from "../../images/curvy/quehacemos.svg";
 
 function Hero() {
   const [showStaticImage, setShowStaticImage] = useState(false);
