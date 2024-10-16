@@ -203,8 +203,8 @@ li {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .curvy-marca {
     position: relative;
-    top: 5px;
-    height: 60px;
+    top: 3px;
+    height: 58px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
