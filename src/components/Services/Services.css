@@ -250,27 +250,17 @@ li {
   }
 }
 
-/* iPhones más pequeños */
-@media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
-  .curvy-marca, .curvy-digital, .curvy-media, .curvy-branding, .curvy-web, .curvy-audiovisual {
-    position: relative;
-    top: 10px; /* Puedes ajustar este valor según sea necesario */
-    height: 55px; /* Ajusta este valor según el tamaño necesario */
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+@supports (-webkit-transform: translate()) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .curvy-marca {
+      position: relative;
+      top: 10px;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
   }
 }
 
-/* iPhones más grandes */
-@media only screen and (min-width: 376px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-  .curvy-marca, .curvy-digital, .curvy-media, .curvy-branding, .curvy-web, .curvy-audiovisual {
-    position: relative;
-    top: 8px;
-    height: 58px;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
 @supports (-webkit-touch-callout: none) {
   /* Aquí puedes ajustar el diseño específicamente para Safari */
   .curvy-branding,
