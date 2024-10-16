@@ -178,6 +178,13 @@ li {
   margin-top: 37%;
 }
 
+@supports (-webkit-touch-callout: none) {
+  /* Aquí puedes ajustar el diseño específicamente para Safari */
+  .curvy-marca {
+    margin-top: -20px;
+  }
+}
+
 @media (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
     grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
