@@ -178,7 +178,7 @@ li {
   margin-top: 37%;
 }
 
-@media (max-width: 1199px) {
+@media (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
     grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
     grid-gap: 20px;
@@ -186,7 +186,7 @@ li {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-device-width: 991px)and (-webkit-min-device-pixel-ratio: 2) {
     .container-services {
       grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
       grid-gap: 20px;
@@ -233,7 +233,7 @@ li {
     }
   }
 /* Media query para pantallas de hasta 767px */
-@media (max-width: 768px) {
+@media (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
     grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
     grid-gap: 20px;
@@ -285,7 +285,7 @@ li {
 }
 
 /* Media query para pantallas de hasta 430px */
-@media (max-width: 430px) {
+@media (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2){
   .container-services {
     grid-template-columns: 1fr; /* Cambia a una sola columna */
     grid-gap: 20px;
@@ -326,7 +326,7 @@ li {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-device-width: 425px) and (-webkit-min-device-pixel-ratio: 2) {
   li {
     font-size: 1.5rem;
   }
@@ -342,13 +342,13 @@ li {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
   .cruzado{
     font-size: 9rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
   .container-services {
     grid-template-columns: 1fr; /* Cambia a una sola columna */
     grid-gap: 20px;
@@ -414,13 +414,13 @@ li {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-device-width: 375px)and (-webkit-min-device-pixel-ratio: 2) {
   .cruzado{
     font-size: 9rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
   .container-services {
     grid-template-columns: 1fr; /* Cambia a una sola columna */
     grid-gap: 20px;
