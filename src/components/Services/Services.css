@@ -201,6 +201,10 @@ li {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .container-services{
+    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    grid-gap: 20px;
+  }
   .curvy-marca {
     position: relative;
     top: 8px;
@@ -250,60 +254,11 @@ li {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 192dpi) {
-  .curvy-marca {
-    position: relative;
-    top: 8px;
-    height: 58px;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  .curvy-digital {
-    position: relative;
-    top: 8px;
-    height: 58px;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  .curvy-media {
-    position: relative;
-    top: 8px;
-    height: 58px;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  .curvy-branding {
-    position: relative;
-    top: 8px;
-    height: 58px;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  .curvy-web {
-    position: relative;
-    top: 8px;
-    height: 58px;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  .curvy-audiovisual {
-    position: relative;
-    top: 8px;
-    height: 58px;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
 @supports (-webkit-transform: translate()) {
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .curvy-marca {
       position: relative;
-      top: 10px;
+      top: 0;
       -webkit-transform: translateY(0);
       transform: translateY(0);
     }
