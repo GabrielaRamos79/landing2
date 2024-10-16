@@ -204,6 +204,7 @@ li {
   .curvy-marca {
     position: relative;
     top: 5px;
+    width: 90px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
