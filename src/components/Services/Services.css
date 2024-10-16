@@ -81,6 +81,8 @@ li {
 } */
 
 .curvy-marca {
+  -webkit-transform: translateY(0); /* Ajustar posición para Safari */
+  transform: translateY(0); /* Asegura que el comportamiento sea consistente */
   width: 100px;
   height: 60px;
   margin-left: -5px;
