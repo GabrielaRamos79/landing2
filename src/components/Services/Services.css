@@ -200,6 +200,15 @@ li {
   margin-top: 37%;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .curvy-marca {
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 @supports (-webkit-touch-callout: none) {
   /* Aquí puedes ajustar el diseño específicamente para Safari */
   .curvy-branding,
