@@ -254,7 +254,19 @@ li {
   }
 }
 
-@supports (-webkit-transform: translate()) {
+@media screen and (device-width: 375px) and (device-height: 667px),
+       screen and (device-width: 812px) and (device-height: 375px),
+       screen and (device-width: 375px) and (device-height: 433px),
+       screen and (device-width: 393px) and (device-height: 852px),
+       screen and (device-width: 768px) and (max-device-height: 1024px) {
+  .curvy-marca {
+    position: relative;
+    top: 8px;
+    transform: translateY(0);
+  }
+}
+
+/* @supports (-webkit-transform: translate()) {
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .curvy-marca {
       position: relative;
@@ -263,21 +275,20 @@ li {
       transform: translateY(0);
     }
   }
-}
+} */
 
-@supports (-webkit-touch-callout: none) {
-  /* Aquí puedes ajustar el diseño específicamente para Safari */
+/* @supports (-webkit-touch-callout: none) {
   .curvy-branding,
   .curvy-marca,
   .curvy-digital,
   .curvy-media,
   .curvy-web,
   .curvy-audiovisual {
-    margin-top: 0px; /* Ajusta el margen para evitar el desplazamiento */
+    margin-top: 0px; 
     position: relative;
     top: 0px;
   }
-}
+} */
 
 @media (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
