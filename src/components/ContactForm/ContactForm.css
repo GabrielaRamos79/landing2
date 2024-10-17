@@ -256,6 +256,9 @@ input[type="checkbox"]:checked::before {
     /* position: relative;
     overflow: hidden; */
   }
+  .input-wrapper {
+    width: 75%;
+  }
   .form-input{
     font-size: 1rem;
     margin-left: 5%;
