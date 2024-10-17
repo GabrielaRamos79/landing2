@@ -248,6 +248,20 @@ input[type="checkbox"]:checked::before {
   border-radius: 5px;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+  .contact-form {
+    max-width: 800px;
+    margin: 0%;
+    font-family: "Inter_18pt-Regular", sans-serif;
+    /* position: relative;
+    overflow: hidden; */
+  }
+  .form-input{
+    font-size: 1rem;
+    margin-left: 5%;
+    width: 150%;
+  }
+}
 @media (max-width: 991px) {
   .form-title {
     font-size: 4rem;
