@@ -201,7 +201,7 @@ li {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .container-services{
+  .container-services {
     grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
     grid-gap: 20px;
   }
@@ -255,10 +255,14 @@ li {
 }
 
 @media screen and (device-width: 375px) and (device-height: 667px),
-       screen and (device-width: 812px) and (device-height: 375px),
-       screen and (device-width: 375px) and (device-height: 433px),
-       screen and (device-width: 393px) and (device-height: 852px),
-       screen and (device-width: 768px) and (max-device-height: 1024px) {
+  screen and (device-width: 812px) and (device-height: 375px),
+  screen and (device-width: 375px) and (device-height: 433px),
+  screen and (device-width: 393px) and (device-height: 852px),
+  screen and (device-width: 768px) and (max-device-height: 1024px) {
+  .container-services {
+    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    grid-gap: 20px;
+  }
   .curvy-marca {
     position: relative;
     top: 8px;
@@ -298,52 +302,51 @@ li {
   }
 }
 
-@media (max-device-width: 991px)and (-webkit-min-device-pixel-ratio: 2) {
-    .container-services {
-      grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
-      grid-gap: 20px;
-      margin-left: 10px;
-      
-    }
-  
-    .services-section h3 {
-      font-size: 4.5rem; /* Ajusta el tamaño del h3 */
-      margin-top: 10%;
-      margin-left: 5%;
-    }
-  
-    ul {
-      padding-left: 0;
-      margin-left: 5%;
-    }
-  
-    li {
-      font-size: 1.05rem;
-    }
-    .content-container {
-      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-      align-items: center; /* Centra los elementos en la columna */
-      margin-bottom: -100px;
-    }
-  
-    .otrolado {
-      max-width: 90%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
-      margin-bottom: 20px; /* Espacio entre la imagen y el texto */
-    }
-  
-    .telita {
-      margin-left: 50px;
-      margin-top: 10px;
-      font-size: 3rem; /* Reduce el tamaño del texto para pantallas pequeñas */
-      text-align: left; /* Centra el texto */
-    }
-  
-    .flecha {
-      margin-left: 280px;
-      margin-top: -200px; /* Espacio adicional entre el texto y la flecha */
-      transform: none; /* Mantiene la flecha sin rotación */
-    }
+@media (max-device-width: 991px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container-services {
+    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    grid-gap: 20px;
+    margin-left: 10px;
   }
+
+  .services-section h3 {
+    font-size: 4.5rem; /* Ajusta el tamaño del h3 */
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-left: 5%;
+  }
+
+  li {
+    font-size: 1.05rem;
+  }
+  .content-container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos en la columna */
+    margin-bottom: -100px;
+  }
+
+  .otrolado {
+    max-width: 90%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+  }
+
+  .telita {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 3rem; /* Reduce el tamaño del texto para pantallas pequeñas */
+    text-align: left; /* Centra el texto */
+  }
+
+  .flecha {
+    margin-left: 280px;
+    margin-top: -200px; /* Espacio adicional entre el texto y la flecha */
+    transform: none; /* Mantiene la flecha sin rotación */
+  }
+}
 /* Media query para pantallas de hasta 767px */
 @media (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
@@ -367,7 +370,7 @@ li {
     font-size: 1.3rem;
   }
 
-  .cruzado{
+  .cruzado {
     font-size: 18rem;
   }
   .content-container {
@@ -397,7 +400,7 @@ li {
 }
 
 /* Media query para pantallas de hasta 430px */
-@media (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2){
+@media (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
     grid-template-columns: 1fr; /* Cambia a una sola columna */
     grid-gap: 20px;
@@ -420,7 +423,7 @@ li {
   li {
     font-size: 1.2rem;
   }
-  .cruzado{
+  .cruzado {
     font-size: 10.5rem;
   }
   .telita {
@@ -443,7 +446,7 @@ li {
     font-size: 1.5rem;
   }
 
-  .cruzado{
+  .cruzado {
     font-size: 10rem;
   }
 
@@ -455,12 +458,12 @@ li {
 }
 
 @media (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
-  .cruzado{
+  .cruzado {
     font-size: 9rem;
   }
 }
 
-@media (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+@media (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
     grid-template-columns: 1fr; /* Cambia a una sola columna */
     grid-gap: 20px;
@@ -493,14 +496,14 @@ li {
     margin-top: 5%;
     margin-bottom: 3%;
   }
-  
+
   .curvy-audiovisual {
     width: 135px;
     height: 60px;
     margin-left: 1.2%;
   }
 
-  .cruzado{
+  .cruzado {
     font-size: 7.6rem;
   }
 
@@ -526,13 +529,13 @@ li {
   }
 }
 
-@media (max-device-width: 375px)and (-webkit-min-device-pixel-ratio: 2) {
-  .cruzado{
+@media (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
+  .cruzado {
     font-size: 9rem;
   }
 }
 
-@media (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+@media (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
     grid-template-columns: 1fr; /* Cambia a una sola columna */
     grid-gap: 20px;
@@ -565,14 +568,14 @@ li {
     margin-top: 5%;
     margin-bottom: 3%;
   }
-  
+
   .curvy-audiovisual {
     width: 135px;
     height: 60px;
     margin-left: 1.2%;
   }
 
-  .cruzado{
+  .cruzado {
     font-size: 7.6rem;
   }
 
