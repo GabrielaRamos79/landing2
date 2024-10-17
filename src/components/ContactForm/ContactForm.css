@@ -257,12 +257,12 @@ input[type="checkbox"]:checked::before {
     overflow: hidden; */
   }
   .input-wrapper {
-    width: 75%;
+    width: 60%;
   }
   .form-input{
     font-size: 1rem;
     margin-left: 5%;
-    width: 100%;
+    width: 80%;
   }
 }
 @media (max-width: 991px) {
