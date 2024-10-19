@@ -401,7 +401,7 @@ li {
   }
 } */
 /* Media query para pantallas de hasta 767px */
-/* @media (max-device-width: 765px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-device-width: 765px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
     grid-template-columns: repeat(1, 1fr); 
     grid-gap: 20px;
@@ -450,7 +450,7 @@ li {
     margin-top: -200px; 
     transform: none; 
   }
-} */
+}
 
 @media (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
