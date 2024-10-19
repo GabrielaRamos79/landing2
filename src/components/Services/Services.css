@@ -254,9 +254,15 @@ li {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (max-width: 991px) and (min-width: 768px) {
+@supports (-webkit-touch-callout: none) {
   .container-services {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para Safari */
+  }
+}
+
+/* @media (-webkit-min-device-pixel-ratio: 2), (max-width: 991px) and (min-width: 768px) {
+  .container-services {
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     margin-left: 10px;
   }
@@ -299,15 +305,15 @@ li {
     margin-top: -200px;
     transform: none;
   }
-}
+} */
 
-@media screen and (device-width: 375px) and (device-height: 667px),
+/* @media screen and (device-width: 375px) and (device-height: 667px),
   screen and (device-width: 812px) and (device-height: 375px),
   screen and (device-width: 375px) and (device-height: 433px),
   screen and (device-width: 393px) and (device-height: 852px),
   screen and (device-width: 768px) and (max-device-height: 1024px) {
   .container-services {
-    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    grid-template-columns: repeat(2, 1fr); 
     grid-gap: 20px;
   }
   .curvy-marca {
@@ -315,7 +321,7 @@ li {
     top: 8px;
     transform: translateY(0);
   }
-}
+} */
 
 /* @supports (-webkit-transform: translate()) {
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
