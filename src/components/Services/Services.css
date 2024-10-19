@@ -347,13 +347,13 @@ li {
   }
 } */
 
-@media (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
-    grid-template-columns: repeat(3, 1fr); /* Cambia a dos columnas */
+    grid-template-columns: repeat(3, 1fr); 
     grid-gap: 20px;
     margin-left: 10px;
   }
-}
+} */
 
 @media (max-device-width: 991px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
