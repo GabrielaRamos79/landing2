@@ -349,7 +349,7 @@ li {
 
 @media (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
-    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    grid-template-columns: repeat(3, 1fr); /* Cambia a dos columnas */
     grid-gap: 20px;
     margin-left: 10px;
   }
@@ -401,9 +401,9 @@ li {
   }
 }
 /* Media query para pantallas de hasta 767px */
-@media (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-device-width: 765px) and (-webkit-min-device-pixel-ratio: 2) {
   .container-services {
-    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    grid-template-columns: repeat(1, 1fr); /* Cambia a dos columnas */
     grid-gap: 20px;
     margin-left: 10px;
   }
@@ -448,6 +448,47 @@ li {
     width: 40%;
     margin-left: 355px;
     margin-top: -200px; /* Espacio adicional entre el texto y la flecha */
+    transform: none; /* Mantiene la flecha sin rotación */
+  }
+}
+
+@media (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container-services {
+    grid-template-columns:repeat(1, 1fr); /* Cambia a una sola columna */
+    grid-gap: 20px;
+    margin-left: 5px;
+  }
+  .services-section {
+    margin-bottom: -100px;
+  }
+  .services-section h3 {
+    font-size: 4.7rem; /* Ajusta el tamaño del h3 */
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-left: 3%;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
+  .cruzado {
+    font-size: 10.5rem;
+  }
+  .telita {
+    margin-left: 40px;
+    margin-top: 12px;
+    margin-bottom: 35px;
+    font-size: 2.5rem; /* Reduce el tamaño del texto para pantallas pequeñas */
+    text-align: left; /* Centra el texto */
+  }
+
+  .flecha {
+    margin-left: 240px;
+    margin-top: -270px; /* Espacio adicional entre el texto y la flecha */
     transform: none; /* Mantiene la flecha sin rotación */
   }
 }
