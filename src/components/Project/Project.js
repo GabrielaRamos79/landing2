@@ -7,29 +7,100 @@ import lesrochespro from "../../images/proyectos/lesrochespro.png";
 import almapro from "../../images/proyectos/almapro.png";
 import porshepro from "../../images/proyectos/porshepro.png";
 import mas from "../../images/details/mas.png";
-import gepopup from "../../images/proyectos/gepopup.png";
-import collage from "../../images/proyectos/collage3.png";
+
+import ge1 from "../../images/proyectos/ge-popup/ge-1.png";
+import ge2 from "../../images/proyectos/ge-popup/ge-2.png";
+import ge3 from "../../images/proyectos/ge-popup/ge-3.jpg";
+import ge4 from "../../images/proyectos/ge-popup/ge-4.jpg";
+
+import super1 from "../../images/proyectos/supermex-popup/super-1.jpg";
+import super2 from "../../images/proyectos/supermex-popup/super-2.jpg";
+import super3 from "../../images/proyectos/supermex-popup/super-3.jpg";
+import super4 from "../../images/proyectos/supermex-popup/super-4.jpg";
+
+import montosa1 from "../../images/proyectos/montosa-popup/montosa-1.jpg";
+import montosa2 from "../../images/proyectos/montosa-popup/montosa-2.jpg";
+import montosa3 from "../../images/proyectos/montosa-popup/montosa-3.png";
+import montosa4 from "../../images/proyectos/montosa-popup/montosa-4.png";
+
+import lesroches1 from "../../images/proyectos/lesroches-popup/lesroches-1.jpg";
+import lesroches2 from "../../images/proyectos/lesroches-popup/lesroches-2.jpg";
+import lesroches3 from "../../images/proyectos/lesroches-popup/lesroches-3.jpg";
+import lesroches4 from "../../images/proyectos/lesroches-popup/lesroches-4.jpg";
+
+import alma1 from "../../images/proyectos/alma-popup/alma-1.jpg";
+import alma2 from "../../images/proyectos/alma-popup/alma-2.jpg";
+import alma3 from "../../images/proyectos/alma-popup/alma-3.png";
+import alma4 from "../../images/proyectos/alma-popup/alma-4.jpg";
+
+import porshe1 from "../../images/proyectos/porshe-popup/porshe-1.jpg";
+import porshe2 from "../../images/proyectos/porshe-popup/porshe-2.jpg";
+import porshe3 from "../../images/proyectos/porshe-popup/porshe-3.jpg";
+import porshe4 from "../../images/proyectos/porshe-popup/porshe-4.jpg";
+
+// Datos de los proyectos con sus imágenes
+const projects = [
+  {
+    name: "General Elevadores",
+    coverImage: gepro,
+    images: [ge1, ge2, ge3, ge4],
+    description: "Actualizo mi branding y pasa esto…"
+  },
+  {
+    name: "Supermex",
+    coverImage: supermexpro,
+    images: [super1, super2, super3, super4],
+    description: "El rebranding que la competencia no quiere que veas."
+  },
+  {
+    name: "Montosa",
+    coverImage: montosapro,
+    images: [montosa1, montosa2, montosa3, montosa4],
+    description: "Seguro que no sabías que el aguacate también servía para esto."
+  },
+  {
+    name: "Lesroches",
+    coverImage: lesrochespro,
+    images: [lesroches1, lesroches2, lesroches3, lesroches4],
+    description: "Destino, ¿se nace o se hace?"
+  },
+  {
+    name: "Alma",
+    coverImage: almapro,
+    images: [alma1, alma2, alma3, alma4],
+    description: "Después de ver esto, vas a empezar a creer en el poder del Alma..."
+  },
+  {
+    name: "Porshe",
+    coverImage: porshepro,
+    images: [porshe1, porshe2, porshe3, porshe4],
+    description: "¿Qué fiera tiene cuatro patas que ruedan?"
+  },
+]
 
 function Project() {
   const [showPopup, setShowPopup] = useState(false);
-  const [currentImage, setCurrentImage] = useState(null);
-  const [showSecondImage, setShowSecondImage] = useState(false);
+  const [currentImages, setCurrentImages] = useState([]); // Array de imágenes actual
+  const [currentIndex, setCurrentIndex] = useState(0); // Índice de la imagen actual
 
-  const handleImageClick = (image) => {
-    setCurrentImage(image);
-    setShowPopup(true);
-    setShowSecondImage(false);
+  const handleProjectClick = (images) => {
+    setCurrentImages(images);
+    setCurrentIndex(0); // Reinicia al inicio de las imágenes
+    setShowPopup(true); // Muestra el popup
   };
 
   const handleNextImage = () => {
-    setShowSecondImage(true); // Muestra la segunda imagen cuando haces clic en la primera
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % currentImages.length);
+  };
+
+  const handlePrevImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + currentImages.length) % currentImages.length);
   };
 
   const handleClosePopup = () => {
     setShowPopup(false);
-    setCurrentImage(null);
-    setShowSecondImage(false);
   };
+
   return (
     <div className="container-project">
       <section className="projects-section">
@@ -43,119 +114,34 @@ function Project() {
             </div>
           </div>
           <div className="container-project2">
-          {/* Primera fila de proyectos */}
-          <div className="proyect-row row">
-            <div>
-              <div
-                className="project-card"
-                onClick={() => handleImageClick(gepopup)}
-              >
-                <img
-                  src={gepro}
-                  alt="General Elevadores"
-                  className="img-fluid"
-                />
-                <div className="project-info">
-                  <small>General Elevadores</small>
-                  <h4>Actualizo mi branding y pasa esto…</h4>
-                </div>
+          {projects.map((project, index) => (
+            <div key={index} className="project-card" onClick={() => handleProjectClick(project.images)}>
+              <img src={project.coverImage} alt={project.name} className="img-fluid" />
+              <div className="project-info">
+                <small>{project.name}</small>
+                <h4>{project.description}</h4>
               </div>
-            </div>
-            <div>
-              <div
-                className="project-card"
-                onClick={() => handleImageClick(collage)}
-              >
-                <img src={supermexpro} alt="Supermex" className="img-fluid" />
-                <div className="project-info">
-                  <small>Supermex</small>
-                  <h4>El rebranding que la competencia no quiere que veas.</h4>
-                </div>
               </div>
-            </div>
-            <div>
-              <div
-                className="project-card"
-                onClick={() => handleImageClick(gepopup)}
-              >
-                <img src={montosapro} alt="Montosa" className="img-fluid" />
-                <div className="project-info">
-                  <small>Montosa</small>
-                  <h4>
-                    Seguro que no sabías que el aguacate también servía para
-                    esto.
-                  </h4>
-                </div>
-              </div>
-            </div>
+          ))}
           </div>
-
-          {/* Segunda fila de proyectos */}
-          <div className="project-row row">
-            <div>
-              <div
-                className="project-card"
-                onClick={() => handleImageClick(gepopup)}
-              >
-                <img
-                  src={lesrochespro}
-                  alt="Les Roches"
-                  className="img-fluid"
-                />
-                <div className="project-info">
-                  <small>Les Roches</small>
-                  <h4>Destino, ¿se nace o se hace?</h4>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                className="project-card"
-                onClick={() => handleImageClick(gepopup)}
-              >
-                <img src={almapro} alt="Alma Láser" className="img-fluid" />
-                <div className="project-info">
-                  <small>Alma Láser</small>
-                  <h4>
-                    Después de ver esto, vas a empezar a creer en el poder del
-                    Alma...
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                className="project-card"
-                onClick={() => handleImageClick(gepopup)}
-              >
-                <img src={porshepro} alt="Porsche" className="img-fluid" />
-                <div className="project-info">
-                  <small>Porsche</small>
-                  <h4>¿Qué fiera tiene cuatro patas que ruedan?</h4>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           {/* Popup de imagen */}
           {showPopup && (
-            <div className="popup-overlay">
-              <div className="popup-content">
-                <img
-                  src={showSecondImage ? collage : currentImage}
-                  alt="Popup"
-                  className="img-fluid"
-                  onClick={showSecondImage ? undefined : handleNextImage}
-                />
-                <img
-                  src={mas}
-                  alt="volver"
-                  className="close-btn"
-                  onClick={handleClosePopup}
-                />
-              </div>
+          <div className="popup-overlay">
+            <div className="popup-content">
+              <img src={currentImages[currentIndex]} alt="Popup" className="img-fluid" />
+              <button className="prev-btn" onClick={handlePrevImage}>
+                {"<"}
+              </button>
+              <button className="next-btn" onClick={handleNextImage}>
+                {">"}
+              </button>
+              <button className="close-btn" onClick={handleClosePopup}>
+                +
+              </button>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </section>
     </div>
   );

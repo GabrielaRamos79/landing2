@@ -12,8 +12,8 @@ function Contact() {
           <p>(+34) 952 424 234</p>
         </div>
         <div className="contact-right">
-          <p>C/ Pintor Martínez Cubells</p>
-          <p>5, Málaga, 29017</p>
+          <p>C/ Pintor Martínez Cubells 5</p>
+          <p>Málaga, 29017</p>
         </div>
       </div>
     </div>

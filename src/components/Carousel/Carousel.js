@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Carousel.css';
 import linea from "../../images/details/Linea.png";
 import estrella from "../../images/details/estrella.png";
 
 function Carousel() {
+  useEffect(() => {
+    // Podemos agregar código JS si es necesario, por ejemplo, para hacer las filas más dinámicas o para interacciones futuras.
+  }, []);
   return (
     <div className="container-carousel">
     <section className="carousel-section">

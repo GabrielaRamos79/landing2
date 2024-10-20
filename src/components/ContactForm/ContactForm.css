@@ -163,12 +163,13 @@ textarea.form-input {
   align-items: center;
   justify-content: flex-start;
   margin-top: 20px;
-  margin-right: 15px;
+  margin-right: 25px;
   margin-left: 0;
+  white-space: nowrap;
 }
 
 .terms-wrapper input {
-  margin-right: 10px;
+  margin-right: -5px;
   margin-left: 2px;
   background-color: transparent;
   border-color: #061599;

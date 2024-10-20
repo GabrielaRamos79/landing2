@@ -70,31 +70,37 @@
 
 .popup-content {
   position: relative;
-  padding: 20px;
+  /* padding: 20px; */
   width: 80%; /* Ajusta este porcentaje según el tamaño total de las 6 imágenes */
-  height: 100%; /* Ajusta este porcentaje según la altura total de las 6 imágenes */
+  /*height: 100%;  Ajusta este porcentaje según la altura total de las 6 imágenes */
   max-width: 1190px;
   max-height: 800px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup-content img {
-  /* width: 100%; */
-  height: auto;
-  /* border-radius: 8px; */
+  width: 800px; /* Ajusta este tamaño según lo que necesites */
+  height: 600px; /* Ajusta la altura también para que coincida */
+  object-fit: cover; /* Esto ayuda a cubrir el área del contenedor manteniendo el enfoque central de la imagen */
 }
 
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
   background-color: #c9ea50;
-  /* color: #061599; */
-  /* border: none; */
-  /* font-size: 25px; */
-  /* padding: 5px 10px; */
+  color: #061599;
+  font-family: 'Hurtmore', sans-serif;
+  border: none;
+  font-size: 50px;
+  line-height: 0px;
+  text-align: center;
+  /* padding: 10px 10px; */
   cursor: pointer;
   z-index: 1100;
   border-radius: 50px;
@@ -102,6 +108,33 @@
 
 .close-btn:hover {
   opacity: 0.8;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Mantiene el centrado vertical */
+  background: none;
+  border: none;
+  font-size: 3rem;
+  font-family: 'Hurtmore', sans-serif;
+  cursor: pointer;
+  z-index: 1100;
+  color: #061599;
+}
+
+.prev-btn {
+  left: 10px; /* Posiciona la flecha izquierda en el extremo izquierdo */
+}
+
+.next-btn {
+  right: 10px; /* Posiciona la flecha derecha en el extremo derecho */
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #c9ea50;
 }
 
 /* Media Query para pantallas pequeñas */
