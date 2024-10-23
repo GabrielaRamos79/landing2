@@ -475,6 +475,32 @@ li {
   .cruzado {
     font-size: 9rem;
   }
+  ul {
+    padding-left: 0;
+    margin-left: 0.5%;
+  }
+
+  li {
+    font-size: 1.1rem;
+    white-space: normal; /* Asegúrate de permitir el ajuste en varias líneas */
+    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+  }
+}
+
+@media (max-width: 360px) and (-webkit-min-device-pixel-ratio: 2) {
+  .cruzado {
+    font-size: 9rem;
+  }
+  ul {
+    padding-left: 0;
+    margin-left: 0.2%;
+  }
+
+  li {
+    font-size: 1.1rem;
+    white-space: normal; /* Asegúrate de permitir el ajuste en varias líneas */
+    word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+  }
 }
 
 @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
