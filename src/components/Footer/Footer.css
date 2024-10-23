@@ -322,6 +322,17 @@
     z-index: 1; /* Asegura que los links estén por encima de otros elementos */
   }
 
+  .legal-links a {
+    margin-left: 5px; /* Ajusta este valor para controlar el espacio entre enlaces */
+    text-decoration: none; /* Asegura que no haya subrayado */
+    color: black; /* Color del texto */
+  }
+  
+  /* Elimina el margen izquierdo del primer enlace si es necesario */
+  .legal-links a:first-child {
+    margin-left: -5px;
+  }
+
   /* Ajustes para las animaciones de los efectos circulares */
   .circle-effect-instagram {
     width: 200px; /* Tamaño más pequeño de los círculos */
