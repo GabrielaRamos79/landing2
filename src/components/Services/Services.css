@@ -202,7 +202,7 @@ li {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .container-services {
-    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    grid-template-columns: repeat(3, 1fr); /* Cambia a dos columnas */
     grid-gap: 20px;
   }
   .curvy-marca {
