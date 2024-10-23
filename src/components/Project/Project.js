@@ -137,7 +137,7 @@ function Project() {
                 {">"}
               </button>
               <button className="close-btn" onClick={handleClosePopup}>
-                +
+                x
               </button>
             </div>
           </div>
