@@ -8,6 +8,7 @@
     color: #161719;
     margin-bottom: 20px;
     font-family: 'Hurtmore', sans-serif;
+    -webkit-transform: translateY(0); /* Ajustar posición para Safari */
   }
   
   .mensaje-titulo{
@@ -15,11 +16,13 @@
     color: #161719;
     margin-bottom: 20px;
     font-family: 'Hurtmore', sans-serif;
+    -webkit-transform: translateY(0); /* Ajustar posición para Safari */
   }
   .mensaje-enviado-container p {
     font-size: 1.5rem;
     color: #161719;
     margin-bottom: 20px;
+    -webkit-transform: translateY(0); /* Ajustar posición para Safari */
   }
   
   .mensaje-descripcion{
@@ -27,6 +30,7 @@
     color: #161719;
     font-family: 'Inter_18pt-REgular', sans-serif;
     text-align: left;
+    -webkit-transform: translateY(0); /* Ajustar posición para Safari */
   }
 
   .mensaje-descripcion strong{
