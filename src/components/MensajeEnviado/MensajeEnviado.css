@@ -10,12 +10,29 @@
     font-family: 'Hurtmore', sans-serif;
   }
   
+  .mensaje-titulo{
+    font-size: 5rem;
+    color: #161719;
+    margin-bottom: 20px;
+    font-family: 'Hurtmore', sans-serif;
+  }
   .mensaje-enviado-container p {
     font-size: 1.5rem;
     color: #161719;
     margin-bottom: 20px;
   }
   
+  .mensaje-descripcion{
+    font-size: 3rem;
+    color: #161719;
+    font-family: 'Inter_18pt-REgular', sans-serif;
+    text-align: left;
+  }
+
+  .mensaje-descripcion strong{
+    font-size: 3.2rem;
+    font-family: 'Hurmore', sans-serif;
+  }
   .mensaje-enviado-container img {
     width: 300px;
     height: auto;
