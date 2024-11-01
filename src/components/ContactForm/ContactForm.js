@@ -31,7 +31,7 @@ function ContactForm() {
           }).then(() => {
             // Redirigir después de que el temporizador finalice
             window.location.href =
-              "http://localhost:3000/mensaje-enviado/mensaje-enviado.html";
+              `${window.location.origin}/mensaje-enviado/mensaje-enviado.html`;
           });
         },
         (error) => {
