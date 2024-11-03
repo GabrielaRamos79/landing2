@@ -31,7 +31,7 @@ function ContactForm() {
           }).then(() => {
             // Redirigir después de que el temporizador finalice
             window.location.href =
-              `${window.location.origin}/mensaje-enviado/mensaje-enviado.html`;
+              `${window.location.origin}/tu-agencia-de-publicidad-en-malaga/mensaje-enviado/mensaje-enviado.html`;
           });
         },
         (error) => {
