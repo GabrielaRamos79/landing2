@@ -1,4 +1,4 @@
-.mensaje-enviado-container {
+/* .mensaje-enviado-container {
     text-align: center;
     margin-top: 50px;
   }
@@ -16,7 +16,7 @@
     margin-bottom: 20px;
     font-family: 'Hurtmore', sans-serif;
   }
-  
+
   .mensaje-enviado-container p {
     font-size: 1.5rem;
     color: #161719;
@@ -38,4 +38,241 @@
     width: 300px;
     height: auto;
   }
+   */
+
+   @font-face {
+    font-family: "Agharti-LightCondensed";
+    src: local("Agharti-LightCondensed"),
+      url("./fonts/Agharti-LightCondensed.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Hurtmore";
+    src: local("Hurtmore") url("./fonts/Hurtmore.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Inter_18pt-Light";
+    src: url("./fonts/Inter_18pt-Light.ttf") format("truetype");
+  }
+  
+  @font-face {
+      font-family: "Inter_18pt-Regular";
+      src: url("./fonts/Inter_18pt-Regular.ttf") format("truetype");
+    }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .mensaje-enviado-container {
+    background-image: url("./textura2.png"); /* Fondo con textura */
+    padding:100px 240px 60px 440px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 764px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .mensaje-content {
+    display: flex;
+    justify-content: space-between;
+    align-items:center; /* Centra el mensaje y el gif verticalmente */
+    gap: 150px; /* Espacio entre el mensaje y el gif */
+  }
+  
+  .mensaje-titulo {
+    font-family: "Hurtmore", sans-serif;
+    font-size: 15rem;
+    color: #161719;
+    transform: rotate(-20deg); /*Rotación opcional */
+  }
+  
+  .mensaje-titulo span {
+    display: block; /* Para que el texto se divida en dos líneas */
+    margin-left: -300px;
+    margin-top: -100px;
+  }
+  /* Estilos para el gif */
+  .mensaje-gif {
+    width: 280px;
+    height: 250px;
+    margin-bottom: 50px;
+  }
+  .mensaje-titulo::before {
+    content: "";
+    background-image: url("./trazado.png"); /* Imagen detrás del texto */
+    background-size: cover;
+    position: absolute;
+    top: -135px; /* Ajusta la posición según lo necesites */
+    left: -602px;
+    width: 251%;
+    height: 130%;
+    z-index: -1; /* Para que esté detrás del texto */
+    transform: rotate(20deg); /*Rotación opcional */
+  }
+  
+  .mensaje-descripcion {
+    font-family: "Inter_18pt-Regular", sans-serif;
+    font-size: 3rem;
+    color: #333;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .mensaje-descripcion span {
+      display: block; /* Asegura que cada línea esté en una nueva fila */
+      margin-left: 260px;
+      margin-right: 0;
+     
+     
+    }
+  
+  .mensaje-descripcion strong {
+    font-family: "Hurtmore", sans-serif;
+    font-size: 3.2rem;
+  }
+  
+  @media (max-width: 1391px) {
+      .mensaje-enviado-container {
+        padding: 60px 20px; /* Ajustar el padding para pantallas más pequeñas */
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+      }
+    
+      .mensaje-content {
+        flex-direction: column; /* Cambia la dirección a columna */
+        gap: 30px; /* Reduce el espacio entre el mensaje y el gif */
+        text-align: center;
+      }
+  
+      .mensaje-titulo {
+          font-size: 8rem; /* Reduce el tamaño del título */
+          margin-left: 0; /* Centra el título */
+          transform: rotate(-20deg); /*Rotación opcional */ /* Opcional: elimina la rotación para pantallas pequeñas */
+        }
+        .mensaje-titulo::before {
+          content: "";
+          background-image: url("./trazado.png"); /* Imagen detrás del texto */
+          background-size: cover;
+          position: absolute;
+          top: -135px; /* Ajusta la posición según lo necesites */
+          left: -402px;
+          width: 450%;
+          height: 180%;
+          z-index: -1; /* Para que esté detrás del texto */
+          transform: rotate(20deg); /*Rotación opcional */
+        }
+  }
+  /* Media Query para pantallas de hasta 767px */
+  @media (max-width: 767px) {
+      .mensaje-enviado-container {
+        padding: 50px 20px; /* Ajustar el padding para pantallas más pequeñas */
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+      }
+    
+      .mensaje-content {
+        flex-direction: column; /* Cambia la dirección a columna */
+        gap: 30px; /* Reduce el espacio entre el mensaje y el gif */
+        text-align: center;
+      }
+    
+      .mensaje-titulo {
+        font-size: 10rem; /* Reduce el tamaño del título */
+        margin-left: 0; /* Centra el título */
+        transform: rotate(-20deg); /* Opcional: elimina la rotación para pantallas pequeñas */
+      }
+    
+      .mensaje-titulo span {
+        margin-left: 0;
+        margin-top: 0; /* Ajusta el espaciado según lo necesites */
+      }
+    
+      .mensaje-gif {
+        width: 200px; /* Ajusta el tamaño del gif */
+        height: auto;
+      }
+    
+      .mensaje-descripcion {
+        font-size: 2rem; /* Reduce el tamaño de la descripción */
+      }
+      
+      .mensaje-titulo::before {
+          content: "";
+          background-image: url("./trazado.png"); /* Imagen detrás del texto */
+          background-size: cover;
+          position: absolute;
+          top: -100px; /* Ajusta la posición según lo necesites */
+          left: -152px;
+          width: 151%;
+          height: 100%;
+          z-index: -1; /* Para que esté detrás del texto */
+          transform: rotate(20deg); /*Rotación opcional */
+        }
+    }
+    
+    /* Media Query para pantallas de hasta 430px */
+    @media (max-width: 430px) {
+      .mensaje-enviado-container {
+        padding: 20px 15px; /* Ajustar el padding para pantallas más pequeñas */
+      }
+    
+      .mensaje-content {
+        flex-direction: column;
+        gap: 50px; /* Reduce aún más el espacio entre los elementos */
+      }
+    
+      .mensaje-titulo {
+        font-size: 6rem; /* Reduce el tamaño del título */
+        transform: rotate(-20deg); /*Rotación opcional */
+      }
+    
+      .mensaje-titulo span {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    
+      .mensaje-gif {
+        width: 220px; /* Ajusta el tamaño del gif */
+        height: 200px;
+      }
+    
+      .mensaje-descripcion {
+          font-size: 1.5rem; /* Ajustar el tamaño del texto */
+          text-align: center; /* Centrar el texto en pantallas pequeñas */
+          color: #161719;
+          margin-top: 10px;
+        }
+    
+      .mensaje-descripcion span {
+        font-size: 1.5rem; /* Ajusta el tamaño del texto */
+        text-align: left;
+        margin-right: 0;
+        margin-left: 2px;
+        color: #161719;
+        font-family: "Inter_18pt-Regular", sans-serif;
+      }
+      .mensaje-descripcion strong {
+          font-family: "Hurtmore", sans-serif;
+          font-size: 1.8rem;
+        }
+        .mensaje-titulo::before {
+          content: "";
+          background-image: url("./trazado.png"); /* Imagen detrás del texto */
+          background-size: cover;
+          position: absolute;
+          top: -10px; /* Ajusta la posición según lo necesites */
+          left: -154px;
+          width: 170%;
+          height: 100%;
+          z-index: -1; /* Para que esté detrás del texto */
+          transform: rotate(20deg); /*Rotación opcional */
+        }
+    }
+  
   
