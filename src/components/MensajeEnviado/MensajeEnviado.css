@@ -98,6 +98,7 @@
     display: block; /* Para que el texto se divida en dos líneas */
     margin-left: -300px;
     margin-top: -100px;
+    font-family: "Hurtmore", sans-serif;
   }
   /* Estilos para el gif */
   .mensaje-gif {
@@ -109,10 +110,10 @@
     content: "";
     background-image: url("./trazado.png"); /* Imagen detrás del texto */
     background-size: cover;
-    position: absolute;
+    position:absolute;
     top: -135px; /* Ajusta la posición según lo necesites */
-    left: -602px;
-    width: 251%;
+    left: -400px;
+    width: 145%;
     height: 130%;
     z-index: -1; /* Para que esté detrás del texto */
     transform: rotate(20deg); /*Rotación opcional */
@@ -130,11 +131,10 @@
       display: block; /* Asegura que cada línea esté en una nueva fila */
       margin-left: 260px;
       margin-right: 0;
-     
-     
+      font-family: "Inter_18pt-Regular", sans-serif;
     }
   
-  .mensaje-descripcion strong {
+  .mensaje-descripcion span strong {
     font-family: "Hurtmore", sans-serif;
     font-size: 3.2rem;
   }
