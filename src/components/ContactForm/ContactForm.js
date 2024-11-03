@@ -31,7 +31,7 @@ function ContactForm() {
           }).then(() => {
             // Redirigir después de que el temporizador finalice
             window.location.href =
-              `${window.location.origin}/tu-agencia-de-publicidad-en-malaga/mensaje-enviado/mensaje-enviado.html`;
+              "https://www.elpuentepublicidad.com/tu-agencia-de-publicidad-en-malaga/mensaje-enviado/mensaje-enviado.html";
           });
         },
         (error) => {
