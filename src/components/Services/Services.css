@@ -207,7 +207,7 @@ li {
   }
   .curvy-marca {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 58px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -215,7 +215,7 @@ li {
 
   .curvy-digital {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 58px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -223,7 +223,7 @@ li {
 
   .curvy-media {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 58px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -231,7 +231,7 @@ li {
 
   .curvy-branding {
     position: relative;
-    top: -5px;
+    top: -2px;
     height: 58px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -239,7 +239,7 @@ li {
 
   .curvy-web {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 58px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -247,7 +247,7 @@ li {
 
   .curvy-audiovisual {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 58px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
