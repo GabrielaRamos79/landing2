@@ -3,19 +3,20 @@
     margin-top: 50px;
   }
   
-  /* .mensaje-enviado-container h1 {
+  .mensaje-enviado-container h1 {
     font-size: 5rem;
     color: #161719;
     margin-bottom: 20px;
     font-family: 'Hurtmore', sans-serif;
-  } */
+  }
   
-  /* .mensaje-titulo{
+  .mensaje-titulo{
     font-size: 5rem;
     color: #161719;
     margin-bottom: 20px;
     font-family: 'Hurtmore', sans-serif;
-  } */
+  }
+  
   .mensaje-enviado-container p {
     font-size: 1.5rem;
     color: #161719;
