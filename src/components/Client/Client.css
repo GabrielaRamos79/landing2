@@ -61,6 +61,15 @@
   height: auto;
   align-items: center;
 }
+
+@media (max-width: 1180px) {
+  .grid-clients {
+      grid-template-columns: repeat(5, 1fr); /* Cambia a tres columnas en pantallas medianas */
+      gap: 25px;
+      margin-left: 5%;
+  }
+}
+
 @media (max-width: 991px) {
     .grid-clients {
         grid-template-columns: repeat(3, 1fr); /* Cambia a tres columnas en pantallas medianas */

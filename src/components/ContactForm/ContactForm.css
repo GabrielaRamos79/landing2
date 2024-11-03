@@ -249,6 +249,103 @@ input[type="checkbox"]:checked::before {
   border-radius: 5px;
 }
 
+@media (max-width: 1180px) {
+  .form-title {
+    font-size: 4rem;
+    margin-left: 10%;
+    text-align: left;
+  }
+
+  label {
+    font-size: 2.8rem;
+    width: 100%;
+    margin-left: 10%;
+    text-align: left;
+  }
+
+  .input-wrapper {
+    width: 75%;
+  }
+
+  /* .form-input {
+    font-size: 1.4rem;
+    margin-right: 5%;
+    width: 100%;
+  } */
+
+  .star-icon {
+    width: 45px;
+    right: 50%;
+  }
+
+  textarea.form-input {
+    width: 75%;
+    margin-left: 10%;
+    height: 120px;
+  }
+
+  .form-group2 label {
+    font-size: 2.8rem;
+    margin-left: 10%;
+    padding-right: 5%;
+  }
+  .form-group2 h2 {
+    font-size: 3rem;
+    margin-left: 10%;
+    padding-right: 5%;
+  }
+
+  .form-group3 h2 {
+    font-size: 2.2rem;
+    margin-top: 0px;
+    margin-left: 90px;
+    padding-right: 0%;
+  }
+
+  .send-button {
+    font-size: 3.2rem;
+    margin-left: 60%;
+    margin-top: 5%;
+  }
+
+  .arrow-icon {
+    top: -40%;
+    right: -5%;
+    width: 18%;
+  }
+
+  .arrow-text {
+    top: -60%;
+    right: -20%;
+    font-size: 1.5rem;
+  }
+
+  .send-wrapper {
+    width: 50%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content:start;
+    margin-bottom: 20px;
+    margin-left: 180px;
+  }
+
+  .terms-wrapper {
+    margin-top: 20px;
+    padding-left: 5px;
+  }
+
+  .terms-wrapper label {
+    font-size: 0.8rem;
+  }
+
+  .custom-container {
+    padding-left: 0;
+    padding-right: 0;
+    background-size: contain;
+  }
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
   .contact-form {
     max-width: 800px;
@@ -262,8 +359,13 @@ input[type="checkbox"]:checked::before {
   }
   .form-input{
     font-size: 1rem;
-    margin-left: 5%;
-    width: 80%;
+    margin-left: -75%;
+    width: 129%;
+  }
+  .form-group2 h2 {
+    font-size: 3rem;
+    margin-left: 10%;
+    padding-right: 5%;
   }
 }
 @media (max-width: 991px) {
@@ -337,6 +439,89 @@ input[type="checkbox"]:checked::before {
 
   .terms-wrapper label {
     font-size: 0.8rem;
+  }
+
+  .custom-container {
+    padding-left: 0;
+    padding-right: 0;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 820px) {
+  .form-title {
+    font-size: 4.5rem;
+    margin-left: 10%;
+    text-align: left;
+  }
+
+  label {
+    font-size: 2.5rem;
+    width: 100%;
+    margin-left: 10%;
+    text-align: left;line-height: 2;
+  }
+
+  .input-wrapper {
+    width: 150%;
+    margin-left: -15px;
+  }
+
+  .form-input {
+    width: 90%;
+    font-size: 1.2rem;
+    margin-left: -10%;
+    margin-right: 0;
+  }
+
+  .star-icon {
+    width: 60px;
+    right: 15%;
+  }
+
+  .textarea.form-input {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .form-group3 h2 {
+    font-size: 2.2rem;
+    margin-left: 10%;
+  }
+  .send-wrapper {
+    width: 50%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content:start;
+    margin-bottom: 20px;
+    margin-left: 180px;
+  }
+  .send-button {
+    margin-left: 80%;
+    font-size: 2.8rem;
+  }
+
+  .arrow-icon {
+    top: -35%;
+    right: -10%;
+    width: 20%;
+  }
+
+  .arrow-text {
+    font-size: 1.2rem;
+    top: -48%;
+    right: -25%;
+  }
+
+  .terms-wrapper {
+    margin-top: 10px;
+    margin-left: 80%;
+    padding-left: 1%;
+  }
+
+  .terms-wrapper label {
+    font-size: 0.7rem;
   }
 
   .custom-container {
