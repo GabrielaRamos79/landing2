@@ -101,14 +101,18 @@
   src: url("./fonts/Inter/Inter_18pt-SemiBold.ttf") format("truetype");
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 .container {
-  display: flex;
-  flex-direction: column; /* Alinear los componentes verticalmente */
+  /* display: flex; */
+  /*flex-direction: column;  Alinear los componentes verticalmente */
   gap: 0px; /* Asegúrate de que no haya separación entre componentes */
+  width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+  max-width: 100%;
+  padding: 0 !important;
+  margin: 0 auto !important;
 }
