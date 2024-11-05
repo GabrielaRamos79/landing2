@@ -1,9 +1,11 @@
 .custom-container {
+  width: 100%;
   padding-left: 0px !important;
   padding-right: 0px !important;
   background-image: url("../../images/details/textura2.png");
 }
 .contact-form {
+  width: 100%;
   max-width: 800px;
   margin: -10%;
   font-family: "Inter_18pt-Regular", sans-serif;
@@ -15,7 +17,7 @@
   font-family: "Hurtmore", sans-serif;
   font-size: 4.5rem;
   margin-left: 15%;
-  margin-top: 24px;
+  /* margin-top: 24px; */
   margin-bottom: 30px;
   text-align: left;
   color: #161719;
@@ -770,20 +772,20 @@ input[type="checkbox"]:checked::before {
     text-align: center;
     padding: 0;
     letter-spacing: 1px;
-    margin-left: -28%;
+    margin-left: -50%;
     margin-top: 35px;
   }
 
   .arrow-icon {
     top: -25%;
-    right: -25%;
-    width: 60%;
+    right: 15%;
+    width: 40%;
   }
 
   .arrow-text {
     font-size: 1.2rem;
     top: -35%;
-    right: -53%;
+    right: -10%;
   }
 
   .send-terms {
@@ -807,7 +809,7 @@ input[type="checkbox"]:checked::before {
     flex: 2;
     width: 120%; /* Asegura que los términos se alineen con el botón */
     text-align: center;
-    margin-left: 105px;
+    margin-left: 70px;
   }
 
   .terms-wrapper label {

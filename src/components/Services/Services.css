@@ -1,6 +1,7 @@
 .services-section {
   background-color: #e9eaf0;
-  padding: 50px 0;
+  /* padding: 50px 0; */
+  width: 100%;
 }
 
 .container-services {
@@ -468,13 +469,61 @@ li {
   li {
     font-size: 1.2rem;
   }
+
+  .curvy-marca {
+    position: relative;
+    top: 0px;
+    height: 58px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .curvy-digital {
+    position: relative;
+    top: 0px;
+    height: 58px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .curvy-media {
+    position: relative;
+    top: 0px;
+    height: 58px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .curvy-branding {
+    position: relative;
+    top: -5px;
+    height: 58px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .curvy-web {
+    position: relative;
+    top: 0px;
+    height: 58px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .curvy-audiovisual {
+    position: relative;
+    top: 0px;
+    height: 58px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
   .cruzado {
     font-size: 8rem;
   }
   .telita {
     margin-left: 40px;
     margin-top: 12px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     font-size: 2.5rem; /* Reduce el tamaño del texto para pantallas pequeñas */
     text-align: left; /* Centra el texto */
   }

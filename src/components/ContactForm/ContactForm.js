@@ -46,7 +46,7 @@ function ContactForm() {
       );
   };
   return (
-    <div id="contactForm" className="container custom-container">
+    <div id="contactForm" className="custom-container">
       <h1 className="form-title"> VAMOS AL LÍO!</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">

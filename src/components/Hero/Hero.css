@@ -1,10 +1,12 @@
 .hero-component {
+  width: 100%;
   background-color: #e9eaf0;
   display: block;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .logo-text-container {
+  width: 100%;
   display: flex; /* Usamos flexbox solo en esta parte */
   justify-content: center; /* Alinea los elementos hacia la izquierda */
   align-items: flex-end; /* Alinea el logo y el texto en la parte inferior */
@@ -410,9 +412,10 @@
 
   .yeah-container {
     position: relative;
-    width: 100%; /* Ajusta el tamaño del contenedor */
+    width: 94%; /* Ajusta el tamaño del contenedor */
     height: 100%; /* Ajusta la altura del contenedor si es necesario */
     overflow: hidden; /* Oculta cualquier cosa que se salga del contenedor */
+    margin-left: 5%;
   }
 
   .yeah {
