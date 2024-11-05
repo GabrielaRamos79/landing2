@@ -46,14 +46,14 @@
 .quieres {
   font-family: "Inter_18-Bold", sans-serif;
   color: #e9eaf0;
-  font-size: 20px;
+  font-size: 30px;
 }
 .btn-yes {
   background-color: #c9ea50;
   font-family: "AghartiCondensed", sans-serif;
   color: #161719;
-  padding: 0px 30px;
-  font-size: 30px;
+  padding: 0px 40px;
+  font-size: 64px;
   font-weight: bold;
   text-decoration: none;
   border-radius: 0;

@@ -23,10 +23,10 @@
   display: flex;
   align-items: center;
   font-family: "Inter_18pt-Light", sans-serif; /* Asegúrate de que la fuente esté bien importada */
-  font-size: 4rem;
+  font-size: 87px;
   color: #161719;
   position: relative;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-left: -10px;
 }
 
@@ -38,18 +38,20 @@
 }
 
 .acento-img {
-  width: 60px;
-  height: auto;
+  width: 86.09px;
+  height: 110.16px;
   vertical-align: middle; /* Para alinear la imagen con el texto */
   position: relative;
-  left: 20px;
+  left: 30px;
+  top: -20px
 }
 
 .puente-img {
-  height: 100px;
+  width: 378.27;
+  height: 130.82px;
   margin-top: 10px; /* Ajusta según sea necesario */
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: 40px;
+  margin-top: 74px;
 }
 
 /* Media query para pantallas pequeñas como móviles (hasta 767px) */

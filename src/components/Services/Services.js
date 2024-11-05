@@ -6,7 +6,7 @@ import media from "../../images/curvy/media.svg";
 import branding from "../../images/curvy/brandingsmall.svg";
 import web from "../../images/curvy/web.svg";
 import audiovisual from "../../images/curvy/audiovisual.svg";
-import alotrolado from "../../images/curvy/alotrolado.svg";
+import alotrolado from "../../images/curvy/otrolado2.svg";
 import flechaizq from "../../images/details/flechaizq.png";
 
 function Services() {
