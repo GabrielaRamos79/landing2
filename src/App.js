@@ -14,7 +14,7 @@ import Services from "./components/Services/Services";
 
 function App() {
   return (
-      <div className="container">
+      <div className="full-width-container">
         <Header />
         <Hero />
         <Services />
