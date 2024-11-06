@@ -320,7 +320,7 @@ input[type="checkbox"]:checked::before {
   }
 
   .send-button {
-    font-size: 86px;
+    font-size: 80px;
     margin-left: 100%;
     margin-top: 5%;
     width: 350px;
@@ -345,9 +345,9 @@ input[type="checkbox"]:checked::before {
     flex: 1;
     flex-direction: row;
     justify-content:start;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-left: 180px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
   }
 
   .terms-wrapper {
