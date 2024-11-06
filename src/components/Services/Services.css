@@ -217,7 +217,7 @@ li {
 
   .curvy-digital {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 109px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -225,7 +225,7 @@ li {
 
   .curvy-media {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 93px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -245,7 +245,7 @@ li {
 
   .curvy-web {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 76.78px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -253,7 +253,7 @@ li {
 
   .curvy-audiovisual {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 80px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
