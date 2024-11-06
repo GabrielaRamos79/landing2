@@ -10,7 +10,7 @@
 /* Título grande */
 .big-title {
   font-family: "Agharti-LightCondensed", sans-serif;
-  font-size: 15rem; /* Tamaño grande para el título */
+  font-size: 306px; /* Tamaño grande para el título */
   text-align: left;
   margin-left: 5%;
   margin-bottom: 15%; /* Separación del contenido */
@@ -29,13 +29,13 @@
 
 /* Estilos para las dos columnas de contacto */
 .contact-left {
-  font-size: 2.2rem;
+  font-size: 53px;
   line-height: 1;
   text-align: left;
 }
 
 .contact-right {
-  font-size: 2.2rem;
+  font-size: 53px;
   line-height: 1;
   text-align: left;
   margin-left: 110px;

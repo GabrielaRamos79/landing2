@@ -19,11 +19,12 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   margin-top: 50px;
+  margin-left: 32px;
 }
 
 .project-card img {
-  width: 100%; /* Ocupa todo el espacio disponible dentro del card */
-  height: auto;
+  width: 510px; /* Ocupa todo el espacio disponible dentro del card */
+  height: 300px;
 }
 
 .project-card:hover {
@@ -36,22 +37,22 @@
 
 .project-info small {
   font-family: "Inter_18pt-Regular", sans-serif;
-  font-size: 0.9rem;
+  font-size: 20px;
   color: #161719;
 }
 
 .project-info h4 {
   font-family: "Inter_18pt-ExtraBold", sans-serif;
-  font-size: 1.3rem;
+  font-size: 30px;
   color: #161719;
   margin-top: 5px;
 }
 
 .section-title {
   font-family: "Inter_18pt-ExtraBold", sans-serif;
-  font-size: 2.5rem;
+  font-size: 63px;
   color: #161719;
-  margin-left: 5%;
+  margin-left: 115px;
   margin-bottom: 20px;
 }
 

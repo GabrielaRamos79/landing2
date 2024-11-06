@@ -55,12 +55,13 @@
   padding: 0px 40px;
   font-size: 64px;
   font-weight: bold;
+  text-align:center;
   text-decoration: none;
   border-radius: 0;
   border-color: #c9ea50;
-  width: auto;
-  height: auto;
-  align-items: center;
+  width: 162.12px;
+  height: 88.84px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1180px) {
