@@ -139,6 +139,37 @@
   color: #c9ea50;
 }
 
+@media (max-width: 1440px){
+  .container-project2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 30px; /* Espacio entre las tarjetas */
+    padding: 0 5%; /* Ajusta el margen a los lados */
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-family: "Inter_18pt-ExtraBold", sans-serif;
+    font-size: 63px;
+    color: #161719;
+    margin-left: 95px;
+    margin-bottom: 20px;
+  }
+
+  .project-card {
+    background-color: #e9eaf0;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-top: 50px;
+    margin-left: 32px;
+  }
+  
+  .project-card img {
+    width: 510px; /* Ocupa todo el espacio disponible dentro del card */
+    height: 250px;
+  }
+}
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
   .container-project2 {
