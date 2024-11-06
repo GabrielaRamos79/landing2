@@ -18,7 +18,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              INSTAGRAM
+              INSTAGRAM&nbsp;
             </a>
             <img
               src={circulo}
@@ -32,7 +32,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LINKEDIN
+              LINKEDIN&nbsp;
             </a>
             <img
               src={circulo}

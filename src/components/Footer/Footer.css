@@ -31,10 +31,10 @@
 
 .circle-effect-instagram {
   position: absolute;
-  top: -2%;
+  top: -1%;
   left: -1%;
-  width: 252px; /* Tamaño del círculo */
-  height: 62px;
+  width: 338px; /* Tamaño del círculo */
+  height: 82px;
   transform: none;
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0;
@@ -48,8 +48,8 @@
   position: absolute;
   top: -4%;
   left: 0%;
-  width: 196px; /* Tamaño del círculo */
-  height: 64px;
+  width: 260px; /* Tamaño del círculo */
+  height: 85px;
   transform: none;
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0;
@@ -61,10 +61,10 @@
 }
 .circle-effect-vimeo {
   position: absolute;
-  top: -4%;
+  top: 4%;
   left: -1%;
-  width: 142px; /* Tamaño del círculo */
-  height: 60px;
+  width: 187px; /* Tamaño del círculo */
+  height: 68px;
   transform: none;
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0;
@@ -86,10 +86,10 @@
   opacity: 0;
 }
 
-.link-container:hover .circle-effect-aviso {
+/* .link-container:hover .circle-effect-aviso {
   transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
   opacity: 2;
-}
+} */
 
 .circle-effect-privacidad {
   position: absolute;
@@ -102,10 +102,10 @@
   opacity: 0;
 }
 
-.link-container:hover .circle-effect-privacidad {
+/* .link-container:hover .circle-effect-privacidad {
   transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
   opacity: 2;
-}
+} */
 
 .circle-effect-cookie {
   position: absolute;
@@ -118,10 +118,10 @@
   opacity: 0;
 }
 
-.link-container:hover .circle-effect-cookie {
+/* .link-container:hover .circle-effect-cookie {
   transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
   opacity: 1;
-}
+} */
 
 @keyframes traceCircle {
   0% {
@@ -175,7 +175,7 @@
   display: flex;
   justify-content: left;
   gap: 30px;
-  font-size: 0.9rem;
+  font-size: 19px;
   margin-bottom: 30px;
   margin-left: 5%;
 }
