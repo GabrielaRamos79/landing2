@@ -209,48 +209,52 @@ li {
   }
   .curvy-marca {
     position: relative;
-    top: 8px;
-    height: 58px;
+    top: 0px;
+    height: 111px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
   .curvy-digital {
     position: relative;
-    top: 8px;
-    height: 58px;
+    top: 0px;
+    height: 109px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
   .curvy-media {
     position: relative;
-    top: 8px;
-    height: 58px;
+    top: 0px;
+    height: 93px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
   .curvy-branding {
     position: relative;
-    top: -2px;
-    height: 58px;
+    top: -35px;
+    height: 156px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
+  .ul-branding{
+    margin-top: -65px;
+  }
+
   .curvy-web {
     position: relative;
-    top: 8px;
-    height: 58px;
+    top: 0px;
+    height: 76.78px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
   .curvy-audiovisual {
     position: relative;
-    top: 8px;
-    height: 58px;
+    top: 0px;
+    height: 80px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }

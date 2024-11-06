@@ -73,7 +73,7 @@ function Services() {
                   alt="branding"
                 />
               </h3>
-              <ul>
+              <ul className='ul-branding'>
                 <li>Identidad corporativa</li>
                 <li>Identidad verbal</li>
                 <li>Identidad sensorial</li>
