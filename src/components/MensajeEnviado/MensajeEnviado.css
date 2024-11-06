@@ -138,6 +138,44 @@
     font-family: "Hurtmore", sans-serif;
     font-size: 3.2rem;
   }
+
+  @media (max-width: 1440px) {
+    .mensaje-enviado-container {
+      padding: 60px 20px; /* Ajustar el padding para pantallas más pequeñas */
+      max-width: 100%; /* Ocupa todo el ancho disponible */
+    }
+  
+    .mensaje-content {
+      flex-direction: column; /* Cambia la dirección a columna */
+      gap: 30px; /* Reduce el espacio entre el mensaje y el gif */
+      text-align: center;
+    }
+
+    .mensaje-titulo {
+        font-size: 8rem; /* Reduce el tamaño del título */
+        font-family: 'Hurtmore', sans-serif;
+        margin-left: 0; /* Centra el título */
+        transform: rotate(-20deg); /*Rotación opcional */ /* Opcional: elimina la rotación para pantallas pequeñas */
+      }
+      .mensaje-titulo::before {
+        content: "";
+        background-image: url("./trazado.png"); /* Imagen detrás del texto */
+        background-size: cover;
+        position: absolute;
+        top: -135px; /* Ajusta la posición según lo necesites */
+        left: -402px;
+        width: 450%;
+        height: 180%;
+        z-index: -1; /* Para que esté detrás del texto */
+        transform: rotate(20deg); /*Rotación opcional */
+      }
+      
+      .mensaje-gif {
+        width: 280px;
+        height: 250px;
+        margin-bottom: 50px;
+      }
+}
   
   @media (max-width: 1391px) {
       .mensaje-enviado-container {
