@@ -772,25 +772,26 @@ input[type="checkbox"]:checked::before {
   }
  
   .send-button {
-    font-size: 3.5rem; /* Ajusta el tamaño del texto del botón */
-    width: 50%; /* Ajusta el ancho del botón en pantallas pequeñas */
+    font-size: 62px; /* Ajusta el tamaño del texto del botón */
+    width: 70%; /* Ajusta el ancho del botón en pantallas pequeñas */
+    height: 90px;
     text-align: center;
-    padding: 0;
+    padding: 0 !important;
     letter-spacing: 1px;
-    margin-left: -50%;
+    margin-left: -175%;
     margin-top: 35px;
   }
 
   .arrow-icon {
-    top: -25%;
-    right: 15%;
+    top: -15%;
+    right: 60%;
     width: 40%;
   }
 
   .arrow-text {
-    font-size: 1.2rem;
-    top: -35%;
-    right: -10%;
+    font-size: 22px;
+    top: -30%;
+    right: 30%;
   }
 
   .send-terms {
@@ -814,7 +815,7 @@ input[type="checkbox"]:checked::before {
     flex: 2;
     width: 120%; /* Asegura que los términos se alineen con el botón */
     text-align: center;
-    margin-left: 70px;
+    margin-left: -220px;
   }
 
   .terms-wrapper label {

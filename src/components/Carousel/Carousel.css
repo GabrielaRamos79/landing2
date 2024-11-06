@@ -85,3 +85,22 @@
     width: 30px;
   }
 }
+
+@media (max-width: 430px) {
+  .carousel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 104px 0;
+    background-color: #061599;
+  }
+
+  .carousel-content span {
+    font-size: 2.5rem;
+  }
+
+  .icon-star, .icon-line {
+    width: 30px;
+  }
+}

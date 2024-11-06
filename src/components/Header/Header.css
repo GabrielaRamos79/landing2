@@ -89,9 +89,14 @@
     align-items: center;
   }
   .acento-somos {
-    font-size: 2.5rem;
+    font-size: 42px;
     text-align: left;
-    margin-left: -250px;
+    margin-left: -280px;
+    padding-left: 20px;
+  }
+
+  .acento-somos h1{
+    padding-left: 20px;
   }
 
   .logo {
@@ -101,12 +106,15 @@
 
   /* Mantén las imágenes y textos del mismo tamaño */
   .acento-img {
-    width: 45px; /* Mantiene el tamaño original de la imagen */
-    margin-bottom: -20px;
+    width: 42.13px; /* Mantiene el tamaño original de la imagen */
+    height: 53.91px;
+    margin-bottom: -70px;
+    margin-left: -10px;
   }
 
   .puente-img {
-    height: 80px; /* Mantiene el tamaño original de la imagen */
+    width: 245.62px;
+    height: 84.94px; /* Mantiene el tamaño original de la imagen */
     margin-left: -15px; /* Elimina el margen izquierdo en la vista de columna */
     margin-top: 10px; /* Añade un margen superior si es necesario */
   }

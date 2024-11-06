@@ -457,7 +457,7 @@ li {
     margin-bottom: -100px;
   }
   .services-section h3 {
-    font-size: 4.7rem; 
+    font-size: 100px; 
     margin-top: 5%;
     margin-left: 3%;
   }
@@ -474,7 +474,7 @@ li {
   .curvy-marca {
     position: relative;
     top: 0px;
-    height: 58px;
+    height: 80px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -482,7 +482,7 @@ li {
   .curvy-digital {
     position: relative;
     top: 0px;
-    height: 58px;
+    height: 80px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -490,7 +490,7 @@ li {
   .curvy-media {
     position: relative;
     top: 0px;
-    height: 58px;
+    height: 80px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -498,7 +498,7 @@ li {
   .curvy-branding {
     position: relative;
     top: -5px;
-    height: 58px;
+    height: 80px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -506,7 +506,7 @@ li {
   .curvy-web {
     position: relative;
     top: 0px;
-    height: 58px;
+    height: 80px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -514,12 +514,12 @@ li {
   .curvy-audiovisual {
     position: relative;
     top: 0px;
-    height: 58px;
+    height: 80px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   .cruzado {
-    font-size: 8rem;
+    font-size: 177px;
   }
   .telita {
     margin-left: 40px;
@@ -544,10 +544,10 @@ li {
     margin-left: 5px;
   }
   .services-section {
-    margin-bottom: -100px;
+    margin-bottom: -180px;
   }
   .services-section h3 {
-    font-size: 4.7rem; /* Ajusta el tamaño del h3 */
+    font-size: 100px; /* Ajusta el tamaño del h3 */
     margin-top: 5%;
     margin-left: 3%;
   }
@@ -558,31 +558,32 @@ li {
   }
 
   li {
-    font-size: 1.2rem;
+    font-size: 22px;
   }
   .cruzado {
-    font-size: 10rem;
+    font-size: 177px;
   }
 
   .otrolado {
-    max-width: 90%; 
-    margin-left: 20px;
+    width: 390px;
+    height: 151.84; 
+    margin-left: 260px;
     margin-bottom: 20px; 
   }
 
   .telita {
-    margin-left: 30px;
+    margin-left: 250px;
     margin-top: 12px;
     margin-bottom: 35px;
-    font-size: 2.5rem; /* Reduce el tamaño del texto para pantallas pequeñas */
+    font-size: 3rem; /* Reduce el tamaño del texto para pantallas pequeñas */
     text-align: left; /* Centra el texto */
   }
 
   .flecha {
     margin-left: 240px;
-    margin-top: -270px; /* Espacio adicional entre el texto y la flecha */
+    margin-top: -450px; /* Espacio adicional entre el texto y la flecha */
     transform: none; /* Mantiene la flecha sin rotación */
-    width: 120px;
+    width: 150px;
   }
 
   .al-otro-lado-section {

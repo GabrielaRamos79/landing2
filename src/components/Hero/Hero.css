@@ -361,18 +361,22 @@
   }
 
   .spin-logo {
-    margin-left: 25px;
+    margin-left: -740px;
+    width: 376px;
+    height: 257px;
   }
   .spin-logo img {
     margin-bottom: 15px; /* Reduce el espacio debajo del logo */
-    width: 500px;
+    width: 376px;
+    height: 257px;
   }
 
   .right-text-container {
-    margin-left: 30px;
+    margin-left: -765px;
+    margin-top: 50px;
   }
   .right-text {
-    font-size: 35px; /* Reduce un poco más el tamaño del texto */
+    font-size: 42px; /* Reduce un poco más el tamaño del texto */
     text-align: right;
   }
 
@@ -384,24 +388,27 @@
   .punch-text {
     max-width: 100%;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 50px;
   }
 
   .punch-text p {
     margin-bottom: 0px; /* Espaciado entre los párrafos */
-    margin-left: -15px;
+    margin-left: -105px;
     font-family: "Inter_18-Regular", sans-serif;
-    font-size: 1.58rem;
+    font-size: 30px;
     text-align: left;
     line-height: 30px;
   }
   .boton-escribe {
-    font-size: 65px; /* Reduce el tamaño del botón */
+    font-size: 86px; /* Reduce el tamaño del botón */
+    margin-left: -200px;
   }
 
   .header-grid {
     grid-template-columns: 1fr; /* Mantén una sola columna */
     margin-top: 15px;
+    padding-top: 0px;
   }
 
   .left-column {
@@ -418,26 +425,30 @@
 
   .yeah-container {
     position: relative;
-    width: 94%; /* Ajusta el tamaño del contenedor */
+    width: 501px; /* Ajusta el tamaño del contenedor */
     height: 100%; /* Ajusta la altura del contenedor si es necesario */
     overflow: hidden; /* Oculta cualquier cosa que se salga del contenedor */
-    margin-left: 5%;
+    margin-left: -15%;
+    padding-top: -20px;
   }
 
   .yeah {
     position: relative;
-    width: 145%;
+    width: 561px;
+    height: 500px;
     max-width: 150%;
-    margin-top: -40px;
-    margin-left: -158px;
+    margin-top: -60px;
+    margin-left: -58px;
     overflow: hidden;
   }
 
   .hacemos {
-    width: 350px;
+    width: 376px;
+    height: 174.62px;
     max-width: 250%;
     margin-top: -45px;
     margin-bottom: 0;
+    margin-left: -70px;
   }
 }
 

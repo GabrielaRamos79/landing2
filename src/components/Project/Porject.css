@@ -152,9 +152,24 @@
     grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     gap: 15px;
   }
+
+  .project-card {
+    background-color: #e9eaf0;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-top: 50px;
+    margin-left: 32px;
+  }
+  
+  .project-card img {
+    width: 363px; /* Ocupa todo el espacio disponible dentro del card */
+    height: 300px;
+  }
+
   .section-title {
     font-family: "Inter_18pt-ExtraBold", sans-serif;
-    font-size: 2rem;
+    font-size: 35px;
     color: #161719;
     margin-left: 5%;
     margin-top: 20px;
@@ -166,8 +181,14 @@
     margin-top: 20px;
   }
   .project-info small {
-    font-family: "Inter_18pt-Regular", sans-serif;
-    font-size: 0.9rem;
+    font-family: "Inter_18pt-semibold", sans-serif;
+    font-size: 22px;
+    color: #161719;
+    font-weight: bold;
+  }
+  .project-info h4 {
+    font-family: "Inter_18pt-Bold", sans-serif;
+    font-size: 22px;
     color: #161719;
     font-weight: bold;
   }

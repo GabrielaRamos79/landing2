@@ -91,6 +91,26 @@
         gap: 55px;
         margin-left: 35px;
     }
+    .quieres {
+      font-family: "Inter_18-Bold", sans-serif;
+      color: #e9eaf0;
+      font-size: 20px;
+    }
+    .btn-yes {
+      background-color: #c9ea50;
+      font-family: "AghartiCondensed", sans-serif;
+      color: #161719;
+      padding: 0px 20px;
+      font-size: 54px;
+      font-weight: bold;
+      text-align:center;
+      text-decoration: none;
+      border-radius: 0;
+      border-color: #c9ea50;
+      width: 152.12px;
+      height: 78.84px;
+      margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 425px) {
