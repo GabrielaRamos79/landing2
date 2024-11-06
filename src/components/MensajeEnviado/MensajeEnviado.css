@@ -63,16 +63,17 @@
       src: url("./fonts/Inter_18pt-Regular.ttf") format("truetype");
     }
   
-  body {
+  /* body {
     font-family: "Inter", sans-serif;
     background-size: cover;
     text-align: center;
     padding: 50px;
-  }
+  } */
   
   .mensaje-enviado-container {
     background-image: url("./textura2.png"); /* Fondo con textura */
-    padding:100px 240px 60px 440px;
+    background-size: cover;
+    /* padding:100px 240px 60px 440px; */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 764px;
