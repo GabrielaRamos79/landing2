@@ -209,7 +209,7 @@ li {
   }
   .curvy-marca {
     position: relative;
-    top: 0px;
+    top: 8px;
     height: 111px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -233,7 +233,7 @@ li {
 
   .curvy-branding {
     position: relative;
-    top: -35px;
+    top: -30px;
     height: 156px;
     -webkit-transform: translateY(0);
     transform: translateY(0);
