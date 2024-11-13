@@ -97,6 +97,244 @@ body {
   font-size: 3.2rem;
 }
 
+.contact-section {
+  width: 100%;
+  background-color: #161719; /* Fondo oscuro */
+  color: white;
+  padding: 20px 0; /* Espaciado */
+  text-align: center;
+  font-family: "Agharti-LightCondensed", sans-serif;
+}
+
+/* Título grande */
+.big-title {
+  font-family: "Agharti-LightCondensed", sans-serif;
+  font-size: 306px; /* Tamaño grande para el título */
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 15%; /* Separación del contenido */
+  color: white;
+}
+
+/* Estilos para los datos de contacto */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px; /* Ancho máximo para centrar el contenido */
+  margin-left: 5%;
+  font-family: "Inter_18pt-SemiBold", sans-serif;
+}
+
+/* Estilos para las dos columnas de contacto */
+.contact-left {
+  font-size: 53px;
+  line-height: 1;
+  text-align: left;
+}
+
+.contact-right {
+  font-size: 53px;
+  line-height: 1;
+  text-align: left;
+  margin-left: 110px;
+  white-space: nowrap;
+}
+.footer-section {
+  width: 100%;
+  background-color: #e9eaf0;
+ 
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Social links styling */
+.social-links {
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+  font-family: "Inter_18pt-Bold";
+  font-size: 53px;
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  position: relative;
+}
+
+.link-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+
+.circle-effect-instagram {
+  position: absolute;
+  top: -1%;
+  left: -1%;
+  width: 338px; /* Tamaño del círculo */
+  height: 82px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.link-container:hover .circle-effect-instagram {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 1;
+}
+.circle-effect-linkedin {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  width: 260px; /* Tamaño del círculo */
+  height: 85px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.link-container:hover .circle-effect-linkedin {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 1;
+}
+.circle-effect-vimeo {
+  position: absolute;
+  top: 4%;
+  left: -1%;
+  width: 187px; /* Tamaño del círculo */
+  height: 68px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.link-container:hover .circle-effect-vimeo {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 1;
+}
+
+.circle-effect-aviso {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 82px; /* Tamaño del círculo */
+  height: 20px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+/* .link-container:hover .circle-effect-aviso {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 2;
+} */
+
+.circle-effect-privacidad {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  width: 155px; /* Tamaño del círculo */
+  height: 22px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+/* .link-container:hover .circle-effect-privacidad {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 2;
+} */
+
+.circle-effect-cookie {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  width: 135px; /* Tamaño del círculo */
+  height: 22px;
+  transform: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+/* .link-container:hover .circle-effect-cookie {
+  transform: translate(calc(-30% + 430px), calc(-50% + 523px), 0px) scale(1);
+  opacity: 1;
+} */
+
+@keyframes traceCircle {
+  0% {
+    transform: translate(calc(-50% + 430px), calc(-50% + 523px), 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(calc(-50% + 0px), calc(-50% + 0px), 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(-50% + 0px), calc(-50% + 0px), 0);
+    opacity: 1;
+  }
+}
+
+.social-links a,
+.legal-links a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 5px;
+  z-index: 1;
+}
+
+
+.vimeo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.vimeo-wrapper a {
+  position: relative;
+  z-index: 1;
+}
+
+.splatter-image {
+  position: absolute;
+  top: -220px;
+  right: 446px;
+  z-index: 0;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+  overflow: hidden;
+}
+
+/* Legal links styling */
+.legal-links {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  font-size: 19px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+
+.legal-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Footer logo */
+.footer-logo img {
+  width: 130px;
+  margin-top: -98px;
+  margin-left: 80%;
+}
+
 @media (max-width: 1391px) {
     .mensaje-enviado-container {
       padding: 60px 20px; /* Ajustar el padding para pantallas más pequeñas */
@@ -199,6 +437,7 @@ body {
       width: 220px; /* Ajusta el tamaño del gif */
       height: 200px;
     }
+    
   
     .mensaje-descripcion {
         font-size: 1.5rem; /* Ajustar el tamaño del texto */
@@ -232,4 +471,139 @@ body {
         transform: rotate(20deg); /*Rotación opcional */
       }
   }
+  @media (max-width: 430px) {
+    .big-title {
+      font-size: 7rem; /* Ajuste aún más pequeño del título */
+      margin-bottom: 5%;
+      text-align: left;
+    }
+  
+    .contact-info {
+      padding: 0 5%; /* Reducir el padding para pantallas muy pequeñas */
+    }
+  
+    .contact-left,
+    .contact-right {
+      font-size: 1.5rem; /* Ajuste más pequeño del texto */
+      margin-bottom: 15px;
+      text-align: left; /* Seguir centrando el texto */
+    }
+  
+    .contact-left {
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
+    .contact-right {
+      margin-left: 0;
+    }
+  }
 
+  @media (max-width: 430px) {
+    .footer-section {
+      padding: 40px 0;
+    }
+  
+    /* Logo arriba a la derecha */
+    .footer-logo img {
+      position:absolute;
+      width: 100px; /* Tamaño más pequeño del logo */
+      margin-top:-135px;
+      /* margin-bottom: -20px; */
+      margin-left: 280px;
+      margin-right: 0%; /* Alineado al lado derecho */
+      display: block;
+    }
+  
+    .footer-logo{
+      margin-top: -50px;
+    }
+  
+    /* Social links en columna */
+    .social-links {
+      flex-direction: column; /* Cambia la dirección a columna */
+      align-items: left; /* Centra el contenido */
+      gap: 10px; /* Reduce el espacio entre los links */
+      font-size: 2rem; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+      margin-left: -30px;
+      justify-content: center;
+      margin-top: -15px;
+    }
+  
+    /* Legal links en fila, centrados */
+    .legal-links {
+      position: absolute; /* Hace que los links estén fuera del flujo normal */
+      bottom: -28px; /* Los posiciona cerca del fondo del contenedor */
+      left: 0%; /* Alinea a la izquierda */
+      display: flex;
+      flex-direction: row; /* Los mantiene en fila */
+      gap: 0px; /* Espacio entre los links */
+      font-size: 0.8rem; /* Tamaño del texto */
+      z-index: 1; /* Asegura que los links estén por encima de otros elementos */
+      margin-left: -20px;
+    }
+  
+    .legal-links a {
+      margin-left: 5px; /* Ajusta este valor para controlar el espacio entre enlaces */
+      text-decoration: none; /* Asegura que no haya subrayado */
+      color: black; /* Color del texto */
+    }
+    
+    /* Elimina el margen izquierdo del primer enlace si es necesario */
+    .legal-links a:first-child {
+      margin-left: -5px;
+    }
+  
+    /* Ajustes para las animaciones de los efectos circulares */
+    .circle-effect-instagram {
+      width: 200px; /* Tamaño más pequeño de los círculos */
+      height: 45px; /* Tamaño más pequeño de la altura */
+      top: -4%; /* Ajusta la posición */
+      left: 0%; /* Ajusta la posición */
+    }
+     .circle-effect-linkedin 
+     {
+      width: 170px; /* Tamaño más pequeño de los círculos */
+      height: 45px; /* Tamaño más pequeño de la altura */
+      top: 5%; /* Ajusta la posición */
+      left: -1%; /* Ajusta la posición */
+    }
+      
+    .circle-effect-vimeo {
+      width: 120px; /* Tamaño más pequeño de los círculos */
+      height: 50px; /* Tamaño más pequeño de la altura */
+      top: -5%; /* Ajusta la posición */
+      left: -1%; /* Ajusta la posición */
+    }
+     .circle-effect-aviso
+     {
+      width: 48px; /* Tamaño más pequeño de los círculos */
+      height: 50px; /* Tamaño más pequeño de la altura */
+      top: -5%; /* Ajusta la posición */
+      left: -5%; /* Ajusta la posición */
+    }
+      
+    .circle-effect-privacidad {
+      width: 80px; /* Tamaño más pequeño de los círculos */
+      height: 50px; /* Tamaño más pequeño de la altura */
+      top: -5%; /* Ajusta la posición */
+      left: -5%; /* Ajusta la posición */
+    }
+      .circle-effect-cookie {
+      width: 80px; /* Tamaño más pequeño de los círculos */
+      height: 50px; /* Tamaño más pequeño de la altura */
+      top: -5%; /* Ajusta la posición */
+      left: -5%; /* Ajusta la posición */
+    }
+    .splatter-image {
+      position: absolute;
+      top: -118px;
+      right: 150px;
+      z-index: 0;
+      width: 130%;
+      max-width: 250%;
+      height: auto;
+      opacity: 0.7;
+      overflow: hidden;
+      transform: rotate(270deg);
+    }
+  }

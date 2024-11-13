@@ -77,7 +77,7 @@ function ContactForm() {
         <div className="form-group">
           <label htmlFor="phone">Teléfono</label>
           <div className="input-wrapper">
-            <input type="tel" id="phone" className="form-input" required />
+            <input type="tel" id="phone" name="user_phone" className="form-input" required />
           </div>
         </div>
 
@@ -104,7 +104,7 @@ function ContactForm() {
                 {/* </a> */}
               </button>
               <div className="terms-wrapper">
-                <input type="checkbox" id="terms" />
+                <input type="checkbox" id="terms" required />
                 <label htmlFor="terms">
                   He leído y acepto la{" "}
                   <a href="https://www.elpuentepublicidad.com/politica-de-privacidad">
