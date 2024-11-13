@@ -17,6 +17,11 @@
 }
 
 @font-face {
+  font-family: "Inter_18pt-Bold";
+  src: url("./fonts/Inter_18pt-Bold.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Inter_18pt-Regular";
     src: url("./fonts/Inter_18pt-Regular.ttf") format("truetype");
   }
