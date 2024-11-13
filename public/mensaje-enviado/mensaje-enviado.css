@@ -5,6 +5,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "AghartiCondensedLight";
+  src: local("AghartiCondensedLight"),
+    url("./fonts/AghartiCondensedLight.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AghartiVF";
+  src: local("AghartiVF"),
+    url("./fonts/AghartiVF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Hurtmore";
@@ -27,19 +41,21 @@
   }
 
 body {
+  width: 100%;
   font-family: "Inter", sans-serif;
   background-size: cover;
   text-align: center;
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .mensaje-enviado-container {
   background-image: url("./textura2.png"); /* Fondo con textura */
-  padding:100px 240px 60px 440px;
+  /* padding:100px 240px 60px 440px; */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 764px;
-  margin: 0 auto;
+  /* max-width: 764px; */
+  width: 100%;
+  /* margin: 0 auto; */
   overflow: hidden;
 }
 
@@ -52,54 +68,63 @@ body {
 
 .mensaje-titulo {
   font-family: "Hurtmore", sans-serif;
-  font-size: 15rem;
+  font-size: 366px;
   color: #161719;
   transform: rotate(-20deg); /*Rotación opcional */
 }
 
 .mensaje-titulo span {
-  display: block; /* Para que el texto se divida en dos líneas */
-  margin-left: -300px;
-  margin-top: -100px;
+  display: block; /* Divide el texto en líneas separadas */
+  margin-left: 150px;
+  line-height: 0.9; /* Ajusta el espaciado entre las líneas (reduce la altura) */
+}
+
+/* Aplica un margen superior solo al primer span */
+.mensaje-titulo span:first-child {
+  margin-top: 180px;
 }
 /* Estilos para el gif */
 .mensaje-gif {
-  width: 280px;
-  height: 250px;
-  margin-bottom: 50px;
+  width: 346px;
+  height: 346px;
+  margin-top: 50px;
+  margin-right: 150px;
 }
 .mensaje-titulo::before {
   content: "";
   background-image: url("./trazado.png"); /* Imagen detrás del texto */
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  top: -135px; /* Ajusta la posición según lo necesites */
-  left: -602px;
-  width: 251%;
-  height: 130%;
+  top: 72px; /* Ajusta la posición según lo necesites */
+  left: -362px;
+  width: 130%;
+  height: 100%;
   z-index: -1; /* Para que esté detrás del texto */
   transform: rotate(20deg); /*Rotación opcional */
 }
 
 .mensaje-descripcion {
   font-family: "Inter_18pt-Regular", sans-serif;
-  font-size: 3rem;
+  font-size: 60px;
   color: #333;
   margin-top: 20px;
-  text-align: left;
+  margin-bottom: 100px;
+  text-align: right;
 }
 
 .mensaje-descripcion span {
     display: block; /* Asegura que cada línea esté en una nueva fila */
-    margin-left: 260px;
-    margin-right: 0;
+    margin-right: 160px;
+    
+    /* margin-right: 0; */
    
    
   }
 
 .mensaje-descripcion strong {
   font-family: "Hurtmore", sans-serif;
-  font-size: 3.2rem;
+  font-size: 71px;
 }
 
 .contact-section {
@@ -181,7 +206,7 @@ body {
   top: -1%;
   left: -1%;
   width: 338px; /* Tamaño del círculo */
-  height: 82px;
+  height: 64px;
   transform: none;
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0;
@@ -193,10 +218,10 @@ body {
 }
 .circle-effect-linkedin {
   position: absolute;
-  top: -4%;
+  top: -2%;
   left: 0%;
-  width: 260px; /* Tamaño del círculo */
-  height: 85px;
+  width: 255px; /* Tamaño del círculo */
+  height: 68px;
   transform: none;
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0;
@@ -208,10 +233,10 @@ body {
 }
 .circle-effect-vimeo {
   position: absolute;
-  top: 4%;
+  top: -5%;
   left: -1%;
-  width: 187px; /* Tamaño del círculo */
-  height: 68px;
+  width: 190px; /* Tamaño del círculo */
+  height: 70px;
   transform: none;
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0;
@@ -337,7 +362,7 @@ body {
 .footer-logo img {
   width: 130px;
   margin-top: -98px;
-  margin-left: 80%;
+  margin-left: 596%;
 }
 
 @media (max-width: 1391px) {
