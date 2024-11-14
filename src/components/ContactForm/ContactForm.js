@@ -77,7 +77,8 @@ function ContactForm() {
         <div className="form-group">
           <label htmlFor="phone">Teléfono</label>
           <div className="input-wrapper">
-            <input type="tel" id="phone" name="user_phone" className="form-input" required />
+            <input type="tel" id="phone" name="user_phone" className="form-input" required pattern="[0-9]{9,15}"
+  title="Introduce un número de teléfono válido" />
           </div>
         </div>
 
