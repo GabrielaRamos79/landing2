@@ -150,3 +150,33 @@
   }
 }
 
+@media (max-width: 279px) {
+  .header-navbar {
+    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    align-items: center;
+  }
+  .acento-somos {
+    font-size: 2.8rem;
+    text-align: left;
+    margin-left: -140px;
+  }
+
+  .logo {
+    flex-direction: column; /* Coloca los elementos en columna */
+    text-align: center; /* Centra el texto y las imágenes */
+  }
+
+  /* Mantén las imágenes y textos del mismo tamaño */
+  .acento-img {
+    width: 50px; /* Mantiene el tamaño original de la imagen */
+    margin-bottom: -65px;
+    margin-left: 10px;
+  }
+
+  .puente-img {
+    height: 60px; /* Mantiene el tamaño original de la imagen */
+    width: 180px;
+    margin-left: -15px; /* Elimina el margen izquierdo en la vista de columna */
+    margin-top: 10px; /* Añade un margen superior si es necesario */
+  }
+}
