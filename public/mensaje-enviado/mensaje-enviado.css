@@ -441,42 +441,46 @@ body {
       }
   }
   
-  /* Media Query para pantallas de hasta 430px */
+  
   @media (max-width: 430px) {
     .mensaje-enviado-container {
-      padding: 20px 15px; /* Ajustar el padding para pantallas más pequeñas */
+      padding: 20px 0px; 
     }
   
     .mensaje-content {
       flex-direction: column;
-      gap: 50px; /* Reduce aún más el espacio entre los elementos */
+      gap: 50px; 
+      margin-left: -50px;
     }
   
     .mensaje-titulo {
-      font-size: 6rem; /* Reduce el tamaño del título */
-      transform: rotate(-20deg); /*Rotación opcional */
+      margin-top: -120px;
+      transform: rotate(-20deg);
     }
   
     .mensaje-titulo span {
-      margin-left: 0;
+      margin-left: -107px;
       margin-top: 0;
+      font-size: 7rem; 
     }
   
     .mensaje-gif {
-      width: 220px; /* Ajusta el tamaño del gif */
+      width: 220px; 
       height: 200px;
+      margin-left: 100px;
+      margin-top: 90px;
     }
     
   
     .mensaje-descripcion {
-        font-size: 1.5rem; /* Ajustar el tamaño del texto */
-        text-align: center; /* Centrar el texto en pantallas pequeñas */
+        font-size: 1.8rem; 
+        text-align: center; 
         color: #161719;
-        margin-top: 10px;
+        margin-top: 30px;
       }
   
     .mensaje-descripcion span {
-      font-size: 1.5rem; /* Ajusta el tamaño del texto */
+      font-size: 2rem; 
       text-align: left;
       margin-right: 0;
       margin-left: 2px;
@@ -485,37 +489,42 @@ body {
     }
     .mensaje-descripcion strong {
         font-family: "Hurtmore", sans-serif;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
       }
       .mensaje-titulo::before {
         content: "";
-        background-image: url("./trazado.png"); /* Imagen detrás del texto */
+        background-image: url("./trazado.png"); 
         background-size: cover;
         position: absolute;
-        top: -10px; /* Ajusta la posición según lo necesites */
-        left: -154px;
-        width: 170%;
-        height: 100%;
-        z-index: -1; /* Para que esté detrás del texto */
-        transform: rotate(20deg); /*Rotación opcional */
+        top: 80px;
+        left: -484px;
+        width: 320%;
+        height: 90%;
+        z-index: -1;
+        transform: rotate(20deg);
       }
   }
   @media (max-width: 430px) {
     .big-title {
-      font-size: 7rem; /* Ajuste aún más pequeño del título */
+      font-size: 8rem; 
+      margin-top: 5px;
       margin-bottom: 5%;
       text-align: left;
+      letter-spacing: 4px;
     }
   
     .contact-info {
-      padding: 0 5%; /* Reducir el padding para pantallas muy pequeñas */
+      /* padding: 0 5%; */
+      display: flex;
+      flex-direction: column;
+      margin-left: -50px;
     }
   
     .contact-left,
     .contact-right {
-      font-size: 1.5rem; /* Ajuste más pequeño del texto */
+      font-size: 1.6rem; 
       margin-bottom: 15px;
-      text-align: left; /* Seguir centrando el texto */
+      text-align: left;
     }
   
     .contact-left {
@@ -527,19 +536,16 @@ body {
     }
   }
 
-  @media (max-width: 430px) {
+   @media (max-width: 430px) {
     .footer-section {
       padding: 40px 0;
     }
-  
-    /* Logo arriba a la derecha */
     .footer-logo img {
       position:absolute;
-      width: 100px; /* Tamaño más pequeño del logo */
+      width: 100px; 
       margin-top:-135px;
-      /* margin-bottom: -20px; */
       margin-left: 280px;
-      margin-right: 0%; /* Alineado al lado derecho */
+      margin-right: 0%; 
       display: block;
     }
   
@@ -547,92 +553,70 @@ body {
       margin-top: -50px;
     }
   
-    /* Social links en columna */
     .social-links {
-      flex-direction: column; /* Cambia la dirección a columna */
-      align-items: left; /* Centra el contenido */
-      gap: 10px; /* Reduce el espacio entre los links */
-      font-size: 2rem; /* Ajuste de tamaño de fuente para pantallas pequeñas */
-      margin-left: -30px;
-      justify-content: center;
+      flex-direction: column; 
+      align-items: left; 
+      gap: 10px; 
+      font-size: 2rem;
+      margin-left: 10px;
+      justify-content: left;
       margin-top: -15px;
+      text-align: left;
     }
   
-    /* Legal links en fila, centrados */
     .legal-links {
-      position: absolute; /* Hace que los links estén fuera del flujo normal */
-      bottom: -28px; /* Los posiciona cerca del fondo del contenedor */
-      left: 0%; /* Alinea a la izquierda */
+      position: absolute; 
+      bottom: -28px; 
+      left: 0px; 
       display: flex;
-      flex-direction: row; /* Los mantiene en fila */
-      gap: 0px; /* Espacio entre los links */
-      font-size: 0.8rem; /* Tamaño del texto */
-      z-index: 1; /* Asegura que los links estén por encima de otros elementos */
-      margin-left: -20px;
+      flex-direction: row;
+      gap: 50px; 
+      font-size: 1rem;
+      z-index: 1; 
+      margin-left: 7px;
     }
   
     .legal-links a {
-      margin-left: 5px; /* Ajusta este valor para controlar el espacio entre enlaces */
-      text-decoration: none; /* Asegura que no haya subrayado */
-      color: black; /* Color del texto */
+      margin-left: -5px; 
+      text-decoration: none; 
+      color: black; 
     }
     
-    /* Elimina el margen izquierdo del primer enlace si es necesario */
     .legal-links a:first-child {
-      margin-left: -5px;
+      margin-left: 4px;
     }
   
-    /* Ajustes para las animaciones de los efectos circulares */
     .circle-effect-instagram {
-      width: 200px; /* Tamaño más pequeño de los círculos */
-      height: 45px; /* Tamaño más pequeño de la altura */
-      top: -4%; /* Ajusta la posición */
-      left: 0%; /* Ajusta la posición */
+      width: 200px; 
+      height: 45px; 
+      top: -4%; 
+      left: 0%; 
     }
      .circle-effect-linkedin 
      {
-      width: 170px; /* Tamaño más pequeño de los círculos */
-      height: 45px; /* Tamaño más pequeño de la altura */
-      top: 5%; /* Ajusta la posición */
-      left: -1%; /* Ajusta la posición */
+      width: 170px; 
+      height: 45px; 
+      top: 5%; 
+      left: -1%; 
     }
       
     .circle-effect-vimeo {
-      width: 120px; /* Tamaño más pequeño de los círculos */
-      height: 50px; /* Tamaño más pequeño de la altura */
-      top: -5%; /* Ajusta la posición */
-      left: -1%; /* Ajusta la posición */
+      width: 120px; 
+      height: 50px; 
+      top: -5%; 
+      left: -1%; 
     }
-     .circle-effect-aviso
-     {
-      width: 48px; /* Tamaño más pequeño de los círculos */
-      height: 50px; /* Tamaño más pequeño de la altura */
-      top: -5%; /* Ajusta la posición */
-      left: -5%; /* Ajusta la posición */
-    }
-      
-    .circle-effect-privacidad {
-      width: 80px; /* Tamaño más pequeño de los círculos */
-      height: 50px; /* Tamaño más pequeño de la altura */
-      top: -5%; /* Ajusta la posición */
-      left: -5%; /* Ajusta la posición */
-    }
-      .circle-effect-cookie {
-      width: 80px; /* Tamaño más pequeño de los círculos */
-      height: 50px; /* Tamaño más pequeño de la altura */
-      top: -5%; /* Ajusta la posición */
-      left: -5%; /* Ajusta la posición */
-    }
+
     .splatter-image {
       position: absolute;
       top: -118px;
-      right: 150px;
+      right: 50px;
       z-index: 0;
       width: 130%;
       max-width: 250%;
       height: auto;
       opacity: 0.7;
       overflow: hidden;
-      transform: rotate(270deg);
+      transform: rotate(180deg);
     }
-  }
+  } 
