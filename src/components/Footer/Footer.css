@@ -612,3 +612,115 @@
     transform: rotate(180deg);
   }
 }
+
+@media (max-width: 279px) {
+  .footer-section {
+    padding: 60px 0;
+    margin-left: 0px;
+  }
+  /* Logo arriba a la derecha */
+  .footer-logo img {
+    position:absolute;
+    width: 100px; /* Tamaño más pequeño del logo */
+    margin-top:-135px;
+    /* margin-bottom: -20px; */
+    margin-left: 160px;
+    margin-right: 0%; /* Alineado al lado derecho */
+    display: block;
+  }
+
+  .footer-logo{
+    margin-top: 0px;
+  }
+
+  /* Social links en columna */
+  .social-links {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: left; /* Centra el contenido */
+    gap: 10px; /* Reduce el espacio entre los links */
+    font-size: 1rem; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+    font-weight: bold;
+    margin-left: -32px;
+    justify-content: center;
+    margin-top: -35px;
+    margin-bottom: 40px;
+  }
+
+  /* Legal links en fila, centrados */
+  .legal-links {
+    position: absolute; /* Hace que los links estén fuera del flujo normal */
+    bottom: 0px; /* Los posiciona cerca del fondo del contenedor */
+    margin-bottom:40px;
+    padding-left: 0px;
+    left: -2%; /* Alinea a la izquierda */
+    display: flex;
+    flex-direction: row; /* Los mantiene en fila */
+    gap: 5px; /* Espacio entre los links */
+    font-size: 0.6rem; /* Tamaño del texto */
+    z-index: 1; /* Asegura que los links estén por encima de otros elementos */
+  }
+  .legal-links a {
+    margin-left: 5px; /* Ajusta este valor para controlar el espacio entre enlaces */
+    text-decoration: none; /* Asegura que no haya subrayado */
+    color: black; /* Color del texto */
+  }
+  
+  /* Elimina el margen izquierdo del primer enlace si es necesario */
+  .legal-links a:first-child {
+    margin-left: -5px;
+  }
+
+  /* Ajustes para las animaciones de los efectos circulares */
+  .circle-effect-instagram {
+    width: 110px; /* Tamaño más pequeño de los círculos */
+    height: 25px; /* Tamaño más pequeño de la altura */
+    top: -4%; /* Ajusta la posición */
+    left: -1%; /* Ajusta la posición */
+  }
+   .circle-effect-linkedin 
+   {
+    width: 90px; /* Tamaño más pequeño de los círculos */
+    height: 25px; /* Tamaño más pequeño de la altura */
+    top: -1%; /* Ajusta la posición */
+    left: -1%; /* Ajusta la posición */
+  }
+    
+  .circle-effect-vimeo {
+    width: 65px; /* Tamaño más pequeño de los círculos */
+    height: 25px; /* Tamaño más pequeño de la altura */
+    top: -5%; /* Ajusta la posición */
+    left: -1%; /* Ajusta la posición */
+  }
+   .circle-effect-aviso
+   {
+    width: 40px; /* Tamaño más pequeño de los círculos */
+    height: 45px; /* Tamaño más pequeño de la altura */
+    top: -10%; /* Ajusta la posición */
+    left: -10%; /* Ajusta la posición */
+  }
+    
+  .circle-effect-privacidad {
+    width: 75px; /* Tamaño más pequeño de los círculos */
+    height: 45px; /* Tamaño más pequeño de la altura */
+    top: -9%; /* Ajusta la posición */
+    left: -8%; /* Ajusta la posición */
+  }
+    .circle-effect-cookie {
+    width: 75px; /* Tamaño más pequeño de los círculos */
+    height: 42px; /* Tamaño más pequeño de la altura */
+    top: -5%; /* Ajusta la posición */
+    left: -10%; /* Ajusta la posición */
+  }
+  .splatter-image {
+    position: absolute;
+    top: -236px;
+    right: 0px;
+    z-index: 0;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    opacity: 0.7;
+    overflow: hidden;
+    transform: rotate(180deg);
+  }
+}

@@ -321,3 +321,39 @@
     overflow: hidden;
   }
 }
+
+@media (max-width: 279px) {
+  .section-title {
+    font-family: "Inter_18pt-ExtraBold", sans-serif;
+    font-size: 1.5rem;
+    color: #161719;
+    margin-left: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 15px;
+  }
+  .popup-content {
+    position: relative;
+    padding: 20px;
+    width: 120%; /* Ajusta este porcentaje según el tamaño total de las 6 imágenes */
+    height: 100%; /* Ajusta este porcentaje según la altura total de las 6 imágenes */
+    max-width: 250%;
+    max-height: 800px;
+    overflow: hidden;
+  }
+
+  .project-card{
+    margin-left: -2px;
+  }
+  .project-card img {
+    width: auto; /* Ocupa todo el espacio disponible dentro del card */
+    height: auto;
+  }
+
+  .project-info small{
+    font-size: 18px;
+  }
+  .project-info h4{
+    font-size: 20px;
+  }
+}
