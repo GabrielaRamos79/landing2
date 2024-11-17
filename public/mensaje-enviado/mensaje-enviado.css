@@ -22,7 +22,12 @@
 
 @font-face {
   font-family: "Hurtmore";
-  src: local("Hurtmore") url("./fonts/Hurtmore.ttf") format("truetype");
+  src: local("Hurtmore"), url("./fonts/Hurtmore.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Hurtmore-Regular";
+  src: local("Hurtmore-Regular"), url("./fonts/Hurtmore-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -67,7 +72,7 @@ body {
 }
 
 .mensaje-titulo {
-  font-family: "Hurtmore", sans-serif;
+  font-family: "Hurtmore-Regular", sans-serif;
   font-size: 366px;
   color: #161719;
   transform: rotate(-20deg); /*Rotación opcional */
