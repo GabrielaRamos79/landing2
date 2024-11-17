@@ -215,7 +215,7 @@
     font-family: "Inter_18pt-semibold", sans-serif;
     font-size: 22px;
     color: #161719;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   .project-info h4 {
     font-family: "Inter_18pt-Bold", sans-serif;
