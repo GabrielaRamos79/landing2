@@ -824,13 +824,13 @@ li {
   }
 
   .otrolado {
-    max-width:50%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
-    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
-    margin-left: 275px;
+    max-width:80%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    margin-bottom: 33px; /* Espacio entre la imagen y el texto */
+    margin-left: 57px;
   }
 
   .telita {
-    margin-left: 300px;
+    margin-left: 56px;
     margin-top: 12px;
     margin-bottom: 35px;
     font-size: 2rem; /* Reduce el tamaño del texto para pantallas pequeñas */
@@ -839,8 +839,8 @@ li {
 
   .flecha {
     width: 90px;
-    margin-left: -50px;
-    margin-top: 80px; /* Espacio adicional entre el texto y la flecha */
+    margin-left: -38px;
+    margin-top: -370px; /* Espacio adicional entre el texto y la flecha */
     transform: none; /* Mantiene la flecha sin rotación */
   }
   .content-container{
